@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Linux Administrator - CSTAD</title>
+  <title>C++ Programming - CSTAD</title>
   <link rel="shotcut icon" href="https://istad.co/resources/img/CSTAD_120.png" />
   <script src="https://cdn.tailwindcss.com"></script>
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
@@ -32,7 +32,7 @@
 <body>
 
   <!-- Header -->
-  <header class="sticky top-0">
+  <header>
     <nav class="bg-blue-800 border-gray-200">
       <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
@@ -150,20 +150,20 @@
           <div class="flex flex-wrap">
             <div class="md:w-3/4 pr-4 pl-4 w-full">
               <div class="course-offer-item">
-                <h2 class="course-offer pt-4 pl-2 font-bold">Linux Administrator</h2>
+                <h2 class="course-offer pt-4 pl-2 font-bold">C++ Programming</h2>
                 <p class="pl-2">
-                  <span>Linux is a family of open-source Unix-like operating systems based on the Linux kernel. Linux is
-                    typically packaged in a Linux distribution. This course will covers fundamental concept in Operating
-                    systems and others, please see the details below:</span>
+                  <span>C++ is one of the world's most popular programming languages. C++ can be found in today's operating systems, Graphical User Interfaces, and embedded systems. C++ programming course will guide you to from basic language syntax to OOP concept step by step. Please see the details course offer below,</span>
                 </p>
                 <h5 class="pt-6 pb-6 pl-2 font-bold text-2xl">Course Offer</h5>
                 <ol class="pl-6 pb-2 ml-4">
-                  <li type="1">Linux installation and initialization</li>
-                  <li type="1">Linux user administration, services, and utilities</li>
-                  <li type="1">Server configuration</li>
-                  <li type="1">Advanced networking concepts and security</li>
-                  <li type="1">Database configuration and kick-start installation</li>
-                  <li type="1">Deployment</li>
+                  <li type="1">Programming Language concept</li>
+                  <li type="1">Basic Languages Syntax</li>
+                  <li type="1">Control Flow</li>
+                  <li type="1">Functions</li>
+                  <li type="1">Object Oriented Programming</li>
+                  <li type="1">Create Console Project</li>
+                  <li type="1">Problem Solving</li>
+                  <li type="1">Final Project</li>
                 </ol>
                 <p></p>
 
@@ -172,14 +172,14 @@
 
                 <!-- Course Fee -->
                 <p class="pl-2">Fee :
-                  <del class="text-red-600 font-bold strikethrough">$ 157.5</del>
+                  <del class="text-red-600 font-bold strikethrough">$ 180.0</del>
                   <span
-                    class="inline-block p-1 text-center font-semibold text-sm align-baseline leading-none rounded rounded-full py-1 px-3 bg-red-600 text-white p-2 font-bold"
-                    style="font-size: 16px;">$ 126.0</span>
+                    class="inline-block p-1 text-center font-semibold text-sm align-baseline leading-none rounded rounded-full py-1 px-3 bg-red-600 text-white  p-2 font-bold"
+                    style="font-size: 16px;">$ 144.0</span>
                 </p>
 
                 <p class="pl-2">Duration :
-                  <span class="text-red-600 font-bold">45</span>
+                  <span class="text-red-600 font-bold">60</span>
 
                   <span class="text-red-600 font-bold" style="text-transform: lowercase;">hours</span>
                   <!-- <span th:text="${course.totalLesson}">Total Lesson</span>
@@ -192,8 +192,8 @@
             <div class="w-full md:w-1/4 pr-4 pl-4 flex justify-center flex-col items-center">
               <div class="flex-item">
                 <span class="icon-course">
-                  <img src="https://api.istad.co/media/image/b9bf96d7-c352-4533-8025-f017517ba648.png"
-                    alt="Linux" class="w-full p-12">
+                  <img src="https://api.istad.co/media/image/73c3424a-39e0-450c-8969-8b35559594f5.png"
+                    alt="C++ Programming" class="w-full p-12">
                 </span>
               </div>
 
@@ -214,7 +214,7 @@
         <!-- End Course Detail -->
 
         <!-- Course Outline -->
-        <div class="container mx-auto sm:px-4 p-2">
+        <div class="container mx-auto sm:px-4 pt-6">
           <div class="flex flex-wrap  mt-5 mb-5">
             <h2 class="course-offer font-bold text-2xl">Course Outline</h2>
           </div>
@@ -228,14 +228,21 @@
             <!-- Accordion Toggle Button -->
             <div class="flex items-center p-4 cursor-pointer" onclick="toggleAccordion('accordion1')">
               <span class="text-gray-600"><i class='bx bxs-chevron-right' style='color:#407bff'></i></span>
-              <h2 class="text-md font-semibold uppercase">Introduction to cloud platform</h2>
+              <h2 class="text-md font-semibold uppercase">Basic anad Fundamental programming Concepts</h2>
             </div>
 
             <!-- Accordion Content -->
             <div id="accordion1" class="p-4 hidden bg-gray-200">
               <ul class="pl-8 list-disc colored-list">
-                <li  class="outline-details">Cloud Platform Overview</li>
-                <li  class="outline-details">Digital Ocean</li>
+                <li  class="outline-details">Introduction and getting started to programming</li>
+                <li  class="outline-details">C++ basics (variable, keywords, statement, expression)</li>
+                <li  class="outline-details">Fundamental data types</li>
+                <li  class="outline-details">Basic Function and file</li>
+                <li  class="outline-details">Debugging</li>
+                <li  class="outline-details">Operators</li>
+                <li  class="outline-details">Object scope and conversion</li>
+                <li  class="outline-details">Control flow and error handling</li>
+                <li  class="outline-details">Lab: Project Practical (1)</li>
               </ul>
             </div>
           </div>
@@ -247,18 +254,16 @@
             <!-- Accordion Toggle Button -->
             <div class="flex items-center p-4 cursor-pointer" onclick="toggleAccordion('accordion2')">
               <span class="text-gray-600"><i class='bx bxs-chevron-right' style='color:#407bff'></i></span>
-              <h2 class="text-md font-semibold uppercase">Introduction to linux</h2>
+              <h2 class="text-md font-semibold uppercase">Conpound data type</h2>
             </div>
 
             <!-- Accordion Content -->
             <div id="accordion2" class="p-4 hidden bg-gray-200">
               <ul class="pl-8 list-disc colored-list">
-                <li  class="outline-details">Linux Overview</li>
-                <li  class="outline-details">Linux Kernel</li>
-                <li  class="outline-details">Linux Shells</li>
-                <li  class="outline-details">Linux File System Structure</li>
-                <li  class="outline-details">The Root User</li>
-                <li  class="outline-details">Basic Commands</li>
+                <li  class="outline-details">Enum and Structs</li>
+                <li  class="outline-details">Array</li>
+                <li  class="outline-details">Strings</li>
+                <li  class="outline-details">Lab: Project Practical (2)</li>
               </ul>
             </div>
           </div>
@@ -270,16 +275,16 @@
             <!-- Accordion Toggle Button -->
             <div class="flex items-center p-4 cursor-pointer" onclick="toggleAccordion('accordion3')">
               <span class="text-gray-600"><i class='bx bxs-chevron-right' style='color:#407bff'></i></span>
-              <h2 class="text-md font-semibold uppercase">User administration</h2>
+              <h2 class="text-md font-semibold uppercase">function</h2>
             </div>
 
             <!-- Accordion Content -->
             <div id="accordion3" class="p-4 hidden bg-gray-200">
               <ul class="pl-8 list-disc colored-list">
-                <li  class="outline-details">System Administration Concept</li>
-                <li  class="outline-details">User Management Commands</li>
-                <li  class="outline-details">Group Management Commands</li>
-                <li  class="outline-details">User Privileges</li>
+                <li  class="outline-details">Types of functions</li>
+                <li  class="outline-details">Passing arguments to functions</li>
+                <li  class="outline-details">Function pointers</li>
+                <li  class="outline-details">Recursion</li>
               </ul>
             </div>
           </div>
@@ -291,15 +296,18 @@
             <!-- Accordion Toggle Button -->
             <div class="flex items-center p-4 cursor-pointer" onclick="toggleAccordion('accordion4')">
               <span class="text-gray-600"><i class='bx bxs-chevron-right' style='color:#407bff'></i></span>
-              <h2 class="text-md font-semibold uppercase">Understanding systemD</h2>
+              <h2 class="text-md font-semibold uppercase">OOP (Object Oriented programming)</h2>
             </div>
 
             <!-- Accordion Content -->
             <div id="accordion4" class="p-4 hidden bg-gray-200">
               <ul class="pl-8 list-disc colored-list">
-                <li  class="outline-details">SystemD Overview</li>
-                <li  class="outline-details">SystemD Commands</li>
-                <li  class="outline-details">SystemD Unit File</li>
+                <li  class="outline-details">Understand Class and Object and Constructors concepts</li>
+                <li  class="outline-details">Encapsulation</li>
+                <li  class="outline-details">Anonymous object</li>
+                <li  class="outline-details">Overloading and inheritance</li>
+                <li  class="outline-details">Object Relationship</li>
+                <li  class="outline-details">Lab: Project Practical (3)</li>
               </ul>
             </div>
           </div>
@@ -311,56 +319,15 @@
             <!-- Accordion Toggle Button -->
             <div class="flex items-center p-4 cursor-pointer" onclick="toggleAccordion('accordion5')">
               <span class="text-gray-600"><i class='bx bxs-chevron-right' style='color:#407bff'></i></span>
-              <h2 class="text-md font-semibold uppercase">Network management</h2>
+              <h2 class="text-md font-semibold uppercase">Final project</h2>
             </div>
 
             <!-- Accordion Content -->
             <div id="accordion5" class="p-4 hidden bg-gray-200">
               <ul class="pl-8 list-disc colored-list">
-                <li  class="outline-details">Network Overview</li>
-                <li  class="outline-details">Basic Commands</li>
-                <li  class="outline-details">Network Management Command Usage</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-
-        <div class="max-w">
-          <!-- Accordion Item 6 -->
-          <div class="mb-4 bg-white rounded-md overflow-hidden">
-            <!-- Accordion Toggle Button -->
-            <div class="flex items-center p-4 cursor-pointer" onclick="toggleAccordion('accordion6')">
-              <span class="text-gray-600"><i class='bx bxs-chevron-right' style='color:#407bff'></i></span>
-              <h2 class="text-md font-semibold uppercase">Database server</h2>
-            </div>
-
-            <!-- Accordion Content -->
-            <div id="accordion6" class="p-4 hidden bg-gray-200">
-              <ul class="pl-8 list-disc colored-list">
-                <li  class="outline-details">Database Server Overview</li>
-                <li  class="outline-details">Database Server Installation</li>
-                <li  class="outline-details">Database Server Configuration</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-
-        <div class="max-w">
-          <!-- Accordion Item 7 -->
-          <div class="mb-4 bg-white rounded-md overflow-hidden">
-            <!-- Accordion Toggle Button -->
-            <div class="flex items-center p-4 cursor-pointer" onclick="toggleAccordion('accordion7')">
-              <span class="text-gray-600"><i class='bx bxs-chevron-right' style='color:#407bff'></i></span>
-              <h2 class="text-md font-semibold uppercase">web server</h2>
-            </div>
-
-            <!-- Accordion Content -->
-            <div id="accordion7" class="p-4 hidden bg-gray-200">
-              <ul class="pl-8 list-disc colored-list">
-                <li  class="outline-details">Web Server</li>
-                <li  class="outline-details">NGINX Overview</li>
-                <li  class="outline-details">NGINX Installation & Configuration</li>
-                <li  class="outline-details">Domain Name Configuration</li>
+                <li  class="outline-details">Real use of console application</li>
+                <li  class="outline-details">Apply OOP concept to solve real problem</li>
+                <li  class="outline-details">Handling error exception in program</li>
               </ul>
             </div>
           </div>
@@ -370,61 +337,61 @@
   </main>
   <!--End of Main -->
 
-    <!-- Similar course -->
-    <div class="container mx-auto sm:px-4 pt-6">
-      <div class="flex flex-wrap justify-center mt-5 mb-5">
-        <h2 class="course-offer font-bold text-2xl">Similar to this Course</h2>
-      </div>
+  <!-- Similar course -->
+  <div class="container mx-auto sm:px-4 p-2">
+    <div class="flex flex-wrap justify-center mt-5 mb-5">
+      <h2 class="course-offer font-bold text-2xl">Similar to this Course</h2>
     </div>
-  
-      <section class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">  
-        <div class="grid gap-8 lg:grid-cols-2 justify-center">
-          <!-- course 1 -->
-          <a href="#" class="max-w-lg bg-white rounded overflow-hidden shadow-lg rounded-2xl flex flex-col sm:flex-row">
-            <!-- Text on the right side -->
-            <div class="w-5/6 p-4">
-              <h2 class="text-xl font-semibold mb-4 text-blue-800" style="font-size: 24px">DevOps Engineering</h2>
-              <span
-                class="inline-block text-center font-semibold text-sm align-baseline leading-none rounded rounded-full py-1 px-3 bg-red-600 text-white hover:bg-red-700 pb-1 font-bold"
-                style="font-size: 16px;">20% Scholarship
-              </span>
-              <p class="text-gray-700 pt-3">This course will provide you with in-depth knowledge on how to build...</p>
-              <p class="text-gray-700 pt-3"><i class='bx bxs-hourglass-top'></i>70 hours<span
-                  class="text-gray-700 pt-3 pl-4"><i class='bx bxs-layer'></i>Advanced</span>
-              </p>
-            </div>
-            <!-- Image on the left side -->
-            <div class="w-1/2 flex items-center justify-center">
-              <img src="https://api.istad.co/media/image/835a7298-dbab-448d-8229-ee8a555c4846.png" alt="Image"
-                class="w-4/5 object-cover">
-            </div>
-          </a>
-          <!--end of course 1 -->
-  
-          <!-- course 2 -->
-          <a href="#" class="max-w-lg bg-white rounded overflow-hidden shadow-lg rounded-2xl flex flex-col sm:flex-row">
-            <!-- Text on the right side -->
-            <div class="w-5/6 p-4">
-              <h2 class="text-xl font-semibold mb-4 text-blue-800" style="font-size: 24px">C++ Programming</h2>
-              <span
-                class="inline-block text-center font-semibold text-sm align-baseline leading-none rounded rounded-full py-1 px-3 bg-red-600 text-white hover:bg-red-700 pb-1 font-bold"
-                style="font-size: 16px;">20% Scholarship</span>
-              <p class="text-gray-700 pt-3">C++ is one of the world's most popular programming languages.</p>
-              <p class="text-gray-700 pt-3"><i class='bx bxs-hourglass-top'></i>60 hours<span
-                  class="text-gray-700 pt-3 pl-4"><i class='bx bxs-layer'></i>Basic</span>
-              </p>
-            </div>
-            <!-- Image on the left side -->
-            <div class="w-1/2 flex items-center justify-center">
-              <img src="https://api.istad.co/media/image/73c3424a-39e0-450c-8969-8b35559594f5.png" alt="Image"
-                class="w-4/5 object-cover">
-            </div>
-          </a>
-          <!-- end of course 2 -->
-        </div>
-      </section>
-    <!-- end of Similar course -->
+  </div>
 
+    <section class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">  
+      <div class="grid gap-8 lg:grid-cols-2  justify-center">
+        <!-- course 1 -->
+        <a href="#" class="max-w-lg bg-white rounded overflow-hidden shadow-lg rounded-2xl flex flex-col sm:flex-row">
+          <!-- Text on the right side -->
+          <div class="w-5/6 p-4">
+            <h2 class="text-xl font-semibold mb-4 text-blue-800" style="font-size: 24px">DevOps Engineering</h2>
+            <span
+              class="inline-block text-center font-semibold text-sm align-baseline leading-none rounded rounded-full py-1 px-3 bg-red-600 text-white hover:bg-red-700 pb-1 font-bold"
+              style="font-size: 16px;">20% Scholarship
+            </span>
+            <p class="text-gray-700 pt-3">This course will provide you with in-depth knowledge on how to build...</p>
+            <p class="text-gray-700 pt-3"><i class='bx bxs-hourglass-top'></i>70 hours<span
+                class="text-gray-700 pt-3 pl-4"><i class='bx bxs-layer'></i>Advanced</span>
+            </p>
+          </div>
+          <!-- Image on the left side -->
+          <div class="w-1/2 flex items-center justify-center">
+            <img src="https://api.istad.co/media/image/835a7298-dbab-448d-8229-ee8a555c4846.png" alt="Image"
+              class="w-4/5 object-cover">
+          </div>
+        </a>
+        <!--end of course 1 -->
+
+        <!-- course 2 -->
+        <a href="#" class="max-w-lg bg-white rounded overflow-hidden shadow-lg rounded-2xl flex flex-col sm:flex-row">
+          <!-- Text on the right side -->
+          <div class="w-5/6 p-4">
+            <h2 class="text-xl font-semibold mb-4 text-blue-800" style="font-size: 24px">C++ Programming</h2>
+            <span
+              class="inline-block text-center font-semibold text-sm align-baseline leading-none rounded rounded-full py-1 px-3 bg-red-600 text-white hover:bg-red-700 pb-1 font-bold"
+              style="font-size: 16px;">20% Scholarship</span>
+            <p class="text-gray-700 pt-3">C++ is one of the world's most popular programming languages.</p>
+            <p class="text-gray-700 pt-3"><i class='bx bxs-hourglass-top'></i>60 hours<span
+                class="text-gray-700 pt-3 pl-4"><i class='bx bxs-layer'></i>Basic</span>
+            </p>
+          </div>
+          <!-- Image on the left side -->
+          <div class="w-1/2 flex items-center justify-center">
+            <img src="https://api.istad.co/media/image/73c3424a-39e0-450c-8969-8b35559594f5.png" alt="Image"
+              class="w-4/5 object-cover">
+          </div>
+        </a>
+        <!-- end of course 2 -->
+      </div>
+    </section>
+  <!-- end of Similar course -->
+  
   <!-- Footer -->
   <footer class="px-3 pt-4 lg:px-9 border-t-2 bg-blue-800">
     <div class="container mx-auto grid gap-10 row-gap-6 mb-8 sm:grid-cols-2 lg:grid-cols-4">
@@ -458,7 +425,7 @@
       </div>
       <div class="mt-3">
         <p class="text-base font-bold tracking-wide text-white">
-           CSTAD IS ALSO AVAILABLE ON 
+          CSTAD IS ALSO AVAILABLE ON 
         </p>
         <div class="flex items-center gap-1 px-2 pt-5 pb-6">
           <a href="https://apps.apple.com/kh/app/cstad-mobile/id6463835798" class="w-full min-w-xl">

@@ -1,6 +1,6 @@
 @font-face {
     font-family: "Inter-Regular";
-    src: url(/cstad-new-version/font/Inter-Regular.ttf);
+    src: url(../font/Inter-Regular.ttf);
 }
 *{
     font-family: "Inter-Regular";
@@ -27,4 +27,15 @@ body{
 }
 .border{
     border-radius: 20px;
+}
+.colored-list {
+    list-style: none;
+}
+.colored-list li::before {
+    content: "\2022";
+    color:#407bff;
+    font-weight: bold;
+    display: inline-block; 
+    width: 1em;
+    margin-left: -1em;
 }

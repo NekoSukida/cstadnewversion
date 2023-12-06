@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Linux Administrator - CSTAD</title>
+  <title>Spring Framework - CSTAD</title>
   <link rel="shotcut icon" href="https://istad.co/resources/img/CSTAD_120.png" />
   <script src="https://cdn.tailwindcss.com"></script>
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
@@ -32,7 +32,7 @@
 <body>
 
   <!-- Header -->
-  <header class="sticky top-0">
+  <header>
     <nav class="bg-blue-800 border-gray-200">
       <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
@@ -150,20 +150,18 @@
           <div class="flex flex-wrap">
             <div class="md:w-3/4 pr-4 pl-4 w-full">
               <div class="course-offer-item">
-                <h2 class="course-offer pt-4 pl-2 font-bold">Linux Administrator</h2>
+                <h2 class="course-offer pt-4 pl-2 font-bold">Spring Framework</h2>
                 <p class="pl-2">
-                  <span>Linux is a family of open-source Unix-like operating systems based on the Linux kernel. Linux is
-                    typically packaged in a Linux distribution. This course will covers fundamental concept in Operating
-                    systems and others, please see the details below:</span>
+                  <span>Spring Course will help in understanding about Spring framework and how to build web applications, RESTful APIs using Spring, Spring MVC, Spring Boot, Thymeleaf, Spring JDBC etc. By the end of this course, students will understand all the below topics.</span>
                 </p>
                 <h5 class="pt-6 pb-6 pl-2 font-bold text-2xl">Course Offer</h5>
                 <ol class="pl-6 pb-2 ml-4">
-                  <li type="1">Linux installation and initialization</li>
-                  <li type="1">Linux user administration, services, and utilities</li>
-                  <li type="1">Server configuration</li>
-                  <li type="1">Advanced networking concepts and security</li>
-                  <li type="1">Database configuration and kick-start installation</li>
-                  <li type="1">Deployment</li>
+                  <li type="1">Spring Boot Application</li>
+                  <li type="1">Database with Spring Boot</li>
+                  <li type="1">Basic RESTful AP</li>
+                  <li type="1">Basic Security</li>
+                  <li type="1">JSON Web Token (JWT)</li>
+                  <li type="1">Final Project</li>
                 </ol>
                 <p></p>
 
@@ -172,14 +170,14 @@
 
                 <!-- Course Fee -->
                 <p class="pl-2">Fee :
-                  <del class="text-red-600 font-bold strikethrough">$ 157.5</del>
+                  <del class="text-red-600 font-bold strikethrough">$ 300.0</del>
                   <span
                     class="inline-block p-1 text-center font-semibold text-sm align-baseline leading-none rounded rounded-full py-1 px-3 bg-red-600 text-white p-2 font-bold"
-                    style="font-size: 16px;">$ 126.0</span>
+                    style="font-size: 16px;">$ 240.0</span>
                 </p>
 
                 <p class="pl-2">Duration :
-                  <span class="text-red-600 font-bold">45</span>
+                  <span class="text-red-600 font-bold">80</span>
 
                   <span class="text-red-600 font-bold" style="text-transform: lowercase;">hours</span>
                   <!-- <span th:text="${course.totalLesson}">Total Lesson</span>
@@ -192,8 +190,8 @@
             <div class="w-full md:w-1/4 pr-4 pl-4 flex justify-center flex-col items-center">
               <div class="flex-item">
                 <span class="icon-course">
-                  <img src="https://api.istad.co/media/image/b9bf96d7-c352-4533-8025-f017517ba648.png"
-                    alt="Linux" class="w-full p-12">
+                  <img src="https://api.istad.co/media/image/c8c41751-3bc0-4f07-9658-7d95efbae692.png"
+                    alt="Spring Framework" class="w-full p-12">
                 </span>
               </div>
 
@@ -228,14 +226,17 @@
             <!-- Accordion Toggle Button -->
             <div class="flex items-center p-4 cursor-pointer" onclick="toggleAccordion('accordion1')">
               <span class="text-gray-600"><i class='bx bxs-chevron-right' style='color:#407bff'></i></span>
-              <h2 class="text-md font-semibold uppercase">Introduction to cloud platform</h2>
+              <h2 class="text-md font-semibold uppercase">getting start with spring framework</h2>
             </div>
 
             <!-- Accordion Content -->
             <div id="accordion1" class="p-4 hidden bg-gray-200">
               <ul class="pl-8 list-disc colored-list">
-                <li  class="outline-details">Cloud Platform Overview</li>
-                <li  class="outline-details">Digital Ocean</li>
+                <li  class="outline-details">Spring Framework Overview</li>
+                <li  class="outline-details">Spring Boot Overview</li>
+                <li  class="outline-details">Spring Boot Application with Gradle</li>
+                <li  class="outline-details">Project Structure</li>
+                <li  class="outline-details">Lab: Discussion</li>
               </ul>
             </div>
           </div>
@@ -247,18 +248,17 @@
             <!-- Accordion Toggle Button -->
             <div class="flex items-center p-4 cursor-pointer" onclick="toggleAccordion('accordion2')">
               <span class="text-gray-600"><i class='bx bxs-chevron-right' style='color:#407bff'></i></span>
-              <h2 class="text-md font-semibold uppercase">Introduction to linux</h2>
+              <h2 class="text-md font-semibold uppercase">core technologies</h2>
             </div>
 
             <!-- Accordion Content -->
             <div id="accordion2" class="p-4 hidden bg-gray-200">
               <ul class="pl-8 list-disc colored-list">
-                <li  class="outline-details">Linux Overview</li>
-                <li  class="outline-details">Linux Kernel</li>
-                <li  class="outline-details">Linux Shells</li>
-                <li  class="outline-details">Linux File System Structure</li>
-                <li  class="outline-details">The Root User</li>
-                <li  class="outline-details">Basic Commands</li>
+                <li  class="outline-details">The IoC Container</li>
+                <li  class="outline-details">Spring Bean</li>
+                <li  class="outline-details">Spring Bean Scope</li>
+                <li  class="outline-details">Spring Bean Configuration</li>
+                <li  class="outline-details">Spring Resources</li>
               </ul>
             </div>
           </div>
@@ -270,16 +270,17 @@
             <!-- Accordion Toggle Button -->
             <div class="flex items-center p-4 cursor-pointer" onclick="toggleAccordion('accordion3')">
               <span class="text-gray-600"><i class='bx bxs-chevron-right' style='color:#407bff'></i></span>
-              <h2 class="text-md font-semibold uppercase">User administration</h2>
+              <h2 class="text-md font-semibold uppercase">spring boot with mvc pattern</h2>
             </div>
 
             <!-- Accordion Content -->
             <div id="accordion3" class="p-4 hidden bg-gray-200">
               <ul class="pl-8 list-disc colored-list">
-                <li  class="outline-details">System Administration Concept</li>
-                <li  class="outline-details">User Management Commands</li>
-                <li  class="outline-details">Group Management Commands</li>
-                <li  class="outline-details">User Privileges</li>
+                <li  class="outline-details">MVC Overview</li>
+                <li  class="outline-details">Spring Web MVC Overview</li>
+                <li  class="outline-details">Spring Web MVC Annotations</li>
+                <li  class="outline-details">Redirect Attributes</li>
+                <li  class="outline-details">Lab: Homework</li>
               </ul>
             </div>
           </div>
@@ -291,15 +292,21 @@
             <!-- Accordion Toggle Button -->
             <div class="flex items-center p-4 cursor-pointer" onclick="toggleAccordion('accordion4')">
               <span class="text-gray-600"><i class='bx bxs-chevron-right' style='color:#407bff'></i></span>
-              <h2 class="text-md font-semibold uppercase">Understanding systemD</h2>
+              <h2 class="text-md font-semibold uppercase">Thymeleaf Template engine</h2>
             </div>
 
             <!-- Accordion Content -->
             <div id="accordion4" class="p-4 hidden bg-gray-200">
               <ul class="pl-8 list-disc colored-list">
-                <li  class="outline-details">SystemD Overview</li>
-                <li  class="outline-details">SystemD Commands</li>
-                <li  class="outline-details">SystemD Unit File</li>
+                <li  class="outline-details">Template Engine Overview</li>
+                <li  class="outline-details">Thymeleaf Overview</li>
+                <li  class="outline-details">Text, Variable</li>
+                <li  class="outline-details">Available Object</li>
+                <li  class="outline-details">Standard Expression Syntax</li>
+                <li  class="outline-details">Contional</li>
+                <li  class="outline-details">Iteration</li>
+                <li  class="outline-details">Fragment</li>
+                <li  class="outline-details">Layout</li>
               </ul>
             </div>
           </div>
@@ -311,15 +318,22 @@
             <!-- Accordion Toggle Button -->
             <div class="flex items-center p-4 cursor-pointer" onclick="toggleAccordion('accordion5')">
               <span class="text-gray-600"><i class='bx bxs-chevron-right' style='color:#407bff'></i></span>
-              <h2 class="text-md font-semibold uppercase">Network management</h2>
+              <h2 class="text-md font-semibold uppercase">mvc with Thymeleaf</h2>
             </div>
 
             <!-- Accordion Content -->
             <div id="accordion5" class="p-4 hidden bg-gray-200">
               <ul class="pl-8 list-disc colored-list">
-                <li  class="outline-details">Network Overview</li>
-                <li  class="outline-details">Basic Commands</li>
-                <li  class="outline-details">Network Management Command Usage</li>
+                <li  class="outline-details">RedirectView</li>
+                <li  class="outline-details">RedirectAttributes</li>
+                <li  class="outline-details">FlashAttributes</li>
+                <li  class="outline-details">Data Binding</li>
+                <li  class="outline-details">Form Validation</li>
+                <li  class="outline-details">Exception</li>
+                <li  class="outline-details">Controller Advice</li>
+                <li  class="outline-details">Internationalization</li>
+                <li  class="outline-details">Multipart</li>
+                <li  class="outline-details">Lab: Classwork</li>
               </ul>
             </div>
           </div>
@@ -331,15 +345,19 @@
             <!-- Accordion Toggle Button -->
             <div class="flex items-center p-4 cursor-pointer" onclick="toggleAccordion('accordion6')">
               <span class="text-gray-600"><i class='bx bxs-chevron-right' style='color:#407bff'></i></span>
-              <h2 class="text-md font-semibold uppercase">Database server</h2>
+              <h2 class="text-md font-semibold uppercase">data access with mybatis framework</h2>
             </div>
 
             <!-- Accordion Content -->
             <div id="accordion6" class="p-4 hidden bg-gray-200">
               <ul class="pl-8 list-disc colored-list">
-                <li  class="outline-details">Database Server Overview</li>
-                <li  class="outline-details">Database Server Installation</li>
-                <li  class="outline-details">Database Server Configuration</li>
+                <li  class="outline-details">MyBatis Overview</li>
+                <li  class="outline-details">Database Connection</li>
+                <li  class="outline-details">MyBatis Mapper</li>
+                <li  class="outline-details">Dynamic SQL</li>
+                <li  class="outline-details">Database Relationship</li>
+                <li  class="outline-details">Advanced MyBatis with transaction</li>
+                <li  class="outline-details">Lab: Homework</li>
               </ul>
             </div>
           </div>
@@ -351,16 +369,92 @@
             <!-- Accordion Toggle Button -->
             <div class="flex items-center p-4 cursor-pointer" onclick="toggleAccordion('accordion7')">
               <span class="text-gray-600"><i class='bx bxs-chevron-right' style='color:#407bff'></i></span>
-              <h2 class="text-md font-semibold uppercase">web server</h2>
+              <h2 class="text-md font-semibold uppercase">common development tools in spring boot</h2>
             </div>
 
             <!-- Accordion Content -->
             <div id="accordion7" class="p-4 hidden bg-gray-200">
               <ul class="pl-8 list-disc colored-list">
-                <li  class="outline-details">Web Server</li>
-                <li  class="outline-details">NGINX Overview</li>
-                <li  class="outline-details">NGINX Installation & Configuration</li>
-                <li  class="outline-details">Domain Name Configuration</li>
+                <li  class="outline-details">DevTools</li>
+                <li  class="outline-details">Lombok</li>
+                <li  class="outline-details">Configuration Properties</li>
+                <li  class="outline-details">Lab: Classwork</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="max-w">
+          <!-- Accordion Item 8 -->
+          <div class="mb-4 bg-white rounded-md overflow-hidden">
+            <!-- Accordion Toggle Button -->
+            <div class="flex items-center p-4 cursor-pointer" onclick="toggleAccordion('accordion8')">
+              <span class="text-gray-600"><i class='bx bxs-chevron-right' style='color:#407bff'></i></span>
+              <h2 class="text-md font-semibold uppercase">restful api with spring boot</h2>
+            </div>
+
+            <!-- Accordion Content -->
+            <div id="accordion8" class="p-4 hidden bg-gray-200">
+              <ul class="pl-8 list-disc colored-list">
+                <li  class="outline-details">RESTful API Overview</li>
+                <li  class="outline-details">Declaration with @RestController</li>
+                <li  class="outline-details">Media Types</li>
+                <li  class="outline-details">Parameters / Headers</li>
+                <li  class="outline-details">@RequestBody</li>
+                <li  class="outline-details">Build First RESTful API</li>
+                <li  class="outline-details">API Documentation with OpenAPI</li>
+                <li  class="outline-details">DTO Role</li>
+                <li  class="outline-details">Request / Response Customization</li>
+                <li  class="outline-details">REST API Exception</li>
+                <li  class="outline-details">Lab: Assignment</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="max-w">
+          <!-- Accordion Item 9 -->
+          <div class="mb-4 bg-white rounded-md overflow-hidden">
+            <!-- Accordion Toggle Button -->
+            <div class="flex items-center p-4 cursor-pointer" onclick="toggleAccordion('accordion9')">
+              <span class="text-gray-600"><i class='bx bxs-chevron-right' style='color:#407bff'></i></span>
+              <h2 class="text-md font-semibold uppercase">mini project</h2>
+            </div>
+
+            <!-- Accordion Content -->
+            <div id="accordion9" class="p-4 hidden bg-gray-200">
+              <ul class="pl-8 list-disc colored-list">
+                <li  class="outline-details">Spring Security Overview</li>
+                <li  class="outline-details">Authentication</li>
+                <li  class="outline-details">Authorization</li>
+                <li  class="outline-details">Role-based Authentication</li>
+                <li  class="outline-details">Basic Authentication</li>
+                <li  class="outline-details">JSON Web Token</li>
+                <li  class="outline-details">API Documentation with OpenAPI</li>
+                <li  class="outline-details">DTO Role</li>
+                <li  class="outline-details">Request / Response Customization</li>
+                <li  class="outline-details">REST API Exception</li>
+                <li  class="outline-details">Lab: Assignment</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="max-w">
+          <!-- Accordion Item 10 -->
+          <div class="mb-4 bg-white rounded-md overflow-hidden">
+            <!-- Accordion Toggle Button -->
+            <div class="flex items-center p-4 cursor-pointer" onclick="toggleAccordion('accordion10')">
+              <span class="text-gray-600"><i class='bx bxs-chevron-right' style='color:#407bff'></i></span>
+              <h2 class="text-md font-semibold uppercase">project practical</h2>
+            </div>
+
+            <!-- Accordion Content -->
+            <div id="accordion10" class="p-4 hidden bg-gray-200">
+              <ul class="pl-8 list-disc colored-list">
+                <li  class="outline-details">Expanse Managment System</li>
+                <li  class="outline-details">Using Lesson that learning so far</li>
+                <li  class="outline-details">Authorization</li>
+                <li  class="outline-details">WebClient</li>
+                <li  class="outline-details">AJAX</li>
               </ul>
             </div>
           </div>
@@ -370,60 +464,60 @@
   </main>
   <!--End of Main -->
 
-    <!-- Similar course -->
-    <div class="container mx-auto sm:px-4 pt-6">
-      <div class="flex flex-wrap justify-center mt-5 mb-5">
-        <h2 class="course-offer font-bold text-2xl">Similar to this Course</h2>
-      </div>
+  <!-- Similar course -->
+  <div class="container mx-auto sm:px-4 pt-6">
+    <div class="flex flex-wrap justify-center mt-5 mb-5">
+      <h2 class="course-offer font-bold text-2xl">Similar to this Course</h2>
     </div>
-  
-      <section class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">  
-        <div class="grid gap-8 lg:grid-cols-2 justify-center">
-          <!-- course 1 -->
-          <a href="#" class="max-w-lg bg-white rounded overflow-hidden shadow-lg rounded-2xl flex flex-col sm:flex-row">
-            <!-- Text on the right side -->
-            <div class="w-5/6 p-4">
-              <h2 class="text-xl font-semibold mb-4 text-blue-800" style="font-size: 24px">DevOps Engineering</h2>
-              <span
-                class="inline-block text-center font-semibold text-sm align-baseline leading-none rounded rounded-full py-1 px-3 bg-red-600 text-white hover:bg-red-700 pb-1 font-bold"
-                style="font-size: 16px;">20% Scholarship
-              </span>
-              <p class="text-gray-700 pt-3">This course will provide you with in-depth knowledge on how to build...</p>
-              <p class="text-gray-700 pt-3"><i class='bx bxs-hourglass-top'></i>70 hours<span
-                  class="text-gray-700 pt-3 pl-4"><i class='bx bxs-layer'></i>Advanced</span>
-              </p>
-            </div>
-            <!-- Image on the left side -->
-            <div class="w-1/2 flex items-center justify-center">
-              <img src="https://api.istad.co/media/image/835a7298-dbab-448d-8229-ee8a555c4846.png" alt="Image"
-                class="w-4/5 object-cover">
-            </div>
-          </a>
-          <!--end of course 1 -->
-  
-          <!-- course 2 -->
-          <a href="#" class="max-w-lg bg-white rounded overflow-hidden shadow-lg rounded-2xl flex flex-col sm:flex-row">
-            <!-- Text on the right side -->
-            <div class="w-5/6 p-4">
-              <h2 class="text-xl font-semibold mb-4 text-blue-800" style="font-size: 24px">C++ Programming</h2>
-              <span
-                class="inline-block text-center font-semibold text-sm align-baseline leading-none rounded rounded-full py-1 px-3 bg-red-600 text-white hover:bg-red-700 pb-1 font-bold"
-                style="font-size: 16px;">20% Scholarship</span>
-              <p class="text-gray-700 pt-3">C++ is one of the world's most popular programming languages.</p>
-              <p class="text-gray-700 pt-3"><i class='bx bxs-hourglass-top'></i>60 hours<span
-                  class="text-gray-700 pt-3 pl-4"><i class='bx bxs-layer'></i>Basic</span>
-              </p>
-            </div>
-            <!-- Image on the left side -->
-            <div class="w-1/2 flex items-center justify-center">
-              <img src="https://api.istad.co/media/image/73c3424a-39e0-450c-8969-8b35559594f5.png" alt="Image"
-                class="w-4/5 object-cover">
-            </div>
-          </a>
-          <!-- end of course 2 -->
-        </div>
-      </section>
-    <!-- end of Similar course -->
+  </div>
+
+    <section class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">  
+      <div class="grid gap-8 lg:grid-cols-2  justify-center">
+        <!-- course 1 -->
+        <a href="#" class="max-w-lg bg-white rounded overflow-hidden shadow-lg rounded-2xl flex flex-col sm:flex-row">
+          <!-- Text on the right side -->
+          <div class="w-5/6 p-4">
+            <h2 class="text-xl font-semibold mb-4 text-blue-800" style="font-size: 24px">DevOps Engineering</h2>
+            <span
+              class="inline-block text-center font-semibold text-sm align-baseline leading-none rounded rounded-full py-1 px-3 bg-red-600 text-white hover:bg-red-700 pb-1 font-bold"
+              style="font-size: 16px;">20% Scholarship
+            </span>
+            <p class="text-gray-700 pt-3">This course will provide you with in-depth knowledge on how to build...</p>
+            <p class="text-gray-700 pt-3"><i class='bx bxs-hourglass-top'></i>70 hours<span
+                class="text-gray-700 pt-3 pl-4"><i class='bx bxs-layer'></i>Advanced</span>
+            </p>
+          </div>
+          <!-- Image on the left side -->
+          <div class="w-1/2 flex items-center justify-center">
+            <img src="https://api.istad.co/media/image/835a7298-dbab-448d-8229-ee8a555c4846.png" alt="Image"
+              class="w-4/5 object-cover">
+          </div>
+        </a>
+        <!--end of course 1 -->
+
+        <!-- course 2 -->
+        <a href="#" class="max-w-lg bg-white rounded overflow-hidden shadow-lg rounded-2xl flex flex-col sm:flex-row">
+          <!-- Text on the right side -->
+          <div class="w-5/6 p-4">
+            <h2 class="text-xl font-semibold mb-4 text-blue-800" style="font-size: 24px">C++ Programming</h2>
+            <span
+              class="inline-block text-center font-semibold text-sm align-baseline leading-none rounded rounded-full py-1 px-3 bg-red-600 text-white hover:bg-red-700 pb-1 font-bold"
+              style="font-size: 16px;">20% Scholarship</span>
+            <p class="text-gray-700 pt-3">C++ is one of the world's most popular programming languages.</p>
+            <p class="text-gray-700 pt-3"><i class='bx bxs-hourglass-top'></i>60 hours<span
+                class="text-gray-700 pt-3 pl-4"><i class='bx bxs-layer'></i>Basic</span>
+            </p>
+          </div>
+          <!-- Image on the left side -->
+          <div class="w-1/2 flex items-center justify-center">
+            <img src="https://api.istad.co/media/image/73c3424a-39e0-450c-8969-8b35559594f5.png" alt="Image"
+              class="w-4/5 object-cover">
+          </div>
+        </a>
+        <!-- end of course 2 -->
+      </div>
+    </section>
+  <!-- end of Similar course -->
 
   <!-- Footer -->
   <footer class="px-3 pt-4 lg:px-9 border-t-2 bg-blue-800">
@@ -458,7 +552,7 @@
       </div>
       <div class="mt-3">
         <p class="text-base font-bold tracking-wide text-white">
-           CSTAD IS ALSO AVAILABLE ON 
+          CSTAD IS ALSO AVAILABLE ON 
         </p>
         <div class="flex items-center gap-1 px-2 pt-5 pb-6">
           <a href="https://apps.apple.com/kh/app/cstad-mobile/id6463835798" class="w-full min-w-xl">
