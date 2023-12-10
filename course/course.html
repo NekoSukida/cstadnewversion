@@ -1,31 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>CSTAD</title>
-        <link rel="stylesheet" href="css/index.css">
-        <link rel="shotcut icon" href="https://istad.co/resources/img/CSTAD_120.png" />
-        <script src="https://cdn.tailwindcss.com"></script>
-        <script src="https://kit.fontawesome.com/6ea73373d5.js" crossorigin="anonymous"></script>
-        <link
-          rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-        />
-        <link
-          href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.css"
-          rel="stylesheet"
-        />
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
-        <style>
-          .cstadlogo {
-            height: 100px;
-            width: 100px;
-          }
-        </style>
-      </head>
-<body>
-    <header class="sticky top-0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Course</title>
+    <link rel="shotcut icon" href="https://istad.co/resources/img/CSTAD_120.png" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/index.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
+    <style>
+      .cstadlogo {
+        height: 100px;
+        width: 100px;
+      }
+    </style>
+  </head>
+<body class="bg-[#f5f5f5]">
+    <header class="sticky top-0" style="z-index: 99;">
         <nav class="bg-blue-800 border-gray-200">
           <div
             class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
@@ -218,31 +221,52 @@
           </div>
         </nav>
     </header>
-        <article class="items-center justify-center m-5">
-            <h2 class="text-3xl text-blue-800 font-semibold">COURSES</h2>
+        <article class=" mx-auto flex justify-center lg:py-10 text">
+            <h2 class="flex text-3xl text-blue-800 font-semibold mx-auto m-5 ">COURSES</h2>
         </article>
         <section class="flex flex-row mx-auto w-4/5 space-x-4">
           <!-- search -->
-            <form class="w-1/4 z-[-9]">   
-              <label for="default-search" class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white">Search</label>
-              <div class="relative">
-                  <input type="search" id="default-search" class="block w-full p-2.5 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Search Course" required>
-                  <button type="submit" class=" text-white absolute end-2.5 bottom-2.5 bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-                    <svg class="w-4 h-4 text-white dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
-                      <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"/>
-                  </svg>
-                  </button>
-              </div>
-            </form>
+          <div class="mb-3">
+            <div class="relative mb-4 flex w-full flex-wrap items-stretch">
+              <input
+                type="search"
+                class="relative m-0 -mr-0.5 block min-w-0 flex-auto rounded-l border border-solid border-neutral-300 bg-transparent bg-clip-padding px-3 py-[0.25rem] text-base font-normal leading-[1.6] text-neutral-700 outline-none transition duration-200 ease-in-out focus:z-[3] focus:border-primary focus:text-neutral-700 focus:shadow-[inset_0_0_0_1px_rgb(59,113,202)] focus:outline-none dark:border-neutral-600 dark:text-neutral-200 dark:placeholder:text-neutral-200 dark:focus:border-primary"
+                placeholder="Search"
+                aria-label="Search"
+                aria-describedby="button-addon1" />
+          
+              <!--Search button-->
+              <button
+                class="relative z-[2] flex items-center rounded-r bg-blue-800 px-6 py-2.5 text-xs font-medium uppercase leading-tight text-white shadow-md transition duration-150 ease-in-out hover:bg-primary-700 hover:shadow-lg focus:bg-primary-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-primary-800 active:shadow-lg"
+                type="button"
+                id="button-addon1"
+                data-te-ripple-init
+                data-te-ripple-color="light">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                  class="h-5 w-5">
+                  <path
+                    fill-rule="evenodd"
+                    d="M9 3.5a5.5 5.5 0 100 11 5.5 5.5 0 000-11zM2 9a7 7 0 1112.452 4.391l3.328 3.329a.75.75 0 11-1.06 1.06l-3.329-3.328A7 7 0 012 9z"
+                    clip-rule="evenodd" />
+                </svg>
+              </button>
+            </div>
+          </div>
           <!-- end of search -->
           <!-- category -->
           <div class="w-1/4">
             <select id="countries" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
-              <option selected>Choose a country</option>
-              <option value="US">United States</option>
-              <option value="CA">Canada</option>
-              <option value="FR">France</option>
-              <option value="DE">Germany</option>
+              <option selected>Category</option>
+              <option value="FP">Fundamental</option>
+              <option value="FE">Front-End</option>
+              <option value="MB">Mobile</option>
+              <option value="DB">Database</option>
+              <option value="BE">Back-End</option>
+              <option value="DO">DevOps</option>
+              <option value="BC">Blockchain</option>
             </select>
           </div>
             
@@ -250,7 +274,7 @@
           <!-- sort by -->
           <div class="w-1/4">
             <select id="countries" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
-              <option selected>Choose a country</option>
+              <option selected>Sort By</option>
               <option value="US">United States</option>
               <option value="CA">Canada</option>
               <option value="FR">France</option>
@@ -260,7 +284,7 @@
           <!-- end of sort by -->
           <!-- button filter -->
           <div>
-              <button type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Filter Result</button>
+              <button type="button" class="text-white bg-blue-800 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Filter Result</button>
           </div>
           <!-- end of button filter -->
         </section>
@@ -268,58 +292,428 @@
         <main>
            <!-- programming -->
             <section>
-                <article class="items-center justify-center m-5">
-                  <h2 class="text-3xl text-blue-800 font-semibold">Fundamental Programming</h2>
+                <article class="items-center justify-center mt-10 mb-4 mx-auto w-4/5">
+                  <h2 class="text-3xl text-blue-800 font-semibold mx-auto">Fundamental Programming</h2>
                 </article>
-                  <div class="flex flex-row mx-auto w-4/5 space-x-4">
-                    <div>
-                    <a href="#" class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
-                      <img class="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg" src="/docs/images/blog/image-4.jpg" alt="">
-                      <div class="flex flex-col justify-between p-4 leading-normal">
-                          <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy technology acquisitions 2021</h5>
-                          <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
+                <section class="py-8 px-4 mx-auto max-w-screen-xl lg:py-5 lg:px-6">  
+                  <div class="grid gap-8 lg:grid-cols-2  justify-center">
+                    <!-- course 1 -->
+                    <a href="#" class="max-w-lg bg-white rounded overflow-hidden shadow-lg rounded-2xl flex flex-col sm:flex-row hover:scale-[1.1] duration-300">
+                      <!-- Text on the right side -->
+                      <div class="w-5/6 p-4">
+                        <h2 class="text-xl font-semibold mb-4 text-blue-800" style="font-size: 24px">DevOps Engineering</h2>
+                        <span
+                          class="inline-block text-center font-semibold text-sm align-baseline leading-none rounded rounded-full py-1 px-3 bg-red-600 text-white hover:bg-red-700 pb-1 font-bold"
+                          style="font-size: 16px;">20% Scholarship
+                        </span>
+                        <p class="text-gray-700 pt-3">This course will provide you with in-depth knowledge on how to build...</p>
+                        <p class="text-gray-700 pt-3"><i class='bx bxs-hourglass-top'></i>70 hours<span
+                            class="text-gray-700 pt-3 pl-4"><i class='bx bxs-layer'></i>Advanced</span>
+                        </p>
                       </div>
-                    </a>  
-                    </div>
-                    <div>
-                      <a href="#" class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
-                        <img class="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg" src="/docs/images/blog/image-4.jpg" alt="">
-                        <div class="flex flex-col justify-between p-4 leading-normal">
-                            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy technology acquisitions 2021</h5>
-                            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
-                        </div>
-                      </a>  
-                    </div>
-                  </div> 
+                      <!-- Image on the left side -->
+                      <div class="w-1/2 flex items-center justify-center">
+                        <img src="https://api.istad.co/media/image/835a7298-dbab-448d-8229-ee8a555c4846.png" alt="Image"
+                          class="w-4/5 object-cover">
+                      </div>
+                    </a>
+                    <!--end of course 1 -->
+            
+                    <!-- course 2 -->
+                    <a href="#" class="max-w-lg bg-white rounded overflow-hidden shadow-lg rounded-2xl flex flex-col sm:flex-row hover:scale-[1.1] duration-300">
+                      <!-- Text on the right side -->
+                      <div class="w-5/6 p-4">
+                        <h2 class="text-xl font-semibold mb-4 text-blue-800" style="font-size: 24px">C++ Programming</h2>
+                        <span
+                          class="inline-block text-center font-semibold text-sm align-baseline leading-none rounded rounded-full py-1 px-3 bg-red-600 text-white hover:bg-red-700 pb-1 font-bold"
+                          style="font-size: 16px;">20% Scholarship</span>
+                        <p class="text-gray-700 pt-3">C++ is one of the world's most popular programming languages.</p>
+                        <p class="text-gray-700 pt-3"><i class='bx bxs-hourglass-top'></i>60 hours<span
+                            class="text-gray-700 pt-3 pl-4"><i class='bx bxs-layer'></i>Basic</span>
+                        </p>
+                      </div>
+                      <!-- Image on the left side -->
+                      <div class="w-1/2 flex items-center justify-center">
+                        <img src="https://api.istad.co/media/image/73c3424a-39e0-450c-8969-8b35559594f5.png" alt="Image"
+                          class="w-4/5 object-cover">
+                      </div>
+                    </a>
+                    <!-- end of course 2 -->
+                  </div>
+                </section> 
             </section>
             <!-- end of programming -->
-            <!-- Web development -->
+            <!-- frontend development -->
             <section>
-              <article class="items-center justify-center m-5">
-                <h2 class="text-3xl text-blue-800 font-semibold">Fundamental Programming</h2>
+              <article class="items-center justify-center mt-10 mb-4 mx-auto w-4/5">
+                <h2 class="text-3xl text-blue-800 font-semibold mx-auto">Front-End Development</h2>
               </article>
-                <div class="flex flex-row mx-auto w-4/5 space-x-4">
-                  <div>
-                  <a href="#" class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
-                    <img class="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg" src="/docs/images/blog/image-4.jpg" alt="">
-                    <div class="flex flex-col justify-between p-4 leading-normal">
-                        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy technology acquisitions 2021</h5>
-                        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
+              <section class="py-8 px-4 mx-auto max-w-screen-xl lg:py-5 lg:px-6">  
+                <div class="grid gap-8 lg:grid-cols-2  justify-center">
+                  <!-- course 1 -->
+                  <a href="#" class="max-w-lg bg-white rounded overflow-hidden shadow-lg rounded-2xl flex flex-col sm:flex-row hover:scale-[1.1] duration-300">
+                    <!-- Text on the right side -->
+                    <div class="w-5/6 p-4">
+                      <h2 class="text-xl font-semibold mb-4 text-blue-800" style="font-size: 24px">DevOps Engineering</h2>
+                      <span
+                        class="inline-block text-center font-semibold text-sm align-baseline leading-none rounded rounded-full py-1 px-3 bg-red-600 text-white hover:bg-red-700 pb-1 font-bold"
+                        style="font-size: 16px;">20% Scholarship
+                      </span>
+                      <p class="text-gray-700 pt-3">This course will provide you with in-depth knowledge on how to build...</p>
+                      <p class="text-gray-700 pt-3"><i class='bx bxs-hourglass-top'></i>70 hours<span
+                          class="text-gray-700 pt-3 pl-4"><i class='bx bxs-layer'></i>Advanced</span>
+                      </p>
                     </div>
-                  </a>  
-                  </div>
-                  <div>
-                    <a href="#" class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
-                      <img class="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg" src="/docs/images/blog/image-4.jpg" alt="">
-                      <div class="flex flex-col justify-between p-4 leading-normal">
-                          <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy technology acquisitions 2021</h5>
-                          <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
+                    <!-- Image on the left side -->
+                    <div class="w-1/2 flex items-center justify-center">
+                      <img src="https://api.istad.co/media/image/835a7298-dbab-448d-8229-ee8a555c4846.png" alt="Image"
+                        class="w-4/5 object-cover">
+                    </div>
+                  </a>
+                  <!--end of course 1 -->
+          
+                  <!-- course 2 -->
+                  <a href="#" class="max-w-lg bg-white rounded overflow-hidden shadow-lg rounded-2xl flex flex-col sm:flex-row hover:scale-[1.1] duration-300">
+                    <!-- Text on the right side -->
+                    <div class="w-5/6 p-4">
+                      <h2 class="text-xl font-semibold mb-4 text-blue-800" style="font-size: 24px">C++ Programming</h2>
+                      <span
+                        class="inline-block text-center font-semibold text-sm align-baseline leading-none rounded rounded-full py-1 px-3 bg-red-600 text-white hover:bg-red-700 pb-1 font-bold"
+                        style="font-size: 16px;">20% Scholarship</span>
+                      <p class="text-gray-700 pt-3">C++ is one of the world's most popular programming languages.</p>
+                      <p class="text-gray-700 pt-3"><i class='bx bxs-hourglass-top'></i>60 hours<span
+                          class="text-gray-700 pt-3 pl-4"><i class='bx bxs-layer'></i>Basic</span>
+                      </p>
+                    </div>
+                    <!-- Image on the left side -->
+                    <div class="w-1/2 flex items-center justify-center">
+                      <img src="https://api.istad.co/media/image/73c3424a-39e0-450c-8969-8b35559594f5.png" alt="Image"
+                        class="w-4/5 object-cover">
+                    </div>
+                  </a>
+                  <!-- end of course 2 -->
+                </div>
+              </section>  
+            </section>
+          <!-- end of frontend -->
+          <!-- Mobile development -->
+            <section>
+                <article class="items-center justify-center mt-10 mb-4 mx-auto w-4/5">
+                  <h2 class="text-3xl text-blue-800 font-semibold mx-auto">Mobile Development</h2>
+                </article>
+                <section class="py-8 px-4 mx-auto max-w-screen-xl lg:py-5 lg:px-6">  
+                  <div class="grid gap-8 lg:grid-cols-2  justify-center">
+                    <!-- course 1 -->
+                    <a href="#" class="max-w-lg bg-white rounded overflow-hidden shadow-lg rounded-2xl flex flex-col sm:flex-row hover:scale-[1.1] duration-300">
+                      <!-- Text on the right side -->
+                      <div class="w-5/6 p-4">
+                        <h2 class="text-xl font-semibold mb-4 text-blue-800" style="font-size: 24px">DevOps Engineering</h2>
+                        <span
+                          class="inline-block text-center font-semibold text-sm align-baseline leading-none rounded rounded-full py-1 px-3 bg-red-600 text-white hover:bg-red-700 pb-1 font-bold"
+                          style="font-size: 16px;">20% Scholarship
+                        </span>
+                        <p class="text-gray-700 pt-3">This course will provide you with in-depth knowledge on how to build...</p>
+                        <p class="text-gray-700 pt-3"><i class='bx bxs-hourglass-top'></i>70 hours<span
+                            class="text-gray-700 pt-3 pl-4"><i class='bx bxs-layer'></i>Advanced</span>
+                        </p>
                       </div>
-                    </a>  
+                      <!-- Image on the left side -->
+                      <div class="w-1/2 flex items-center justify-center">
+                        <img src="https://api.istad.co/media/image/835a7298-dbab-448d-8229-ee8a555c4846.png" alt="Image"
+                          class="w-4/5 object-cover">
+                      </div>
+                    </a>
+                    <!--end of course 1 -->
+            
+                    <!-- course 2 -->
+                    <a href="#" class="max-w-lg bg-white rounded overflow-hidden shadow-lg rounded-2xl flex flex-col sm:flex-row hover:scale-[1.1] duration-300">
+                      <!-- Text on the right side -->
+                      <div class="w-5/6 p-4">
+                        <h2 class="text-xl font-semibold mb-4 text-blue-800" style="font-size: 24px">C++ Programming</h2>
+                        <span
+                          class="inline-block text-center font-semibold text-sm align-baseline leading-none rounded rounded-full py-1 px-3 bg-red-600 text-white hover:bg-red-700 pb-1 font-bold"
+                          style="font-size: 16px;">20% Scholarship</span>
+                        <p class="text-gray-700 pt-3">C++ is one of the world's most popular programming languages.</p>
+                        <p class="text-gray-700 pt-3"><i class='bx bxs-hourglass-top'></i>60 hours<span
+                            class="text-gray-700 pt-3 pl-4"><i class='bx bxs-layer'></i>Basic</span>
+                        </p>
+                      </div>
+                      <!-- Image on the left side -->
+                      <div class="w-1/2 flex items-center justify-center">
+                        <img src="https://api.istad.co/media/image/73c3424a-39e0-450c-8969-8b35559594f5.png" alt="Image"
+                          class="w-4/5 object-cover">
+                      </div>
+                    </a>
+                    <!-- end of course 2 -->
                   </div>
-                </div> 
+                </section> 
+            </section>
+            <!-- end of mobile -->
+          <!-- database management -->
+            <section>
+              <article class="items-center justify-center mt-10 mb-4 mx-auto w-4/5">
+                <h2 class="text-3xl text-blue-800 font-semibold mx-auto">Database Management</h2>
+              </article>
+              <section class="py-8 px-4 mx-auto max-w-screen-xl lg:py-5 lg:px-6">  
+                <div class="grid gap-8 lg:grid-cols-2  justify-center">
+                  <!-- course 1 -->
+                  <a href="#" class="max-w-lg bg-white rounded overflow-hidden shadow-lg rounded-2xl flex flex-col sm:flex-row hover:scale-[1.1] duration-300">
+                    <!-- Text on the right side -->
+                    <div class="w-5/6 p-4">
+                      <h2 class="text-xl font-semibold mb-4 text-blue-800" style="font-size: 24px">DevOps Engineering</h2>
+                      <span
+                        class="inline-block text-center font-semibold text-sm align-baseline leading-none rounded rounded-full py-1 px-3 bg-red-600 text-white hover:bg-red-700 pb-1 font-bold"
+                        style="font-size: 16px;">20% Scholarship
+                      </span>
+                      <p class="text-gray-700 pt-3">This course will provide you with in-depth knowledge on how to build...</p>
+                      <p class="text-gray-700 pt-3"><i class='bx bxs-hourglass-top'></i>70 hours<span
+                          class="text-gray-700 pt-3 pl-4"><i class='bx bxs-layer'></i>Advanced</span>
+                      </p>
+                    </div>
+                    <!-- Image on the left side -->
+                    <div class="w-1/2 flex items-center justify-center">
+                      <img src="https://api.istad.co/media/image/835a7298-dbab-448d-8229-ee8a555c4846.png" alt="Image"
+                        class="w-4/5 object-cover">
+                    </div>
+                  </a>
+                  <!--end of course 1 -->
+          
+                  <!-- course 2 -->
+                  <a href="#" class="max-w-lg bg-white rounded overflow-hidden shadow-lg rounded-2xl flex flex-col sm:flex-row hover:scale-[1.1] duration-300">
+                    <!-- Text on the right side -->
+                    <div class="w-5/6 p-4">
+                      <h2 class="text-xl font-semibold mb-4 text-blue-800" style="font-size: 24px">C++ Programming</h2>
+                      <span
+                        class="inline-block text-center font-semibold text-sm align-baseline leading-none rounded rounded-full py-1 px-3 bg-red-600 text-white hover:bg-red-700 pb-1 font-bold"
+                        style="font-size: 16px;">20% Scholarship</span>
+                      <p class="text-gray-700 pt-3">C++ is one of the world's most popular programming languages.</p>
+                      <p class="text-gray-700 pt-3"><i class='bx bxs-hourglass-top'></i>60 hours<span
+                          class="text-gray-700 pt-3 pl-4"><i class='bx bxs-layer'></i>Basic</span>
+                      </p>
+                    </div>
+                    <!-- Image on the left side -->
+                    <div class="w-1/2 flex items-center justify-center">
+                      <img src="https://api.istad.co/media/image/73c3424a-39e0-450c-8969-8b35559594f5.png" alt="Image"
+                        class="w-4/5 object-cover">
+                    </div>
+                  </a>
+                  <!-- end of course 2 -->
+                </div>
+              </section> 
           </section>
-          <!-- end of web -->
+          <!-- end of database -->
+          <!-- backend development -->
+          <section>
+            <article class="items-center justify-center mt-10 mb-4 mx-auto w-4/5">
+              <h2 class="text-3xl text-blue-800 font-semibold mx-auto">Back-End Development</h2>
+            </article>
+            <section class="py-8 px-4 mx-auto max-w-screen-xl lg:py-5 lg:px-6">  
+              <div class="grid gap-8 lg:grid-cols-2  justify-center">
+                <!-- course 1 -->
+                <a href="#" class="max-w-lg bg-white rounded overflow-hidden shadow-lg rounded-2xl flex flex-col sm:flex-row hover:scale-[1.1] duration-300">
+                  <!-- Text on the right side -->
+                  <div class="w-5/6 p-4">
+                    <h2 class="text-xl font-semibold mb-4 text-blue-800" style="font-size: 24px">DevOps Engineering</h2>
+                    <span
+                      class="inline-block text-center font-semibold text-sm align-baseline leading-none rounded rounded-full py-1 px-3 bg-red-600 text-white hover:bg-red-700 pb-1 font-bold"
+                      style="font-size: 16px;">20% Scholarship
+                    </span>
+                    <p class="text-gray-700 pt-3">This course will provide you with in-depth knowledge on how to build...</p>
+                    <p class="text-gray-700 pt-3"><i class='bx bxs-hourglass-top'></i>70 hours<span
+                        class="text-gray-700 pt-3 pl-4"><i class='bx bxs-layer'></i>Advanced</span>
+                    </p>
+                  </div>
+                  <!-- Image on the left side -->
+                  <div class="w-1/2 flex items-center justify-center">
+                    <img src="https://api.istad.co/media/image/835a7298-dbab-448d-8229-ee8a555c4846.png" alt="Image"
+                      class="w-4/5 object-cover">
+                  </div>
+                </a>
+                <!--end of course 1 -->
+        
+                <!-- course 2 -->
+                <a href="#" class="max-w-lg bg-white rounded overflow-hidden shadow-lg rounded-2xl flex flex-col sm:flex-row hover:scale-[1.1] duration-300">
+                  <!-- Text on the right side -->
+                  <div class="w-5/6 p-4">
+                    <h2 class="text-xl font-semibold mb-4 text-blue-800" style="font-size: 24px">C++ Programming</h2>
+                    <span
+                      class="inline-block text-center font-semibold text-sm align-baseline leading-none rounded rounded-full py-1 px-3 bg-red-600 text-white hover:bg-red-700 pb-1 font-bold"
+                      style="font-size: 16px;">20% Scholarship</span>
+                    <p class="text-gray-700 pt-3">C++ is one of the world's most popular programming languages.</p>
+                    <p class="text-gray-700 pt-3"><i class='bx bxs-hourglass-top'></i>60 hours<span
+                        class="text-gray-700 pt-3 pl-4"><i class='bx bxs-layer'></i>Basic</span>
+                    </p>
+                  </div>
+                  <!-- Image on the left side -->
+                  <div class="w-1/2 flex items-center justify-center">
+                    <img src="https://api.istad.co/media/image/73c3424a-39e0-450c-8969-8b35559594f5.png" alt="Image"
+                      class="w-4/5 object-cover">
+                  </div>
+                </a>
+                <!-- end of course 2 -->
+              </div>
+            </section>  
+          </section>
+          <!-- end of backend -->
+          <!-- devop engineering -->
+          <section>
+            <article class="items-center justify-center mt-10 mb-4 mx-auto w-4/5">
+              <h2 class="text-3xl text-blue-800 font-semibold mx-auto">DevOps Engineering</h2>
+            </article>
+              <section class="py-8 px-4 mx-auto max-w-screen-xl lg:py-5 lg:px-6">  
+                <div class="grid gap-8 lg:grid-cols-2  justify-center">
+                  <!-- course 1 -->
+                  <a href="#" class="max-w-lg bg-white rounded overflow-hidden shadow-lg rounded-2xl flex flex-col sm:flex-row hover:scale-[1.1] duration-300">
+                    <!-- Text on the right side -->
+                    <div class="w-5/6 p-4">
+                      <h2 class="text-xl font-semibold mb-4 text-blue-800" style="font-size: 24px">DevOps Engineering</h2>
+                      <span
+                        class="inline-block text-center font-semibold text-sm align-baseline leading-none rounded rounded-full py-1 px-3 bg-red-600 text-white hover:bg-red-700 pb-1 font-bold"
+                        style="font-size: 16px;">20% Scholarship
+                      </span>
+                      <p class="text-gray-700 pt-3">This course will provide you with in-depth knowledge on how to build...</p>
+                      <p class="text-gray-700 pt-3"><i class='bx bxs-hourglass-top'></i>70 hours<span
+                          class="text-gray-700 pt-3 pl-4"><i class='bx bxs-layer'></i>Advanced</span>
+                      </p>
+                    </div>
+                    <!-- Image on the left side -->
+                    <div class="w-1/2 flex items-center justify-center">
+                      <img src="https://api.istad.co/media/image/835a7298-dbab-448d-8229-ee8a555c4846.png" alt="Image"
+                        class="w-4/5 object-cover">
+                    </div>
+                  </a>
+                  <!--end of course 1 -->
+          
+                  <!-- course 2 -->
+                  <a href="#" class="max-w-lg bg-white rounded overflow-hidden shadow-lg rounded-2xl flex flex-col sm:flex-row hover:scale-[1.1] duration-300">
+                    <!-- Text on the right side -->
+                    <div class="w-5/6 p-4">
+                      <h2 class="text-xl font-semibold mb-4 text-blue-800" style="font-size: 24px">C++ Programming</h2>
+                      <span
+                        class="inline-block text-center font-semibold text-sm align-baseline leading-none rounded rounded-full py-1 px-3 bg-red-600 text-white hover:bg-red-700 pb-1 font-bold"
+                        style="font-size: 16px;">20% Scholarship</span>
+                      <p class="text-gray-700 pt-3">C++ is one of the world's most popular programming languages.</p>
+                      <p class="text-gray-700 pt-3"><i class='bx bxs-hourglass-top'></i>60 hours<span
+                          class="text-gray-700 pt-3 pl-4"><i class='bx bxs-layer'></i>Basic</span>
+                      </p>
+                    </div>
+                    <!-- Image on the left side -->
+                    <div class="w-1/2 flex items-center justify-center">
+                      <img src="https://api.istad.co/media/image/73c3424a-39e0-450c-8969-8b35559594f5.png" alt="Image"
+                        class="w-4/5 object-cover">
+                    </div>
+                  </a>
+                  <!-- end of course 2 -->
+                </div>
+              </section> 
+          </section>
+          <!-- end of devop -->
+          <!-- data analytics -->
+          <section>
+            <article class="items-center justify-center mt-10 mb-4 mx-auto w-4/5">
+              <h2 class="text-3xl text-blue-800 font-semibold mx-auto">Data Analytics</h2>
+            </article>
+            <section class="py-8 px-4 mx-auto max-w-screen-xl lg:py-5 lg:px-6">  
+              <div class="grid gap-8 lg:grid-cols-2  justify-center">
+                <!-- course 1 -->
+                <a href="#" class="max-w-lg bg-white rounded overflow-hidden shadow-lg rounded-2xl flex flex-col sm:flex-row hover:scale-[1.1] duration-300">
+                  <!-- Text on the right side -->
+                  <div class="w-5/6 p-4">
+                    <h2 class="text-xl font-semibold mb-4 text-blue-800" style="font-size: 24px">DevOps Engineering</h2>
+                    <span
+                      class="inline-block text-center font-semibold text-sm align-baseline leading-none rounded rounded-full py-1 px-3 bg-red-600 text-white hover:bg-red-700 pb-1 font-bold"
+                      style="font-size: 16px;">20% Scholarship
+                    </span>
+                    <p class="text-gray-700 pt-3">This course will provide you with in-depth knowledge on how to build...</p>
+                    <p class="text-gray-700 pt-3"><i class='bx bxs-hourglass-top'></i>70 hours<span
+                        class="text-gray-700 pt-3 pl-4"><i class='bx bxs-layer'></i>Advanced</span>
+                    </p>
+                  </div>
+                  <!-- Image on the left side -->
+                  <div class="w-1/2 flex items-center justify-center">
+                    <img src="https://api.istad.co/media/image/835a7298-dbab-448d-8229-ee8a555c4846.png" alt="Image"
+                      class="w-4/5 object-cover">
+                  </div>
+                </a>
+                <!--end of course 1 -->
+        
+                <!-- course 2 -->
+                <a href="#" class="max-w-lg bg-white rounded overflow-hidden shadow-lg rounded-2xl flex flex-col sm:flex-row hover:scale-[1.1] duration-300">
+                  <!-- Text on the right side -->
+                  <div class="w-5/6 p-4">
+                    <h2 class="text-xl font-semibold mb-4 text-blue-800" style="font-size: 24px">C++ Programming</h2>
+                    <span
+                      class="inline-block text-center font-semibold text-sm align-baseline leading-none rounded rounded-full py-1 px-3 bg-red-600 text-white hover:bg-red-700 pb-1 font-bold"
+                      style="font-size: 16px;">20% Scholarship</span>
+                    <p class="text-gray-700 pt-3">C++ is one of the world's most popular programming languages.</p>
+                    <p class="text-gray-700 pt-3"><i class='bx bxs-hourglass-top'></i>60 hours<span
+                        class="text-gray-700 pt-3 pl-4"><i class='bx bxs-layer'></i>Basic</span>
+                    </p>
+                  </div>
+                  <!-- Image on the left side -->
+                  <div class="w-1/2 flex items-center justify-center">
+                    <img src="https://api.istad.co/media/image/73c3424a-39e0-450c-8969-8b35559594f5.png" alt="Image"
+                      class="w-4/5 object-cover">
+                  </div>
+                </a>
+                <!-- end of course 2 -->
+              </div>
+            </section>  
+          </section>
+          <!-- end of data analytics-->
+          <!-- blockchain development -->
+          <section>
+            <article class="items-center justify-center mt-10 mb-4 mx-auto w-4/5">
+              <h2 class="text-3xl text-blue-800 font-semibold mx-auto">Blockchain Development</h2>
+            </article>
+            <section class="py-8 px-4 mx-auto max-w-screen-xl lg:py-5 lg:px-6 mb-16">  
+              <div class="grid gap-8 lg:grid-cols-2  justify-center">
+                <!-- course 1 -->
+                <a href="#" class="max-w-lg bg-white rounded overflow-hidden shadow-lg rounded-2xl flex flex-col sm:flex-row hover:scale-[1.1] duration-300">
+                  <!-- Text on the right side -->
+                  <div class="w-5/6 p-4">
+                    <h2 class="text-xl font-semibold mb-4 text-blue-800" style="font-size: 24px">DevOps Engineering</h2>
+                    <span
+                      class="inline-block text-center font-semibold text-sm align-baseline leading-none rounded rounded-full py-1 px-3 bg-red-600 text-white hover:bg-red-700 pb-1 font-bold"
+                      style="font-size: 16px;">20% Scholarship
+                    </span>
+                    <p class="text-gray-700 pt-3">This course will provide you with in-depth knowledge on how to build...</p>
+                    <p class="text-gray-700 pt-3"><i class='bx bxs-hourglass-top'></i>70 hours<span
+                        class="text-gray-700 pt-3 pl-4"><i class='bx bxs-layer'></i>Advanced</span>
+                    </p>
+                  </div>
+                  <!-- Image on the left side -->
+                  <div class="w-1/2 flex items-center justify-center">
+                    <img src="https://api.istad.co/media/image/835a7298-dbab-448d-8229-ee8a555c4846.png" alt="Image"
+                      class="w-4/5 object-cover">
+                  </div>
+                </a>
+                <!--end of course 1 -->
+        
+                <!-- course 2 -->
+                <a href="#" class="max-w-lg bg-white rounded overflow-hidden shadow-lg rounded-2xl flex flex-col sm:flex-row hover:scale-[1.1] duration-300">
+                  <!-- Text on the right side -->
+                  <div class="w-5/6 p-4">
+                    <h2 class="text-xl font-semibold mb-4 text-blue-800" style="font-size: 24px">C++ Programming</h2>
+                    <span
+                      class="inline-block text-center font-semibold text-sm align-baseline leading-none rounded rounded-full py-1 px-3 bg-red-600 text-white hover:bg-red-700 pb-1 font-bold"
+                      style="font-size: 16px;">20% Scholarship</span>
+                    <p class="text-gray-700 pt-3">C++ is one of the world's most popular programming languages.</p>
+                    <p class="text-gray-700 pt-3"><i class='bx bxs-hourglass-top'></i>60 hours<span
+                        class="text-gray-700 pt-3 pl-4"><i class='bx bxs-layer'></i>Basic</span>
+                    </p>
+                  </div>
+                  <!-- Image on the left side -->
+                  <div class="w-1/2 flex items-center justify-center">
+                    <img src="https://api.istad.co/media/image/73c3424a-39e0-450c-8969-8b35559594f5.png" alt="Image"
+                      class="w-4/5 object-cover">
+                  </div>
+                </a>
+                <!-- end of course 2 -->
+              </div>
+            </section>  
+          </section>
+          <!-- end of block -->
         </main>
 
   <!-- footer -->
@@ -392,7 +786,8 @@
               <p class="mr-1">Email:</p>
               <a href="info.istad@gmail.com" title="send email">info.istad@gmail.com</a>
             </div>
-            <p class="text-white">(+855) 95-990-910<br/>(+855) 93-990-910</p>
+            <p class="text-white"><a href="tel:+85595990910">(+855) 95-990-910</a>
+              <br/><a href="tel:+85593990910">(+855) 93-990-910</a></p>
             <div class="flex justify-start space-x-3 text-white text-2xl">
               <a href="https://www.facebook.com/istad.co/?ref=embed_page"><i class="fa-brands fa-facebook"></i></a>
               <a href="https://www.youtube.com/@istad7665"><i class="fa-brands fa-youtube"></i></a>

@@ -1,3 +1,34 @@
-*{
-    Font-family: "Inter-SemiBold", "NotoSerifKhmer-SemiBold", sans-serif !important;
+@font-face {
+    font-family: "Inter-Regular";
+    src: url(../font/Inter-Regular.ttf);
 }
+*{
+    font-family: "Inter-Regular";
+}
+
+
+.fontInter{
+    font-family: 'Inter-Black', sans-serif !important;
+}
+/* @font-face {
+    font-family: "NotoSerifKhmer-SemiBold";
+    src: url(../font/KhmerFont/NotoSerifKhmer-SemiBold.ttf);
+} */
+@font-face {
+    font-family: "Khmer";
+    src: url(../font/KhmerFont/NotoSerifKhmer-Regular.ttf);
+}
+.font-khmer{
+    font-family: 'Khmer', sans-serif !important;
+}
+.text{
+    text-align: center;
+}
+/* .z-index{
+    position: relative;
+    z-index: -1;
+}
+.letter-center{
+    align-items: center;
+    justify-content: center;
+} */

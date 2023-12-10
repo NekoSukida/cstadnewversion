@@ -4,10 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CSTAD</title>
-    <link rel="stylesheet" href="css/index.css">
     <link rel="shotcut icon" href="https://istad.co/resources/img/CSTAD_120.png" />
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://kit.fontawesome.com/6ea73373d5.js" crossorigin="anonymous"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
@@ -16,6 +15,10 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.css"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="./css/index.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.css" rel="stylesheet" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
     <style>
       .cstadlogo {
@@ -25,7 +28,7 @@
     </style>
   </head>
   <body>
-    <header class="sticky top-0">
+    <header class="sticky top-0 " style="z-index: 99;">
       <nav class="bg-blue-800 border-gray-200">
         <div
           class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
@@ -378,7 +381,7 @@
           <p class="text-[#626262] text-l mx-auto">Check out the available courses</p>
         </article>
         <div
-            class="container relative z-[-9] grid grid-cols-3 mx-auto my-6 gap-6 max-[1024px]:grid-cols-2 max-sm:grid-cols-1 w-4/5"
+            class="container relative grid grid-cols-3 mx-auto my-6 gap-6 max-[1024px]:grid-cols-2 max-sm:grid-cols-1 w-4/5"
           >
             <div
               class="duration-300 hover:scale-[1.1] w-full max-w-sm  h-72 rounded-lg bg-white"
@@ -419,10 +422,10 @@
           <div
           class="duration-300 hover:scale-[1.1] w-full max-w-sm  h-72 rounded-lg bg-white"
         >
-          <a class="relative" href="./detail/detail.html">
+          <a class="relative" href="#">
             <img
               class="p-0 rounded-t-lg h-72 "
-              src="asset/svg/Binary code-pana.svg"
+              src="asset/photo_1_2023-12-06_09-19-44.jpg"
               alt="Programming"
               />
               <div class="flex items-center justify-between absolute z-10 p-3 top-0">
@@ -437,10 +440,10 @@
         <div
         class="duration-300 hover:scale-[1.1] w-full max-w-sm  h-72 rounded-lg bg-white"
       >
-        <a class="relative" href="./detail/detail.html">
+        <a class="relative" href="#">
           <img
             class="p-0 rounded-t-lg h-72 "
-            src="asset/svg/Binary code-pana.svg"
+            src="asset/photo_2_2023-12-06_09-19-44.jpg"
             alt="Programming"
             />
             <div class="flex items-center justify-between absolute z-10 p-3 top-0">
@@ -455,10 +458,10 @@
         <div
         class="duration-300 hover:scale-[1.1] w-full max-w-sm  h-72 rounded-lg bg-white"
       >
-        <a class="relative" href="./detail/detail.html">
+        <a class="relative" href="#">
           <img
             class="p-0 rounded-t-lg h-72 "
-            src="asset/svg/Binary code-pana.svg"
+            src="asset/photo_3_2023-12-06_09-19-44.jpg"
             alt="Programming"
             />
             <div class="flex items-center justify-between absolute z-10 p-3 top-0">
@@ -472,10 +475,10 @@
         <div
         class="duration-300 hover:scale-[1.1] w-full max-w-sm  h-72 rounded-lg bg-white"
       >
-        <a class="relative" href="./detail/detail.html">
+        <a class="relative" href="#">
           <img
             class="p-0 rounded-t-lg h-72 "
-            src="asset/svg/Binary code-pana.svg"
+            src="asset/photo_4_2023-12-06_09-19-44.jpg"
             alt="Programming"
             />
             <div class="flex items-center justify-between absolute z-10 p-3 top-0">
@@ -552,7 +555,7 @@
         <article class=" mx-auto w-4/5">
           <h2 class="text-black font-bold text-3xl mx-auto">Our successful <span class="text-blue-800">students'</span> projects</h2>
         </article>
-        <div class="relative z-[-9] flex items-center justify-center mx-auto w-4/5 dark:text-gray-50">
+        <div class="relative  flex items-center justify-center mx-auto w-4/5 dark:text-gray-50">
           <button aria-label="Slide back" type="button" class="absolute left-0 z-30 p-2 ml-10 bg-opacity-50 rounded-full focus:outline-none focus:dark:bg-gray-400 focus:ri focus:ri focus:ri dark:bg-gray-900">
             <svg width="8" height="14" fill="none" viewBox="0 0 8 14" xmlns="http://www.w3.org/2000/svg" class="w-4 h-4">
               <path d="M7 1L1 7L7 13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
@@ -560,19 +563,29 @@
           </button>
           <div class="flex items-center justify-start w-full h-full gap-6 py-4 mx-auto overflow-auto lg:gap-8">
             <div class="relative flex flex-shrink-0 w-full sm:w-auto">
-              <img class="object-cover object-center dark:bg-gray-500 h-96 aspect-square" src="asset/project_success1.jpg" alt="Team Project Success">
+              <a href="./blog/achievement.html">
+              <img class="object-cover object-center rounded-md dark:bg-gray-500 h-96 aspect-square" src="asset/project_success1.jpg" alt="Team Project Success">
+              </a>
             </div>
             <div class="relative flex flex-shrink-0 w-full sm:w-auto">
-              <img class="object-cover object-center dark:bg-gray-500 h-96 aspect-square" src="asset/project_success2.jpg" alt="Team Project Success">
+              <a href="./blog/achievement.html">
+              <img class="object-cover object-center rounded-md dark:bg-gray-500 h-96 aspect-square" src="asset/project_success2.jpg" alt="Team Project Success">
+              </a>
+            </div> 
+            <div class="relative flex flex-shrink-0 w-full sm:w-auto">
+              <a href="./blog/achievement.html">
+              <img class="object-cover object-center rounded-md dark:bg-gray-500 h-96 aspect-square" src="asset/project_success3.jpg" alt="Team Project Success">
+              </a>
             </div>
             <div class="relative flex flex-shrink-0 w-full sm:w-auto">
-              <img class="object-cover object-center dark:bg-gray-500 h-96 aspect-square" src="asset/project_success3.jpg" alt="Team Project Success">
+              <a href="./blog/achievement.html">
+              <img class="object-cover object-center rounded-md dark:bg-gray-500 h-96 aspect-square" src="asset/project_success4.jpg" alt="Team Project Success">
+              </a>
             </div>
             <div class="relative flex flex-shrink-0 w-full sm:w-auto">
-              <img class="object-cover object-center dark:bg-gray-500 h-96 aspect-square" src="asset/project_success4.jpg" alt="Team Project Success">
-            </div>
-            <div class="relative flex flex-shrink-0 w-full sm:w-auto">
-              <img class="object-cover object-center dark:bg-gray-500 h-96 aspect-square" src="asset/project_success5.jpg" alt="Team Project Success">
+              <a href="./blog/achievement.html">
+              <img class="object-cover object-center rounded-md dark:bg-gray-500 h-96 aspect-square" src="asset/project_success5.jpg" alt="Team Project Success">
+              </a>
             </div>
           </div>
           <button aria-label="Slide forward" id="next" class="absolute right-0 z-30 p-2 mr-10 bg-opacity-50 rounded-full focus:outline-none focus:dark:bg-gray-400 focus:ri focus:ri focus:ri dark:bg-gray-900">
@@ -583,7 +596,7 @@
         </div>
       </section>
       <!-- end of project -->
-
+      
       <!-- feedback -->
       <section class="p-4 mx-auto w-4/5 lg:p-8 dark:bg-gray-800 dark:text-gray-100">
         <div class="container relative z-[-9] mx-auto space-y-12">
@@ -592,7 +605,7 @@
             <div class="flex flex-col justify-center flex-1 p-6 dark:bg-gray-900">
               <h3 class="text-3xl font-bold text-blue-800">Upcoming <span class="text-black">Scholarship </span> </h3>
               <p class="my-6 text-2xl text-black">100% available for <span class="text-blue-800">50 seats</span></p>
-              <button type="button" class="self-start text-blue-800">Enroll</button>
+              <button type="button" class="self-start text-white bg-blue-800 p-2 rounded-xl">Enroll</button>
             </div>
           </div>
           <div class="flex flex-col overflow-hidden rounded-lg shadow-sm lg:flex-row">
@@ -674,7 +687,8 @@
             <p class="mr-1">Email:</p>
             <a href="info.istad@gmail.com" title="send email">info.istad@gmail.com</a>
           </div>
-          <p class="text-white">(+855) 95-990-910<br/>(+855) 93-990-910</p>
+          <p class="text-white"><a href="tel:+85595990910">(+855) 95-990-910</a>
+            <br/><a href="tel:+85593990910">(+855) 93-990-910</a></p>
           <div class="flex justify-start space-x-3 text-white text-2xl">
             <a href="https://www.facebook.com/istad.co/?ref=embed_page"><i class="fa-brands fa-facebook"></i></a>
             <a href="https://www.youtube.com/@istad7665"><i class="fa-brands fa-youtube"></i></a>
