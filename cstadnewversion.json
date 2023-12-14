@@ -7,15 +7,15 @@
 	},
 	"item": [
 		{
-			"name": "Restaurant",
+			"name": "cstad",
 			"item": [
 				{
-					"name": "getAllRestaurants",
+					"name": "getAllcstad",
 					"request": {
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "https://cms.istad.co/api/food-panda-restaurants?populate=*",
+							"raw": "https://cms.istad.co/api/cstad-new-version?populate=*",
 							"protocol": "https",
 							"host": [
 								"cms",
@@ -24,7 +24,7 @@
 							],
 							"path": [
 								"api",
-								"food-panda-restaurants"
+								"cstad-new-version"
 							],
 							"query": [
 								{
@@ -37,7 +37,7 @@
 					"response": []
 				},
 				{
-					"name": "addRestaurant",
+					"name": "cstad-activity",
 					"request": {
 						"method": "POST",
 						"header": [],
@@ -51,7 +51,7 @@
 							}
 						},
 						"url": {
-							"raw": "https://cms.istad.co/api/food-panda-restaurants",
+							"raw": "https://cms.istad.co/api/cstad-new-version",
 							"protocol": "https",
 							"host": [
 								"cms",
@@ -60,14 +60,14 @@
 							],
 							"path": [
 								"api",
-								"food-panda-restaurants"
+								"cstad-new-verion"
 							]
 						}
 					},
 					"response": []
 				},
 				{
-					"name": "updateRestaurant",
+					"name": "updateCstad",
 					"request": {
 						"method": "PUT",
 						"header": [],
@@ -81,7 +81,7 @@
 							}
 						},
 						"url": {
-							"raw": "https://cms.istad.co/api/food-panda-restaurants/11",
+							"raw": "https://cms.istad.co/api/cstad-new-version/11",
 							"protocol": "https",
 							"host": [
 								"cms",
@@ -90,7 +90,7 @@
 							],
 							"path": [
 								"api",
-								"food-panda-restaurants",
+								"food-panda-cstad-new-version",
 								"11"
 							]
 						}
@@ -98,12 +98,12 @@
 					"response": []
 				},
 				{
-					"name": "deleteRestaurant",
+					"name": "deleteCstad",
 					"request": {
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "https://cms.istad.co/api/food-panda-restaurants/38",
+							"raw": "https://cms.istad.co/api/cstad/38",
 							"protocol": "https",
 							"host": [
 								"cms",
@@ -112,7 +112,7 @@
 							],
 							"path": [
 								"api",
-								"food-panda-restaurants",
+								"cstad-new-version",
 								"38"
 							]
 						}
