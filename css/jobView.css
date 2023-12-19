@@ -1,14 +1,14 @@
 @font-face {
     font-family: "Inter-Regular";
-    src: url(../font/Inter-Regular.ttf);
+    src: url(./../font/Inter-Regular.ttf);
 }
 @font-face {
     font-family: "Khmer";
-    src: url(../font/KhmerFont/NotoSerifKhmer-Regular.ttf);
+    src: url(./../font/KhmerFont/NotoSerifKhmer-Regular.ttf);
 }
 
 *{
-    font-family: "Inter";
+    font-family: "Inter-Regular";
 }
 
 body{
