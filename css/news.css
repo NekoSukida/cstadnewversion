@@ -1,0 +1,13 @@
+@font-face {
+    font-family: "NotoSerifKhmer-SemiBold";
+    src: url(../font/KhmerFont/NotoSerifKhmer-SemiBold.ttf);
+}
+*{
+    font-family: "NotoSerifKhmer-SemiBold";
+}
+
+
+.fontInter{
+    font-family: 'Inter-Black', sans-serif !important;
+    font-family: 'NotoSerifkhme-SemiBold',sans-serif !important;
+}
