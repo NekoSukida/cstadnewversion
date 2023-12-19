@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSTAD</title>
+    <link rel="shotcut icon" href="https://istad.co/resources/img/CSTAD_120.png" />
+    <link rel="stylesheet" href="../css/scholarship.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
+  </head>
+  <body>
+    <header class="sticky top-0">
+      <nav class="bg-blue-800 top-0 left-0 right-0">
+        <div
+          class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
+        >
+          <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+            <img
+              src="https://istad.co/resources/img/CSTAD_120.png"
+              class="h-12"
+              alt="cstad Logo"
+            />
+            <span
+              class="self-center text-white text-2xl font-semibold whitespace-nowrap dark:text-white"
+              >C S T A D</span
+            >
+          </a>
+          <button
+            data-collapse-toggle="navbar-dropdown"
+            type="button"
+            class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+            aria-controls="navbar-dropdown"
+            aria-expanded="false"
+          >
+            <span class="sr-only">Open main menu</span>
+            <svg
+              class="w-5 h-5 text-gray-100"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 17 14"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M1 1h15M1 7h15M1 13h15"
+              />
+            </svg>
+          </button>
+          <div
+            class="hidden bg-blue-800 md:block md:w-auto"
+            id="navbar-dropdown"
+          >
+            <ul
+              class="bg-blue-800 flex flex-col font-medium p-4 md:p-0 mt-4 text-white border border-gray-100 rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0"
+            >
+              <li>
+                <a
+                  href="#"
+                  class="bg-blue-800 block py-2 px-3 rounded md:bg-transparent md:p-0 md:dark:text-blue-500 dark:bg-blue-600 md:dark:bg-transparent"
+                  aria-current="page"
+                  >HOME</a
+                >
+              </li>
+              <li>
+                <button
+                  id="dropdownNavbarLink"
+                  data-dropdown-toggle="dropdownNavbar"
+                  class="flex items-center justify-between w-full py-2 px-3 rounded hover:bg-black-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto dark:text-white md:dark:hover:text-blue-500 dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent"
+                >
+                  ENROLL
+                  <svg
+                    class="w-2.5 h-2.5 ms-2.5"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 10 6"
+                  >
+                    <path
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="m1 1 4 4 4-4"
+                    />
+                  </svg>
+                </button>
+                <!-- Dropdown menu -->
+                <div
+                  id="dropdownNavbar"
+                  class="z-10 hidden font-normal bg-gray-100 divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600"
+                >
+                  <ul
+                    class="py-2 text-sm text-gray-700 dark:text-gray-400"
+                    aria-labelledby="dropdownLargeButton"
+                  >
+                    <li>
+                      <a
+                        href="#"
+                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                        >Dashboard</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                        >Settings</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                        >Earnings</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 px-3 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                  >COURSE</a
+                >
+              </li>
+              <li>
+                <button
+                  id="dropdownNavbarLink"
+                  data-dropdown-toggle="dropdownNavbar"
+                  class="flex items-center justify-between w-full py-2 px-3 rounded hover:bg-black-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto dark:text-white md:dark:hover:text-blue-500 dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent"
+                >
+                  ANNOUNCEMENT
+                  <svg
+                    class="w-2.5 h-2.5 ms-2.5"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 10 6"
+                  >
+                    <path
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="m1 1 4 4 4-4"
+                    />
+                  </svg>
+                </button>
+                <!-- Dropdown menu -->
+                <div
+                  id="dropdownNavbar"
+                  class="z-10 hidden font-normal bg-gray-100 divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600"
+                >
+                  <ul
+                    class="py-2 text-sm text-gray-700 dark:text-gray-400"
+                    aria-labelledby="dropdownLargeButton"
+                  >
+                    <li>
+                      <a
+                        href="#"
+                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                        >Dashboard</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                        >Settings</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                        >Earnings</a
+                      >
+                    </li>
+                  </ul>
+                  <div class="py-1">
+                    <a
+                      href="#"
+                      class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white"
+                      >Sign out</a
+                    >
+                  </div>
+                </div>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 px-3 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                  >ABOUT US</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 px-3 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                  >CONTACT US</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+        <section class="max-w-screen-xl mx-auto mt-5">
+            <div class="">
+                <img src="../img/cover.jpg" alt="cover-img" class="rounded-2xl">
+            </div>
+            <h1 class="text-xl text-center mt-5">Information Department of Postgraduate Studies</h1>
+              <h1 class="text-xl text-center mt-3">វិទ្យាស្ថានអភិវឌ្ឍន៍វិទ្យាសាស្រ្ត និង បច្ចេកវិទ្យាកម្រិតខ្ពស់បាននឹងកំពុងផ្តល់អាហារូបករណ៍ ចំនួន 50 កន្លែង សម្រាប់ឆ្នាំសិក្សា 2023។</h1>  
+            <div>
+              <div class="md:block hidden absolute bottom-10 end-28">
+                <img
+                class="rounded-2xl w-32"
+                src="https://img.freepik.com/free-vector/engineer-developer-with-laptop-tablet-code-cross-platform-development-cross-platform-operating-systems-software-environments-concept-pinkish-coral-bluevector-isolated-illustration_335657-2524.jpg?w=1060&t=st=1702260098~exp=1702260698~hmac=97fc2e05b2efc2b672a6d34ed3772a09556af9f4ae6e687976a5fb18ffc0fe63"
+                />
+            </div>
+              <ol class="pl-6 pb-2 mt-5 ml-4 list-disc text-lg">
+                <li type="I">មុខជំនាញដែលត្រូវសិក្សាមូលដ្ឋាន</li>
+                  <ul>
+                    <div class="ml-5 mb-5 list-disc">
+                      <li class="outline-details">Java Features</li>
+                      <li class="outline-details">Web Design</li>
+                      <li class="outline-details">Database</li>
+                      <li class="outline-details">Spring</li>
+                      <li class="outline-details">Git and Deployment</li>
+                      <li class="outline-details">UX/UI Concept and Design</li>
+                      <li class="outline-details">Project Management</li>
+                    </div> 
+                  </ul>
+                </li>
+                <li type="I">មុខជំនាញដែលត្រូវជ្រើសរើសនិងសិក្សាកម្រិតខ្ពស់</li>
+                  <ul>
+                    <div class="ml-5 mb-5 list-disc">
+                      <li class="outline-details">Blockchain</li>
+                      <li class="outline-details">Cyber Security</li>
+                      <li class="outline-details">Data Analytics</li>
+                      <li class="outline-details">DevOps</li>
+                    </div> 
+                  </ul>
+                </li>
+                <li type="I">មុខជំនាញដែលត្រូវជ្រើសរើសនិងសិក្សាកម្រិតខ្ពស់</li>
+                <ul>
+                  <div class="ml-5 mt-4  list-disc">
+                    <li class="outline-details">ជាបេក្ខជនទាំងពីរភេទដែលកំពុងសិក្សា ឬ បានបញ្ចប់ការសិក្សាផ្នែកព័ត៌មានវិទ្យា</li>
+                  </div> 
+                </ul>
+                <li type="I" class="mt-4 mb-4">កាលបរិច្ឆេទ និងការទទួលពាក្យចាប់ពីការផ្សាយជូនដំណឹងនេះតទៅរហូតដល់ថ្ងៃទី ៣០ ខែ មករា ឆ្នាំ ២០២៣</li>
+                </li>
+                <li type="I">កាលបរិច្ឆេទនៃការប្រលង</li>
+                  <ul>
+                    <div class="ml-5 mb-5 list-disc">
+                      <li class="outline-details">ប្រលងសរសេរ នៅថ្ងៃទី ៤ ខែ កុម្ភៈ ឆ្នាំ ២០២៣</li>
+                      <li class="outline-details">សម្ភាស៍ នៅថ្ងៃទី ១១ ខែ កុម្ភៈ ឆ្នាំ ២០២៣</li>
+                      <li class="outline-details">ចូលរៀននៅថ្ងៃទី ២០ ខែ កុម្ភៈ ឆ្នាំ ២០២៣</li>
+                    </div> 
+                  </ul>
+                </li>
+                <li type="I">វិញ្ញាសាប្រលង</li>
+                  <ul>
+                    <div class="ml-5 mt-4 list-disc">
+                      <li class="outline-details">IT និង ភាសាអង់គ្លេស</li>
+                    </div> 
+                  </ul>
+                </li>
+                <li type="I">អត្ថប្រយោជន៍ដែលទទួលបាន</li>
+                  <ul>
+                    <div class="ml-5 mt-4 list-disc">
+                      <li class="outline-details">សិក្សាដោយឥតគិតថ្លៃទទួលបានអាហារូបករណ៍ពេញ ១០០%</li>
+                      <li class="outline-details">ទទួលបានអាជីពច្បាស់លាស់លើជំនាញនីមួយៗ</li>
+                      <li class="outline-details">ទទួលបានឱកាសទទួលនូវការចែករំលែកបទពិសោធ៍ របស់វាគ្មិនល្អៗ និងមានគំនិតបែបអាជីវកម្ម និងដឹកនាំ</li>
+                      <li class="outline-details">ទទួលបានឱកាសការងារទាំងក្នុងវិស័យរដ្ឋនិងឯកជន</li>
+                      <li class="outline-details">ទទួលបានឱកាសទៅសិក្សាបន្តថ្នាក់អនុបណ្ឌិត និង បណ្ឌិតនៅក្រៅប្រទេស</li>
+                    </div> 
+                  </ul>
+                </li>
+              </ol>
+            </div>
+            <div>
+              <h2><br>ព័ត៌មានលម្អិតសូមទាក់ទងមកកាន់វិទ្យាស្ថាន ISTAD តាមរយៈ៖ 093-990-910 / 095-990-910 ឬ t.me/istadkh ឬ www.istad.co/enroll ឬនៅទីតាំងសាលាផ្ទាល់ដែលមានអាសយដ្ឋានស្ថិតនៅ ផ្ទះលេខ 24, ផ្លូវលេខ 562, សង្កាត់បឹងកក់ ១, ខណ្ឌទួលគោក, រាជធានីភ្នំពេញ។ ចំណាំ៖ ករណីដែលមានការកែប្រែនៅចំណុចលេខ V ស្តីអំពីកាលបរិច្ឆេទនៃការប្រលង សាលានឹងជូនដំណឹងតាមពេលក្រោយ។ សូមអរគុណ !</h2>
+            </div>
+            <div class="mt-5 mb-5">
+              <div class=" flex items-center justify-center">
+              <button
+                  class="hover:shadow-form w-96 rounded-2xl text-xl font-bold text-white bg-blue-800 border-2 py-3 px-8 text-center">
+                  APPLY NOW
+              </button>
+              </div>
+          </div>
+        </section>
+    </main>
+    <footer class="px-3 pt-4 lg:px-9 border-t-2 bg-blue-800">
+      <div
+        class="container mx-auto grid gap-10 row-gap-6 mb-8 sm:grid-cols-2 lg:grid-cols-4"
+      >
+        <div class="ml-4 mt-4">
+          <a href="#" class="inline-flex items-center">
+            <img
+              src="https://istad.co/resources/img/CSTAD_120.png"
+              alt="logo"
+              class="cstadlogo"
+            />
+            <span class="ml-2 text-xl font-bold tracking-wide text-white"
+              >CSTAD</span
+            >
+          </a>
+          <p class="mt-4 text-sm text-white">
+            CSTAD is a noteworthy science and technology center in
+            Cambodia.CSTAD has routed Cambodian students to advanced science and
+            technology, research, and develop digital skills and our graduates
+            have been guaranteed excellent job opportunities with the Top IT
+            company.
+          </p>
+        </div>
+        <div class="flex flex-col gap-2 ml-12 text-lg text-white">
+          <p class="text-base font-bold tracking-wide">LEARN MORE</p>
+          <a href="#">Course</a>
+          <a href="#">IT News</a>
+          <a href="#">Job Opportunity</a>
+          <a href="#">Privacy Policy</a>
+          <a href="#">FAQ</a>
+        </div>
+        <div class="flex flex-col gap-2 text-lg text-white">
+          <p class="text-base font-bold tracking-wide">POPULAR COURSE</p>
+          <a href="#">Web Design</a>
+          <a href="#">Flutter Mobile Development</a>
+          <a href="#">Spring framework</a>
+          <a href="#">Java Programming</a>
+        </div>
+        <div class="mt-3">
+          <p class="text-base font-bold tracking-wide text-white">
+            COMPANY IS ALSO AVAILABLE ON
+          </p>
+          <div class="flex items-center gap-1 px-2 pt-5 pb-6">
+            <a
+              href="https://apps.apple.com/kh/app/cstad-mobile/id6463835798"
+              class="w-full min-w-xl"
+            >
+              <img
+                src="https://social.webestica.com/assets/images/app-store.svg"
+                alt="Appstore Button"
+                class="h-10"
+              />
+            </a>
+            <a
+              class="w-full min-w-xl"
+              href="https://play.google.com/store/apps/details?id=co.istad.mobile.istad_moblie&pcampaignid=web_share"
+            >
+              <img
+                src="https://social.webestica.com/assets/images/google-play.svg"
+                alt="Playstore Button"
+                class="h-10"
+              />
+            </a>
+          </div>
+          <p class="text-base font-bold tracking-wide text-white">Contacts</p>
+          <div class="flex text-white">
+            <p class="mr-1">Email:</p>
+            <a href="info.istad@gmail.com" title="send email">info.istad@gmail.com</a>
+          </div>
+          <p class="text-white">(+855) 95-990-910<br/>(+855) 93-990-910</p>
+          <div class="flex justify-start space-x-3 text-white text-2xl">
+            <a href="https://www.facebook.com/istad.co/?ref=embed_page"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.youtube.com/@istad7665"><i class="fa-brands fa-youtube"></i></a>
+            <a href="https://t.me/istadkh"><i class="fa-brands fa-telegram"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="text-center pt-5 pb-10 border-t lg:flex-row"
+      >
+        <p class="text-base text-white">
+          © 2023 Center of Science and Technology Advanced Development | All
+          Rights Reserved
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
