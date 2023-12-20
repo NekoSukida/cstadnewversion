@@ -1,13 +1,24 @@
 @font-face {
-    font-family: "NotoSerifKhmer-SemiBold";
-    src: url(../font/KhmerFont/NotoSerifKhmer-SemiBold.ttf);
+    font-family: "Inter-Regular";
+    src: url(../font/Inter-Regular.ttf);
 }
+
+@font-face {
+    font-family: "Khmer";
+    src: url(./../font/KhmerFont/NotoSerifKhmer-Regular.ttf);
+}
+
 *{
-    font-family: "NotoSerifKhmer-SemiBold";
+    font-family: "Inter-Regular";
 }
 
 
 .fontInter{
     font-family: 'Inter-Black', sans-serif !important;
     font-family: 'NotoSerifkhme-SemiBold',sans-serif !important;
+}
+
+.job-offer-khmer{
+    font-family: 'Khmer', sans-serif !important;
+
 }
