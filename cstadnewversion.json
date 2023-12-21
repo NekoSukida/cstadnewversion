@@ -7,15 +7,15 @@
 	},
 	"item": [
 		{
-			"name": "cstad",
+			"name": "cstad-activities",
 			"item": [
 				{
-					"name": "getAllcstad",
+					"name": "getAll",
 					"request": {
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "https://cms.istad.co/api/cstad-new-version?populate=*",
+							"raw": "https://cms.istad.co/api/cstad-new-activities",
 							"protocol": "https",
 							"host": [
 								"cms",
@@ -24,7 +24,7 @@
 							],
 							"path": [
 								"api",
-								"cstad-new-version"
+								"cstad-activities"
 							],
 							"query": [
 								{
@@ -37,13 +37,13 @@
 					"response": []
 				},
 				{
-					"name": "cstad-activity",
+					"name": "cstad-activities",
 					"request": {
 						"method": "POST",
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"data\": {\r\n    \"name\": \"Koko Shop II\",\r\n    \"category\": \"Milk Tea\",\r\n    \"discount\": 20,\r\n    \"deliveryFee\": 1.05,\r\n    \"deliveryTime\": 30,\r\n    \"picture\": \"2192\"\r\n  }\r\n}",
+							"raw": "{\r\n  \"data\": {\r\n    \"title\": \"Monthly Activity in CSTAD\",\r\n    \"description\": \"CSTAD also provided activity for each students twice a year. Those activity are sport day, Happy Khmer New Year party, road trip,...\",\r\n    \"thumbnails\": Monthly Test\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -51,7 +51,7 @@
 							}
 						},
 						"url": {
-							"raw": "https://cms.istad.co/api/cstad-new-version",
+							"raw": "https://cms.istad.co/api/cstad-activities",
 							"protocol": "https",
 							"host": [
 								"cms",
@@ -60,20 +60,20 @@
 							],
 							"path": [
 								"api",
-								"cstad-new-verion"
+								"cstad-activities"
 							]
 						}
 					},
 					"response": []
 				},
 				{
-					"name": "updateCstad",
+					"name": "update",
 					"request": {
 						"method": "PUT",
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"data\": {\r\n    \"name\": \"Koko Shop II\",\r\n    \"category\": \"Milk Tea\",\r\n    \"discount\": 20,\r\n    \"deliveryFee\": 1.05,\r\n    \"deliveryTime\": 30,\r\n    \"picture\": \"2192\"\r\n  }\r\n}",
+							"raw": "{\r\n  \"data\": {\r\n    \"title\": \"Monthly Activity in CSTAD\",\r\n    \"description\": \"CSTAD also provided activity for each students twice a year. Those activity are sport day, Happy Khmer New Year party, road trip,...\",\r\n    \"thumbnails\": Monthly Test\r\n}",							
 							"options": {
 								"raw": {
 									"language": "json"
@@ -81,7 +81,7 @@
 							}
 						},
 						"url": {
-							"raw": "https://cms.istad.co/api/cstad-new-version/11",
+							"raw": "https://cms.istad.co/api/cstad-activities/11",
 							"protocol": "https",
 							"host": [
 								"cms",
@@ -90,7 +90,7 @@
 							],
 							"path": [
 								"api",
-								"food-panda-cstad-new-version",
+								"cstad-activities",
 								"11"
 							]
 						}
@@ -98,12 +98,12 @@
 					"response": []
 				},
 				{
-					"name": "deleteCstad",
+					"name": "delete",
 					"request": {
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "https://cms.istad.co/api/cstad/38",
+							"raw": "https://cms.istad.co/api/cstad-activities/38",
 							"protocol": "https",
 							"host": [
 								"cms",
@@ -112,7 +112,7 @@
 							],
 							"path": [
 								"api",
-								"cstad-new-version",
+								"cstad-activities",
 								"38"
 							]
 						}
@@ -137,7 +137,7 @@
 					]
 				},
 				"url": {
-					"raw": "https://cms.istad.co/api/upload",
+					"raw": "https://cms.istad.co/api/cstad-activities",
 					"protocol": "https",
 					"host": [
 						"cms",

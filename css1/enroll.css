@@ -1,3 +1,27 @@
+@font-face {
+  font-family: "Inter-Regular";
+  src: url(../font/Inter-Regular.ttf);
+}
+*{
+  font-family: "Inter-Regular";
+}
+
+
+.fontInter{
+  font-family: 'Inter-Black', sans-serif !important;
+}
+@font-face {
+  font-family: "NotoSerifKhmer-SemiBold";
+  src: url(../font/KhmerFont/NotoSerifKhmer-SemiBold.ttf);
+}
+@font-face {
+  font-family: "Khmer";
+  src: url(../font/KhmerFont/NotoSerifKhmer-Regular.ttf);
+}
+*font-khmer{
+  font-family: 'Khmer', sans-serif !important;
+}
+
 body {
   background: whitesmoke;
 }
