@@ -11,7 +11,7 @@
           rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
         />
-        <link
+        <link(+855) 93-990-910
           href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.css"
           rel="stylesheet"
         />
@@ -34,210 +34,203 @@
         </style>
     </head>
     <body class="bg-[#f5f5f5]">
-        <header class="sticky top-0" style="z-index: 99;">
-            <nav class="bg-blue-800 border-gray-200">
-              <div
-                class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
+      <header class="sticky top-0" style="z-index: 99">
+        <nav class="bg-blue-800 border-gray-200">
+          <div
+            class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
+          >
+            <a href="../index.html" class="flex items-center space-x-3 rtl:space-x-reverse">
+              <img
+                src="https://istad.co/resources/img/CSTAD_120.png"
+                class="h-12"
+                alt="cstad Logo"
+              />
+              <span
+                class="self-center text-white text-2xl font-semibold whitespace-nowrap"
+                >C S T A D</span
               >
-                <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
-                  <img
-                    src="https://istad.co/resources/img/CSTAD_120.png"
-                    class="h-12"
-                    alt="cstad Logo"
-                  />
-                  <span
-                    class="self-center text-white text-2xl font-semibold whitespace-nowrap dark:text-white"
-                    >C S T A D</span
+            </a>
+            <button
+              data-collapse-toggle="navbar-multi-level"
+              type="button"
+              class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-white rounded-lg md:hidden hover:text-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400"
+              aria-controls="navbar-multi-level"
+              aria-expanded="false"
+            >
+              <span class="sr-only">Open main menu</span>
+              <svg
+                class="w-5 h-5"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 17 14"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M1 1h15M1 7h15M1 13h15"
+                />
+              </svg>
+            </button>
+            <div class="hidden w-full md:block md:w-auto" id="navbar-multi-level">
+              <ul
+                class="bg-blue-800 flex flex-col font-medium p-4 md:p-0 mt-4 text-white border border-gray-100 rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0"
+              >
+                <li>
+                  <a
+                    href="../index.html"
+                    class="block py-2 px-3 rounded md:bg-transparent md:p-0"
+                    aria-current="page"
+                    >HOME</a
                   >
-                </a>
-                <button
-                  data-collapse-toggle="navbar-dropdown"
-                  type="button"
-                  class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
-                  aria-controls="navbar-dropdown"
-                  aria-expanded="false"
-                >
-                  <span class="sr-only">Open main menu</span>
-                  <svg
-                    class="w-5 h-5 text-gray-100"
-                    aria-hidden="true"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 17 14"
+                </li>
+                <li>
+                  <button
+                    id="dropdownNavbarLink"
+                    data-dropdown-toggle="dropdownNavbar1"
+                    class="flex items-center justify-between w-full py-2 px-3 rounded hover:bg-blue-500 md:hover:bg-transparent md:border-0 md:p-0 md:w-auto"
                   >
-                    <path
-                      stroke="currentColor"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M1 1h15M1 7h15M1 13h15"
-                    />
-                  </svg>
-                </button>
-                <div
-                  class="hidden bg-blue-800 md:block md:w-auto"
-                  id="navbar-dropdown"
-                >
-                  <ul
-                    class="bg-blue-800 flex flex-col font-medium p-4 md:p-0 mt-4 text-white border border-gray-100 rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0"
+                    ENROLLMENT
+                    <svg
+                      class="w-2.5 h-2.5 ms-2.5"
+                      aria-hidden="true"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 10 6"
+                    >
+                      <path
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="m1 1 4 4 4-4"
+                      />
+                    </svg>
+                  </button>
+                  <!-- Dropdown menu -->
+                  <div
+                    id="dropdownNavbar1"
+                    class="absolute z-10 hidden font-normal bg-gray-100 divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600"
                   >
-                    <li>
-                      <a
-                        href="./../index.html"
-                        class="bg-blue-800 block py-2 px-3 rounded md:bg-transparent md:p-0 md:dark:text-blue-500 dark:bg-blue-600 md:dark:bg-transparent"
-                        aria-current="page"
-                        >HOME</a
-                      >
-                    </li>
-                    <li>
-                      <button
-                        id="dropdownNavbarLink"
-                        data-dropdown-toggle="dropdownNavbar1"
-                        class="flex items-center justify-between w-full py-2 px-3 rounded hover:bg-[#bfcfff] md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto dark:text-white md:dark:hover:text-blue-500 dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent"
-                      >
-                        ENROLLMENT
-                        <svg
-                          class="w-2.5 h-2.5 ms-2.5"
-                          aria-hidden="true"
-                          xmlns="http://www.w3.org/2000/svg"
-                          fill="none"
-                          viewBox="0 0 10 6"
+                    <ul
+                      class="py-2 text-sm text-gray-700 dark:text-gray-400"
+                      aria-labelledby="dropdownLargeButton"
+                    >
+                      <li>
+                        <a href="./../enroll1/enroll.html" class="block px-4 py-2 hover:bg-gray-300"
+                          >Paid Course</a
                         >
-                          <path
-                            stroke="currentColor"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            stroke-width="2"
-                            d="m1 1 4 4 4-4"
-                          />
-                        </svg>
-                      </button>
-                      <!-- Dropdown menu -->
-                      <div
-                        id="dropdownNavbar1"
-                        class="absolute z-10 hidden font-normal bg-gray-100 divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600"
-                      >
-                        <ul
-                          class="py-2 text-sm text-gray-700 dark:text-gray-400"
-                          aria-labelledby="dropdownLargeButton"
+                      </li>
+                      <li>
+                        <a href="./../enroll1/apply.html" class="block px-4 py-2 hover:bg-gray-300"
+                          >Scholarship</a
                         >
-                          <li>
-                            <a
-                              href="#"
-                              class="block px-4 py-2 hover:bg-[#bfcfff] dark:hover:bg-gray-600 dark:hover:text-white"
-                              >Paid Course</a
-                            >
-                          </li>
-                          <li>
-                            <a
-                              href="#"
-                              class="block px-4 py-2 hover:bg-[#bfcfff] dark:hover:bg-gray-600 dark:hover:text-white"
-                              >Scholarship</a
-                            >
-                          </li>
-                          <li>
-                            <a
-                              href="#"
-                              class="block px-4 py-2 hover:bg-[#bfcfff] dark:hover:bg-gray-600 dark:hover:text-white"
-                              >Bachelor Degree</a
-                            >
-                          </li>
-                        </ul>
-                      </div>
-                    </li>
-                    <li>
-                      <a
-                        href="./../course/course.html"
-                        class="block py-2 px-3 rounded hover:bg-[#bfcfff] md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
-                        >COURSE</a
-                      >
-                    </li>
-                    <li>
-                      <button
-                        id="dropdownNavbarLink"
-                        data-dropdown-toggle="dropdownNavbar"
-                        class="flex items-center justify-between w-full py-2 px-3 rounded hover:bg-[#bfcfff] md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto dark:text-white md:dark:hover:text-blue-500 dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent"
-                      >
-                        ANNOUNCEMENT
-                        <svg
-                          class="w-2.5 h-2.5 ms-2.5"
-                          aria-hidden="true"
-                          xmlns="http://www.w3.org/2000/svg"
-                          fill="none"
-                          viewBox="0 0 10 6"
+                      </li>
+                      <li>
+                        <a href="./../enroll1/bachelor.html" class="block px-4 py-2 hover:bg-gray-300"
+                          >Bachelor Degree</a
                         >
-                          <path
-                            stroke="currentColor"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            stroke-width="2"
-                            d="m1 1 4 4 4-4"
-                          />
-                        </svg>
-                      </button>
-                      <!-- Dropdown menu -->
-                      <div
-                        id="dropdownNavbar"
-                        class="relative z-10 hidden font-normal bg-gray-100 divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600"
-                      >
-                        <ul
-                          class="py-2 text-sm text-gray-700 dark:text-gray-400"
-                          aria-labelledby="dropdownLargeButton"
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li>
+                  <a
+                    href="../course/course.html"
+                    class="block py-2 px-3 rounded hover:bg-blue-500 md:hover:bg-transparent md:border-0 md:p-0"
+                    >COURSE</a
+                  >
+                </li>
+                <li>
+                  <button
+                    id="dropdownNavbarLink"
+                    data-dropdown-toggle="dropdownNavbar"
+                    class="flex items-center justify-between w-full py-2 px-3 rounded hover:bg-blue-500 md:hover:bg-transparent md:border-0 md:p-0 md:w-auto"
+                  >
+                    ANNOUNCEMENT
+                    <svg
+                      class="w-2.5 h-2.5 ms-2.5"
+                      aria-hidden="true"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 10 6"
+                    >
+                      <path
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="m1 1 4 4 4-4"
+                      />
+                    </svg>
+                  </button>
+                  <!-- Dropdown menu -->
+                  <div
+                    id="dropdownNavbar"
+                    class="relative z-10 hidden font-normal bg-gray-100 divide-y divide-gray-100 rounded-lg shadow w-44"
+                  >
+                    <ul
+                      class="py-2 text-sm text-gray-700"
+                      aria-labelledby="dropdownLargeButton"
+                    >
+                      <li>
+                        <a
+                          href="./../announcement/AnnounmnetJob.html"
+                          class="block px-4 py-2 hover:bg-gray-300"
+                          >Job Opportunity</a
                         >
-                          <li>
-                            <a
-                              href="./../announcement/AnnounmnetJob.html"
-                              class="block px-4 py-2 hover:bg-[#bfcfff] dark:hover:bg-gray-600 dark:hover:text-white"
-                              >Job Opportunity</a
-                            >
-                          </li>
-                          <li>
-                            <a
-                              href="./../announcement/itnews.html"
-                              class="block px-4 py-2 hover:bg-[#bfcfff] dark:hover:bg-gray-600 dark:hover:text-white"
-                              >IT News</a
-                            >
-                          </li>
-                          <li>
-                            <a
-                              href="./../announcement/activity.html"
-                              class="block px-4 py-2 hover:bg-[#bfcfff] dark:hover:bg-gray-600 dark:hover:text-white"
-                              >Activity</a
-                            >
-                          </li>
-                        </ul>
-                      </div>
-                    </li>
-                    <li>
-                      <a
-                        href="#"
-                        class="block py-2 px-3 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
-                        >ABOUT US</a
-                      >
-                    </li>
-                    <li>
-                      <a
-                        href="#"
-                        class="block py-2 px-3 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
-                        >CONTACT US</a
-                      >
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </nav>
-        </header>
+                      </li>
+                      <li>
+                        <a
+                          href="./../announcement/itnews.html"
+                          class="block px-4 py-2 hover:bg-gray-300"
+                          >IT News</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="./../announcement/activity.html"
+                          class="block px-4 py-2 hover:bg-gray-300"
+                          >Activity</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li>
+                  <a
+                    href="../about_us/about-us.html"
+                    class="block py-2 px-3 rounded hover:bg-blue-500 md:hover:bg-transparent md:border-0 md:p-0"
+                    >ABOUT US</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="../contact_us/contact-us.html"
+                    class="block py-2 px-3 rounded hover:bg-blue-500 md:hover:bg-transparent md:border-0 md:p-0"
+                    >CONTACT US</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
     <main>
         <!-- blog -->
-        <section class="p-4 lg:p-8 mx-auto w-4/5 bg-white mt-5 rounded-lg mb-4">
+        <section class="p-4 lg:p-8 mx-auto w-4/5 mt-5 rounded-lg mb-4 bg-white">
           <div data-aos="fade-up">
             <div class="container mx-auto space-y-12">
               <a href="/blog/achievement.html">
                 <div class="flex flex-col overflow-hidden rounded-md lg:flex-row hover:scale-[1.1] duration-300">
-                    <img src="/./asset/photo_1_2023-12-06_09-19-44.jpg" alt="" class="h-80 dark:bg-gray-500 aspect-video rounded-md">
+                    <img src="./../asset/Image/PhotoStad.png" alt="" class="h-80 rounded-md">
                     <div class="flex flex-col justify-center flex-1 p-6 dark:bg-gray-900">
-                        <h3 class="text-3xl font-bold text-blue-800">Quiz Management System</h3>
-                        <p class="my-6 dark:text-gray-400">Specializes in creating and providing high-quality UI (User Interface) kits, templates, and components for web developers and designers</p>
+                        <h3 class="text-3xl font-bold text-blue-800">PhotoSTAD</h3>
+                        <p class="my-6 dark:text-gray-400">
+                          PhotoSTAD features demo <span class="font-khmer">គម្រោងនេះមានឈ្មោះថា PhotoSTAD ជួយសម្រួលការងាររដ្ឋបាលដែលត្រូវធ្វើដូចជាការធ្វើ លិខិតសរសើរ សញ្ញាប័ត្រ ជាដើម និងរួមទាំងការងារបស់អ្នករចនានៅតាមស្ថាប័ន ក្រុមហ៊ុន ឬគ្រឹះស្ថានអប់រំផ្សេងៗ ក្នុងការរចនារូបភាពដែលមានលក្ខណៈរួមនិងស្រដៀងៗគ្នាច្រើន។</span>
+                        </p>
                         <div class="sm:block md:inline-block text-blue-900 text-sm pb-4">
                           <i class="fa fa-folder i-style pl-4"></i>
                           <span class="content-detail-info pl-2">Web Project</span>
@@ -246,24 +239,32 @@
                 </div>
               </a>
               <a href="/blog/achievement.html">
-                <div class="flex flex-col overflow-hidden rounded-md lg:flex-row-reverse hover:scale-[1.1] duration-300">
-                    <img src="/./asset/photo_2_2023-12-06_09-19-44.jpg" alt="" class="h-80 dark:bg-gray-500 aspect-video rounded-md">
+                <div class="flex flex-col overflow-hidden rounded-md lg:flex-row hover:scale-[1.1] duration-300">
+                    <img src="./../asset/Image/PhotoStad.png" alt="" class="h-80 rounded-md ">
                     <div class="flex flex-col justify-center flex-1 p-6 dark:bg-gray-900">
-                                <h3 class="text-3xl font-bold text-blue-800">Open Source Templates</h3>
-                                <p class="my-6 dark:text-gray-400">Specializes in creating and providing high-quality UI (User Interface) kits, templates, and components for web developers and designers</p>
-                                <div class="sm:block md:inline-block text-blue-900 text-sm pb-4">
-                                  <i class="fa fa-folder i-style pl-4"></i>
-                                  <span class="content-detail-info pl-2">Web Project</span>
-                                </div>
+                            <h3 class="text-3xl font-bold text-blue-800">PortISTAD</h3>
+                            <p class="my-6 dark:text-gray-400">
+                              <span class="font-khmer">
+                                គម្រោងនេះមានឈ្មោះថា PortISTAD: ផ្តល់នូវភាពងាយស្រួលក្នុងការគ្រប់គ្រងទិន្នន័យអតីតនិស្សិតទាំងអស់រួមទាំងប្រវត្តិរូបរបស់ពួកគេ ដោយអាចធ្វើការបង្កើតបន្ថែមនូវ Portolio ដែលអាចបង្ហាញនូវស្នាដៃរបស់និស្សិតតាមបែបឌីជីថល។ អ្វីដែលពិសេសជាងនេះទៀតគឺ វេបសាយនេះបានធ្វើឱ្យមានភាពងាយស្រួលនិង អាចជួយឱ្យគ្រប់កម្រិតនៃអ្នកប្រើប្រាស់ អាចប្រើបានយ៉ាងមានប្រសិទ្ធភាពព្រមទាំងចំណេញពេលវេលា។
+                              </span>
+                            </p>
+                            <div class="sm:block md:inline-block text-blue-900 text-sm pb-4">
+                            <i class="fa fa-folder i-style pl-4"></i>
+                            <span class="content-detail-info pl-2">Web Project</span>
+                        </div>
                     </div>
                 </div>
               </a>
               <a href="/blog/achievement.html">
-                <div class="flex flex-col overflow-hidden rounded-md lg:flex-row hover:scale-[1.1] duration-300">
-                    <img src="/./asset/photo_3_2023-12-06_09-19-44.jpg" alt="" class="h-80 dark:bg-gray-500 aspect-video rounded-md">
+                <div class="flex flex-col overflow-hidden rounded-md lg:flex-row  hover:scale-[1.1] duration-300">
+                    <img src="./../asset/Image/PhotoStad.png" alt="" class="h-80 rounded-md">
                     <div class="flex flex-col justify-center flex-1 p-6 dark:bg-gray-900">
-                        <h3 class="text-3xl font-bold text-blue-800">Service Listing</h3>
-                        <p class="my-6 dark:text-gray-400">Service Listing is an online platform that provides crowd-sourced reviews and information about local businesses</p>
+                        <h3 class="text-3xl font-bold text-blue-800">Cam-Giving</h3>
+                        <p class="my-6 dark:text-gray-400">
+                          <span class="font-khmer">
+                            គម្រោងនេះមានឈ្មោះថា Cam-Giving: គឺជាវេទិកាដែលជួយម្ចាស់ជំនួយ និងអង្គការនានាប្រមូលមូលនិធិសម្រាប់បុព្វហេតុមួយដោយបង្កើត និងផ្សព្វផ្សាយព្រឹត្តិការណ៍ និងគំនិតផ្តួចផ្តើមការរៃអង្គាសប្រាក់។ វេទិកានេះក៏ផ្តល់នូវឧបករណ៍សម្រាប់គ្រប់គ្រងការបរិច្ចាគ និងធានាថាការបរិច្ចាករបស់ពួកគេបានទៅដល់អង្គការ ឬបុគ្គលដែលត្រូវការជំនួយ។
+                          </span>
+                        </p>
                         <div class="sm:block md:inline-block text-blue-900 text-sm pb-4">
                           <i class="fa fa-folder i-style pl-4"></i>
                           <span class="content-detail-info pl-2">Web Project</span>
@@ -307,94 +308,75 @@
         
         <!-- end of pagination -->
     </main>
-    <footer class="px-3 pt-4 lg:px-9 border-t-2 bg-blue-800">
-        <div
-          class="container mx-auto grid gap-10 row-gap-6 mb-8 sm:grid-cols-2 lg:grid-cols-4"
-        >
-          <div class="ml-4 mt-4">
-            <a href="#" class="inline-flex items-center">
-              <img
-                src="https://istad.co/resources/img/CSTAD_120.png"
-                alt="logo"
-                class="cstadlogo"
-              />
-              <span class="ml-2 text-xl font-bold tracking-wide text-white"
-                >CSTAD</span
-              >
-            </a>
-            <p class="mt-4 text-sm text-white text-justify">
-              CSTAD is a noteworthy science and technology center in
-              Cambodia. CSTAD has routed Cambodian students to advanced science and
-              technology, research, and develop digital skills and our graduate
-              have been guaranteed excellent job opportunities with the Top IT
-              company.
-            </p>
-          </div>
-          <div class="flex flex-col gap-2 ml-12 text-lg text-white">
-            <p class="text-base font-bold tracking-wide">LEARN MORE</p>
-            <a href="./../course/course.html">Course</a>
-            <a href="./../announcement/itnews.html">IT News</a>
-            <a href="./../announcement/AnnounmnetJob.html">Job Opportunity</a>
-            <a href="#">Privacy Policy</a>
-            <a href="#">FAQ</a>
-          </div>
-          <div class="flex flex-col gap-2 text-lg text-white">
-            <p class="text-base font-bold tracking-wide">POPULAR COURSE</p>
-            <a href="#">Web Design</a>
-            <a href="#">Flutter Mobile Development</a>
-            <a href="#">Spring framework</a>
-            <a href="#">Java Programming</a>
-          </div>
-          <div class="mt-3">
-            <p class="text-base font-bold tracking-wide text-white">
-              CSTAD IS ALSO AVAILABLE ON
-            </p>
-            <div class="flex items-center gap-1 px-2 pt-5 pb-6">
-              <a
-                href="https://apps.apple.com/kh/app/cstad-mobile/id6463835798"
-                class="w-full min-w-xl"
-              >
-                <img
-                  src="https://social.webestica.com/assets/images/app-store.svg"
-                  alt="Appstore Button"
-                  class="h-10"
-                />
-              </a>
-              <a
-                class="w-full min-w-xl"
-                href="https://play.google.com/store/apps/details?id=co.istad.mobile.istad_moblie&pcampaignid=web_share"
-              >
-                <img
-                  src="https://social.webestica.com/assets/images/google-play.svg"
-                  alt="Playstore Button"
-                  class="h-10"
-                />
-              </a>
-            </div>
-            <p class="text-base font-bold tracking-wide text-white">Contacts</p>
-            <div class="flex text-white">
-              <p class="mr-1">Email:</p>
-              <a href="info.istad@gmail.com" title="send email">info.istad@gmail.com</a>
-            </div>
-            <p class="text-white">(+855) 95-990-910<br/>(+855) 93-990-910</p>
-            <div class="flex justify-start space-x-3 text-white text-2xl">
-              <a href="https://www.facebook.com/istad.co/?ref=embed_page"><i class="fa-brands fa-facebook"></i></a>
-              <a href="https://www.youtube.com/@istad7665"><i class="fa-brands fa-youtube"></i></a>
-              <a href="https://t.me/istadkh"><i class="fa-brands fa-telegram"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-  
-        <div
-          class="text-center pt-5 pb-10 border-t lg:flex-row"
-        >
-          <p class="text-base text-white">
-            © 2023 Center of Science and Technology Advanced Development | All
-            Rights Reserved
-          </p>
-        </div>
-    </footer>
+<!-- Footer -->
+<footer class="px-3 pt-4 lg:px-9 border-t-2 bg-blue-800 pt-3 text-center sm:text-center md:text-center">
+  <div class="container mx-auto grid gap-10 row-gap-6 mb-8 sm:grid-cols-2 lg:grid-cols-4">
+    <div class="ml-4">
+      <a href="../index.html" class="flex inline-flex items-center ">
+        <img src="https://istad.co/resources/img/CSTAD_120.png" alt="logo" class="cstadlogo" />
+        <span class="ml-2 text-lg font-bold tracking-wide text-white">Start your IT career with CSTAD</span>
+      </a>
+      <p class="mt-4 text-sm text-white text-justify">
+        CSTAD is a noteworthy science and technology center in
+        Cambodia.CSTAD has routed Cambodian students to advanced science and
+        technology, research, and develop digital skills and our graduates
+        have been guaranteed excellent job opportunities with the Top IT
+        company.
+      </p>
+    </div>
+    <div class="flex flex-col gap-2 text-lg text-white">
+      <p class="text-base font-bold tracking-wide">LEARN MORE</p>
+      <a href="../course/course.html">Course</a>
+      <a href="../announcement/itnews.html">IT News</a>
+      <a href="../announcement/AnnounmnetJob.html">Job Opportunity</a>
+      <a href="../policy/privacy.html">Privacy Policy</a>
+      <a href="../policy/faq.html">FAQ</a>
+    </div>
+    <div class="flex flex-col gap-2 text-lg text-white">
+      <p class="text-base font-bold tracking-wide">POPULAR COURSE</p>
+      <a href="webCourse.html">Web Design</a>
+      <a href="flutterCourse.html">Flutter Mobile Development</a>
+      <a href="springCourse.html">Spring framework</a>
+      <a href="javaCourse.html">Java Programming</a>
+    </div>
+    <div class="mt-3">
+      <p class="text-base font-bold tracking-wide text-white">
+         CSTAD IS ALSO AVAILABLE ON 
+      </p>
+
+      <div class="gap-1 pt-5 pb-6 flex">
+        <a href="https://apps.apple.com/kh/app/cstad-mobile/id6463835798" class="w-full min-w-xl flex justify-end">
+            <img src="https://social.webestica.com/assets/images/app-store.svg" alt="Appstore Button" class="h-10" />
+        </a>
+        <a href="https://play.google.com/store/apps/details?id=co.istad.mobile.istad_moblie&pcampaignid=web_share" class="w-full min-w-xl">
+            <img src="https://social.webestica.com/assets/images/google-play.svg" alt="Playstore Button" class="h-10" />
+        </a>
+    </div>
+    
+
+      <p class="text-base font-bold tracking-wide text-white">Contacts</p>
+      <div class="text-white">
+        <span class="mr-1">Email:</span>
+        <a href="info.istad@gmail.com" title="send email">info.istad@gmail.com</a>
+      </div>
+      <p class="text-white"><a href="tel:+85595990910">(+855) 95-990-910</a><br /><a href="tel:+85593990910">(+855) 93-990-910</a></p>
+      <div class="justify-start space-x-3 text-white text-2xl">
+        <a href="https://www.facebook.com/istad.co/?ref=embed_page"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://www.youtube.com/@istad7665"><i class="fa-brands fa-youtube"></i></a>
+        <a href="https://t.me/istadkh"><i class="fa-brands fa-telegram"></i></a>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <div class="text-center pt-5 pb-10 border-t lg:flex-row">
+    <p class="text-base text-white">
+      © 2023 Center of Science and Technology Advanced Development | All
+      Rights Reserved
+    </p>
+  </div>
+</footer>
+<!-- End of Footer -->
 
     <script>
       AOS.init();

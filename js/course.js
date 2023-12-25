@@ -22,20 +22,6 @@
 //   const listContainer = document.querySelector(".list-container"); // Adjust the selector to match your container
 //   const listItems = document.querySelectorAll("h2");
 
-//   listItems.forEach((item) => {
-//     let text = item.textContent.toLowerCase();
-//     if (text.indexOf(filter) !== -1) {
-//       // Move matching item to the top by detaching and reattaching
-//       listContainer.prepend(item);
-//       item.style.display = "block"; // or any other appropriate display value
-//     } else {
-//       item.style.display = "none";
-//     }
-//   });
-// }
-
-
-
 
 const url = "https://cms.istad.co/api/cstad-courses?populate=%2A";
 const getData = async () => {
