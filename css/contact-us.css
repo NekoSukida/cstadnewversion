@@ -1,0 +1,12 @@
+.contact-item {
+    flex: 1 1 300px;
+    max-width: 300px;
+    margin-bottom: 15px;
+  }
+
+  @media (min-width: 768px) {
+    .contact-item {
+      flex: 1 1 30%; /* Adjust the percentage based on your design */
+      max-width: 30%;
+    }
+  }

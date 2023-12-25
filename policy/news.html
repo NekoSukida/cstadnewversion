@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New page</title>
+    
+    <script src="https://kit.fontawesome.com/98e0409db1.js" crossorigin="anonymous"></script>
+    <link rel="shotcut icon" href="https://istad.co/resources/img/CSTAD_120.png" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
+    <link rel="stylesheet" href="./../css/news.css">
+  <style>
+    .cstadlogo {
+    height: 100px;
+    width: 100px;
+  }
+  
+ 
+  </style>
+</head>
+<body style="background-color: whitesmoke;">
+  <header class="sticky top-0" style="z-index: 99">
+    <nav class="bg-blue-800 border-gray-200">
+      <div
+        class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
+      >
+        <a href="../index.html" class="flex items-center space-x-3 rtl:space-x-reverse">
+          <img
+            src="https://istad.co/resources/img/CSTAD_120.png"
+            class="h-12"
+            alt="cstad Logo"
+          />
+          <span
+            class="self-center text-white text-2xl font-semibold whitespace-nowrap"
+            >C S T A D</span
+          >
+        </a>
+        <button
+          data-collapse-toggle="navbar-multi-level"
+          type="button"
+          class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-white rounded-lg md:hidden hover:text-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400"
+          aria-controls="navbar-multi-level"
+          aria-expanded="false"
+        >
+          <span class="sr-only">Open main menu</span>
+          <svg
+            class="w-5 h-5"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 17 14"
+          >
+            <path
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M1 1h15M1 7h15M1 13h15"
+            />
+          </svg>
+        </button>
+        <div class="hidden w-full md:block md:w-auto" id="navbar-multi-level">
+          <ul
+            class="bg-blue-800 flex flex-col font-medium p-4 md:p-0 mt-4 text-white border border-gray-100 rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0"
+          >
+            <li>
+              <a
+                href="../index.html"
+                class="block py-2 px-3 rounded md:bg-transparent md:p-0"
+                aria-current="page"
+                >HOME</a
+              >
+            </li>
+            <li>
+              <button
+                id="dropdownNavbarLink"
+                data-dropdown-toggle="dropdownNavbar1"
+                class="flex items-center justify-between w-full py-2 px-3 rounded hover:bg-blue-500 md:hover:bg-transparent md:border-0 md:p-0 md:w-auto"
+              >
+                ENROLLMENT
+                <svg
+                  class="w-2.5 h-2.5 ms-2.5"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 10 6"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="m1 1 4 4 4-4"
+                  />
+                </svg>
+              </button>
+              <!-- Dropdown menu -->
+              <div
+                id="dropdownNavbar1"
+                class="absolute z-10 hidden font-normal bg-gray-100 divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600"
+              >
+                <ul
+                  class="py-2 text-sm text-gray-700 dark:text-gray-400"
+                  aria-labelledby="dropdownLargeButton"
+                >
+                  <li>
+                    <a href="./../enroll1/enroll.html" class="block px-4 py-2 hover:bg-gray-300"
+                      >Paid Course</a
+                    >
+                  </li>
+                  <li>
+                    <a href="./../enroll1/apply.html" class="block px-4 py-2 hover:bg-gray-300"
+                      >Scholarship</a
+                    >
+                  </li>
+                  <li>
+                    <a href="./../enroll1/bachelor.html" class="block px-4 py-2 hover:bg-gray-300"
+                      >Bachelor Degree</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <a
+                href="./course.html"
+                class="block py-2 px-3 rounded hover:bg-blue-500 md:hover:bg-transparent md:border-0 md:p-0"
+                >COURSE</a
+              >
+            </li>
+            <li>
+              <button
+                id="dropdownNavbarLink"
+                data-dropdown-toggle="dropdownNavbar"
+                class="flex items-center justify-between w-full py-2 px-3 rounded hover:bg-blue-500 md:hover:bg-transparent md:border-0 md:p-0 md:w-auto"
+              >
+                ANNOUNCEMENT
+                <svg
+                  class="w-2.5 h-2.5 ms-2.5"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 10 6"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="m1 1 4 4 4-4"
+                  />
+                </svg>
+              </button>
+              <!-- Dropdown menu -->
+              <div
+                id="dropdownNavbar"
+                class="relative z-10 hidden font-normal bg-gray-100 divide-y divide-gray-100 rounded-lg shadow w-44"
+              >
+                <ul
+                  class="py-2 text-sm text-gray-700"
+                  aria-labelledby="dropdownLargeButton"
+                >
+                  <li>
+                    <a
+                      href="./../announcement/AnnounmnetJob.html"
+                      class="block px-4 py-2 hover:bg-gray-300"
+                      >Job Opportunity</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="./../announcement/itnews.html"
+                      class="block px-4 py-2 hover:bg-gray-300"
+                      >IT News</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="./../announcement/activity.html"
+                      class="block px-4 py-2 hover:bg-gray-300"
+                      >Activity</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <a
+                href="../about_us/about-us.html"
+                class="block py-2 px-3 rounded hover:bg-blue-500 md:hover:bg-transparent md:border-0 md:p-0"
+                >ABOUT US</a
+              >
+            </li>
+            <li>
+              <a
+                href="../contact_us/contact-us.html"
+                class="block py-2 px-3 rounded hover:bg-blue-500 md:hover:bg-transparent md:border-0 md:p-0"
+                >CONTACT US</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+   <main>
+    <section class="p-6">
+      <div class="max-w-6xl mx-auto bg-white p-6 rounded-3xl shadow-md">
+        <!-- Title -->
+        <h2 class="job-offer text-xl sm:text-2xl md:text-2xl lg:text-3xl mb-4 text-blue-900 font-normal md:font-bold pl-10 mx-auto">Provide the latest methodology with high quality training and mentoring</h2>
+
+        <!-- Icon -->
+        <div class="sm:block md:inline-block text-blue-900 text-sm pt-4 pl-10">
+          <!-- Author -->
+          <i class="fas fa-user i-style pl-4"></i>
+          <span class="content-detail-info pl-2">boss</span>
+          <!-- End Author -->
+      
+          <!-- Publish Date -->
+          <i class="fas fa-clock i-style pl-4"></i>
+          <span class="content-detail-info pl-2">19-Sep-2022</span>
+          <!-- End Publish Date -->
+      
+          <!-- View -->
+          <i class="fas fa-eye i-style pl-4"></i>
+          <span class="content-detail-info pl-2">999</span>
+          <!-- End View -->
+        </div>
+      
+        <!-- Type -->
+        <div class="sm:block md:inline-block text-blue-900 text-sm pb-4">
+          <i class="fa fa-folder i-style pl-4"></i>
+          <span class="content-detail-info pl-2">Blog</span>
+        </div>
+        <!-- End Type -->
+
+        <!-- Image -->
+        <section class="p-6">
+          <div class="mb-10 mx-auto bg-white mt-8 rounded-xl  overflow-hidden md:max-w-2xl lg:max-w-4xl ">
+            <div class="md:flex ">
+              <div class="md:shrink-0  ">
+                <img class=" text-md object-cover rounded-2xl md:h-full md:w-48 lg:w-[400px]" src="https://api.istad.co/media/image/779a9824-0e29-44ff-9f4c-922d78f04b1f.png" alt="Modern building architecture">
+              </div>
+              <div class="p-8">
+                <div class="job-offer-khmer uppercase tracking-wide text-sm text-indigo-500 font-semibold">និយមន័យរបស់ Cybersecurity</div>
+                
+                <p class="mt-2 job-offer-khmer text-slate-500">Cyber Security គឺជាការ ការពារ ប្រព័ន្ធកុំព្យូទ័រ, servers, ទូរស័ព្ទ, ប្រព័ន្ធអេឡិចត្រូនិច, network និង ទិន្នន័យ ​ពីការវាយប្រហារផ្សេងៗ ដែលមានគោលបំណងមិនល្អ។ ដែលបណ្ដាលអោយមាន​ ការលុកចូល ការផ្លាស់ប្ដូរការបង្កក ឬកំទេចនូវព័ត៌មានសំខាន់ៗ លួចយកទិន្ន័យ ឬលុយពីអ្នកប្រើប្រាស់ឬធ្វើឲ្យរាំងស្ទះដល់ដំណើរការធុរកិច្ចទូទៅ។ Cyber Security យើងអាចបង្រួមន័យយ៉ាងខ្លីថា 
+ការការពារប្រព័ន្ធទិន្នន័យឌីជីថល។</p>
+              </div>
+            </div>
+          </div>
+    
+          <div class="mx-auto bg-white mt-8 rounded-xl overflow-hidden md:max-w-2xl lg:max-w-4xl">
+            <div class="md:flex">
+              <div class="p-8">
+                <div class="job-offer-khmer uppercase tracking-wide text-sm text-indigo-500 font-semibold">Cyber Crime Statistics</div>
+                
+                <p class="job-offer-khmer mt-2 text-slate-500"> ស្ថិតិនៃ ឧក្រិដ្ឋកម្មតាមអ៊ីនធឺណិត៖
+
+ច្រើនជាង 25 លាន​ កំណត់ត្រា ត្រូវបានលាតត្រដាង តាមអ៊ីនធឺណិត និង dark web ជារៀងរាល់ថ្ងៃ​នៅឆ្នាំ 2018។
+300 ពាន់លានពាក្យសម្ងាត់ បានបង្កើតឡើង គិតត្រឹមឆ្នាំ 2020។
+ឧក្រិដ្ឋកម្មតាមអ៊ីនធឺណិត ធ្វើឱ្យមានការចំណាយ $6 ពាន់ពាន់លានក្នុងឆ្នាំ 2021។
+24, 000 malicious mobile apps ត្រូវបាន ហាមឃាត់ ជារៀងរាល់ថ្ងៃ។
+Healthcare: Ransomware attack (ជាការវាយប្រហារ ដោយ encrypt files មិនអាចប្រើបាន លុះត្រាតែបង់លុយបានប្រើប្រាស់បានធម្មតាឡើងវិញ) បានកើតឡើង 4 ដងជាប់ៗគ្នា។
+ជាង 60% នៃការក្លែងបន្លំដែលមានប្រភពចេញពី ទូរស័ព្ទ។
+ទិន្នន័យសម្ងាត់ផ្ទាល់ខ្លួនរបស់យើង ត្រូវបានគេ​ លួចយកទៅលក់ក្នុង dark web ក្នុងតម្លៃថោកៗ។
+90% នៃ attacker បានប្រើវិធី encryption។</p>
+              </div>
+              <div class="md:shrink-0">
+                <img class="h-48 w-full object-cover rounded-2xl md:h-full md:w-48 lg:w-[400px]" src="./../asset/Image/123.png" alt="Modern building architecture">
+              </div>
+            </div>
+          </div>
+        </section>
+  
+        <!-- Text -->
+        <h2 class="text-xl sm:text-2xl md:text-2xl lg:text-3xl mb-4 font-semibold pt-10 pr-10 pl-10"><span class="job-offer-khmer">List of information</span></h2>
+        <p class="job-offer-khmer text-justify container whitespace-pre-line pb-2 pl-10" style="font-size: 16px; line-height: 2.0;" >
+          2. Security
+          អ្នកទាំងអស់គ្នាប្រាកដជាធ្លាប់ប្រើប្រាស់នូវការ login ទៅកាន់ applications ដែលអ្នកប្រើប្រាស់បានតាមរយៈច្រើនទម្រង់ដូចជា​៖ តាមរយៈ ការប្រើប្រាស់លេខកូដ ការស្កេនមុខ ការស្កេនមេដៃការស្កេនតាមភ្នែក ឬទម្រង់ផ្សេងៗទៀតជាច្រើន។ តាមរយៈ WEB 4.0 នេះអ្នកស្រាវជ្រាវនឹងសង្ឃឹមថាមានការ log in ដោយគ្រាន់តែប្រើការគិត (Login by Thinking) ប៉ុណ្ណោះ។
+          3. School and The Workplace
+          អ្នកស្រាវជ្រាវនឹងគិតថាមានការចូលរួមច្រើនពី BCIs ដោយធ្វើឱ្យការសិក្សាតាមស្ថាប័នអប់រំអាចសិក្សាទៅលើអ្វីដែលជាសមត្ថភាពរបស់សិស្សមានពិត ត្រឹមត្រូវច្បាស់លាស់តាមជំនាញ ឬជាអ្វីដែលសិស្សចង់បាន និងចំណុចផ្សេងៗទៀតដែលអាចធ្វើឱ្យការអនុវត្តការងារកាន់តែមានប្រសិទ្ធភាព នៅតាមស្ថាប័ន។
+          4. A New Kind of Social Media
+          Metaverse ក៏ត្រូវបានគេកំពុងស្រាវជ្រាវនិងអភិវឌ្ឍផងដែរ ប៉ុន្តែអ្នកស្រាវជ្រាវសង្ឃឹមថា remote learning, remote work ការជួបជុំបែប ឌីជីថល ជាមួយមិត្តភក្តិ ឬគ្រួសារដោយប្រើប្រាស់ VR និង AR អាចនឹងរឹតតែមានភាពងាយស្រួលនិងផ្តល់អត្ថប្រយោជន៍ខ្ពស់។
+          Challenges for Web 4.0
+          មិនខុសពីបច្ចេកវិទ្យាផ្សេងនោះទេ មុននឹងមានការចេញជាផ្លូវការអ្វីមួយគឺតែងតែជួបនូវឩបសគ្គដើម្បីក្លាយជា standard នៃ អ៉ីនធឺណិតជំនាន់ក្រោយ។ ចំណុចទាំងនោះមានដូចជា៖
+          1. User Safety
+          2. Data Privacy
+          យោងតាមចំណុចទី១ ខាងលើ អ្នកប្រើប្រាស់ត្រូវតែមានទំនុកចិត្តខ្ពស់ទៅលើ BCIs នោះ។ ​ដោយសារតែការប្រើប្រាស់ម៉ាស៊ីននេះ ទិន្នន័យរបស់យើងទាំងអស់ នឹងអាចត្រូវក្រុមហ៊ុនយកអត្ថប្រយោជន៍ពីលើ។
+          Conclusion
+          នៅពេលដែលបច្ចេកវិទ្យាដើរទៅមុខ អ៉ីនធឺណិត មិនត្រឹមតែសម្របតាមសមត្ថភាពនៃបច្ចេកវិទ្យាថ្មីប៉ុណ្ណោះទេ ប៉ុន្តែថែមទាំងតម្រូវការរបស់អ្នកប្រើប្រាស់ផងដែរ។អ្នកដែលកើតក្រោយឆ្នាំ ១៩៩០ មិនដែលស្គាល់រសជាតិពិភពលោកដែលគ្មាន អុីនធឺណិត។ ចំណែកឯ យុវជនជំនាន់​បច្ចុប្បន្ន​នឹង​មិន​ស្គាល់​ពិភពលោក​ដែល​គ្មាន​ social mediaឡើយ។ មនុស្សដែលកើតក្នុងដប់ទៅម្ភៃឆ្នាំខាងមុខ ប្រហែលជាមិនអាចស្គាល់ពិភពលោកដែលគ្មានគំនិតរីកចម្រើននោះទេ។ការវិវឌ្ឍន៍នៃបច្ចេកវិទ្យាបានធ្វើឱ្យយើងបានភ្ជាប់ទំនាក់ទំនង និងមានអត្ថប្រយោជន៍កាន់តែច្រើន ប៉ុន្តែវាក៏តែងតែមានគុណវិបត្តិផងដែរ។ វាពិតជាមានសារៈសំខាន់ណាស់សម្រាប់អ្នកបច្ចេកវិទ្យា និងអ្នកអភិវឌ្ឍន៍នាពេលអនាគត ដើម្បីចងចាំអំពីសុវត្ថិភាព និងឯកជនភាពរបស់អ្នកប្រើប្រាស់របស់ពួកគេ។នេះជាការជជែកលេងអំពី WEB 4.0 ទោះថ្ងៃមុខទៅជាយ៉ាងណា មានការប្រែប្រួលទៅលើទ្រឹស្តីដែល គេប៉ាន់ស្មាននិងស្រាវជ្រាវក្តី សូមរង់ចាំតាមដានទាំងអស់គ្នាតទៅមុខទៀត។ សូមអរគុណ!
+
+        </p>
+      
+       <!-- Scroll Back Btn -->
+       <section class="flex justify-end pt-4">
+        <button id="goToTopButton" class="bg-blue-500 text-white px-4 py-2 rounded-lg shadow hover:bg-blue-600 ease-in-out">
+          Scroll Back
+        </button>
+      </section>
+      <!-- End of Scroll Back -->
+
+      </div>
+    </section>
+  </main>
+
+<!-- Footer -->
+<footer class="px-3 pt-4 lg:px-9 border-t-2 bg-blue-800 pt-3 text-center sm:text-center md:text-center">
+  <div class="container mx-auto grid gap-10 row-gap-6 mb-8 sm:grid-cols-2 lg:grid-cols-4">
+    <div class="ml-4">
+      <a href="../index.html" class="flex inline-flex items-center ">
+        <img src="https://istad.co/resources/img/CSTAD_120.png" alt="logo" class="cstadlogo" />
+        <span class="ml-2 text-lg font-bold tracking-wide text-white">Start your IT career with CSTAD</span>
+      </a>
+      <p class="mt-4 text-sm text-white text-justify">
+        CSTAD is a noteworthy science and technology center in
+        Cambodia.CSTAD has routed Cambodian students to advanced science and
+        technology, research, and develop digital skills and our graduates
+        have been guaranteed excellent job opportunities with the Top IT
+        company.
+      </p>
+    </div>
+    <div class="flex flex-col gap-2 text-lg text-white">
+      <p class="text-base font-bold tracking-wide">LEARN MORE</p>
+      <a href="../course/course.html">Course</a>
+      <a href="../announcement/itnews.html">IT News</a>
+      <a href="../announcement/AnnounmnetJob.html">Job Opportunity</a>
+      <a href="../policy/privacy.html">Privacy Policy</a>
+      <a href="../policy/faq.html">FAQ</a>
+    </div>
+    <div class="flex flex-col gap-2 text-lg text-white">
+      <p class="text-base font-bold tracking-wide">POPULAR COURSE</p>
+      <a href="webCourse.html">Web Design</a>
+      <a href="flutterCourse.html">Flutter Mobile Development</a>
+      <a href="springCourse.html">Spring framework</a>
+      <a href="javaCourse.html">Java Programming</a>
+    </div>
+    <div class="mt-3">
+      <p class="text-base font-bold tracking-wide text-white">
+         CSTAD IS ALSO AVAILABLE ON 
+      </p>
+
+      <div class="gap-1 pt-5 pb-6 flex">
+        <a href="https://apps.apple.com/kh/app/cstad-mobile/id6463835798" class="w-full min-w-xl flex justify-end">
+            <img src="https://social.webestica.com/assets/images/app-store.svg" alt="Appstore Button" class="h-10" />
+        </a>
+        <a href="https://play.google.com/store/apps/details?id=co.istad.mobile.istad_moblie&pcampaignid=web_share" class="w-full min-w-xl">
+            <img src="https://social.webestica.com/assets/images/google-play.svg" alt="Playstore Button" class="h-10" />
+        </a>
+    </div>
+    
+
+      <p class="text-base font-bold tracking-wide text-white">Contacts</p>
+      <div class="text-white">
+        <span class="mr-1">Email:</span>
+        <a href="mailto:info.istad@gmail.com" title="send email">info.istad@gmail.com</a>
+      </div>
+      <p class="text-white"><a href="tel:+85595990910">(+855) 95-990-910</a>
+        <br/><a href="tel:+85593990910">(+855) 93-990-910</a></p>
+      <div class="justify-start space-x-3 text-white text-2xl">
+        <a href="https://www.facebook.com/istad.co/?ref=embed_page"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://www.youtube.com/@istad7665"><i class="fa-brands fa-youtube"></i></a>
+        <a href="https://t.me/istadkh"><i class="fa-brands fa-telegram"></i></a>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <div class="text-center pt-5 pb-10 border-t lg:flex-row">
+    <p class="text-base text-white">
+      © 2023 Center of Science and Technology Advanced Development | All
+      Rights Reserved
+    </p>
+  </div>
+</footer>
+<!-- End of Footer -->
+    
+  <script src="./../js/btnScrollUp.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,59 @@
+@font-face {
+    font-family: "Inter-Regular";
+    src: url(../font/Inter-Regular.ttf);
+}
+*{
+    font-family: "Inter-Regular";
+}
+
+
+.fontInter{
+    font-family: 'Inter-Black', sans-serif !important;
+}
+body{
+    background-color: whitesmoke;
+}
+.course-offer {
+    font-family: 'Inter-Black', sans-serif !important;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-size: 30px;
+}
+.course-offer-sub {
+    font-family: 'Inter-Black', sans-serif !important;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-size: 22px;
+}
+.border{
+    border-radius: 20px;
+}
+.colored-list {
+    list-style: none;
+}
+.colored-list li::before {
+    content: "\2022";
+    color:#407bff;
+    font-weight: bold;
+    display: inline-block; 
+    width: 1em;
+    margin-left: -1em;
+}
+.accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+}
+
+.accordion-header::after {
+    content: '\25BC'; /* Down arrow */
+    float: right;
+    margin-left: 0.5rem;
+    transition: transform 0.3s ease-in-out;
+    color:#407bff;
+}
+
+.active::after {
+    transform: rotate(180deg); /* Rotate arrow for the active state */
+    
+}

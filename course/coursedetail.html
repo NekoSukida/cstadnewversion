@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>C++ Programming - CSTAD</title>
+  <link rel="shotcut icon" href="https://istad.co/resources/img/CSTAD_120.png" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+  />
+  <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.css"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="./../css/course.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.css" rel="stylesheet" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
+  <style>
+    .cstadlogo {
+      height: 100px;
+      width: 100px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header class="sticky top-0" style="z-index: 99">
+    <nav class="bg-blue-800 border-gray-200">
+      <div
+        class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
+      >
+        <a href="../index.html" class="flex items-center space-x-3 rtl:space-x-reverse">
+          <img
+            src="https://istad.co/resources/img/CSTAD_120.png"
+            class="h-12"
+            alt="cstad Logo"
+          />
+          <span
+            class="self-center text-white text-2xl font-semibold whitespace-nowrap"
+            >C S T A D</span
+          >
+        </a>
+        <button
+          data-collapse-toggle="navbar-multi-level"
+          type="button"
+          class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-white rounded-lg md:hidden hover:text-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400"
+          aria-controls="navbar-multi-level"
+          aria-expanded="false"
+        >
+          <span class="sr-only">Open main menu</span>
+          <svg
+            class="w-5 h-5"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 17 14"
+          >
+            <path
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M1 1h15M1 7h15M1 13h15"
+            />
+          </svg>
+        </button>
+        <div class="hidden w-full md:block md:w-auto" id="navbar-multi-level">
+          <ul
+            class="bg-blue-800 flex flex-col font-medium p-4 md:p-0 mt-4 text-white border border-gray-100 rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0"
+          >
+            <li>
+              <a
+                href="../index.html"
+                class="block py-2 px-3 rounded md:bg-transparent md:p-0"
+                aria-current="page"
+                >HOME</a
+              >
+            </li>
+            <li>
+              <button
+                id="dropdownNavbarLink"
+                data-dropdown-toggle="dropdownNavbar1"
+                class="flex items-center justify-between w-full py-2 px-3 rounded hover:bg-blue-500 md:hover:bg-transparent md:border-0 md:p-0 md:w-auto"
+              >
+                ENROLLMENT
+                <svg
+                  class="w-2.5 h-2.5 ms-2.5"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 10 6"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="m1 1 4 4 4-4"
+                  />
+                </svg>
+              </button>
+              <!-- Dropdown menu -->
+              <div
+                id="dropdownNavbar1"
+                class="absolute z-10 hidden font-normal bg-gray-100 divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600"
+              >
+                <ul
+                  class="py-2 text-sm text-gray-700 dark:text-gray-400"
+                  aria-labelledby="dropdownLargeButton"
+                >
+                  <li>
+                    <a href="./../enroll1/enroll.html" class="block px-4 py-2 hover:bg-gray-300"
+                      >Paid Course</a
+                    >
+                  </li>
+                  <li>
+                    <a href="./../enroll1/apply.html" class="block px-4 py-2 hover:bg-gray-300"
+                      >Scholarship</a
+                    >
+                  </li>
+                  <li>
+                    <a href="./../enroll1/bachelor.html" class="block px-4 py-2 hover:bg-gray-300"
+                      >Bachelor Degree</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <a
+                href="./course.html"
+                class="block py-2 px-3 rounded hover:bg-blue-500 md:hover:bg-transparent md:border-0 md:p-0"
+                >COURSE</a
+              >
+            </li>
+            <li>
+              <button
+                id="dropdownNavbarLink"
+                data-dropdown-toggle="dropdownNavbar"
+                class="flex items-center justify-between w-full py-2 px-3 rounded hover:bg-blue-500 md:hover:bg-transparent md:border-0 md:p-0 md:w-auto"
+              >
+                ANNOUNCEMENT
+                <svg
+                  class="w-2.5 h-2.5 ms-2.5"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 10 6"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="m1 1 4 4 4-4"
+                  />
+                </svg>
+              </button>
+              <!-- Dropdown menu -->
+              <div
+                id="dropdownNavbar"
+                class="relative z-10 hidden font-normal bg-gray-100 divide-y divide-gray-100 rounded-lg shadow w-44"
+              >
+                <ul
+                  class="py-2 text-sm text-gray-700"
+                  aria-labelledby="dropdownLargeButton"
+                >
+                  <li>
+                    <a
+                      href="./../announcement/AnnounmnetJob.html"
+                      class="block px-4 py-2 hover:bg-gray-300"
+                      >Job Opportunity</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="./../announcement/itnews.html"
+                      class="block px-4 py-2 hover:bg-gray-300"
+                      >IT News</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="./../announcement/activity.html"
+                      class="block px-4 py-2 hover:bg-gray-300"
+                      >Activity</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <a
+                href="../about_us/about-us.html"
+                class="block py-2 px-3 rounded hover:bg-blue-500 md:hover:bg-transparent md:border-0 md:p-0"
+                >ABOUT US</a
+              >
+            </li>
+            <li>
+              <a
+                href="../contact_us/contact-us.html"
+                class="block py-2 px-3 rounded hover:bg-blue-500 md:hover:bg-transparent md:border-0 md:p-0"
+                >CONTACT US</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- End of Header -->
+
+  <!-- Main -->
+  <main>
+    <section>
+      <div class="container mx-auto sm:px-4 mt-3">
+        <!-- FirstDetails -->
+        <div id="detail" class="mx-auto sm:px-4 bg-white rounded-2xl p-6">
+          <!--  -->
+        </div>
+        <!-- End of FirstDetails -->
+        <!-- Course Detail -->
+        <div class="container mx-auto sm:px-4 pt-6">
+          <div class="flex justify-end pr-0 mt-3 ">
+            <a href="#" target="_new"
+              class="inline-block align-middle text-center select-none border font-bold whitespace-no-wrap rounded-2xl py-1 px-3 leading-normal no-underline text-blue-600 border-blue-600 hover:bg-blue-600 hover:text-white bg-white hover:bg-blue-600 border-0 mt-2 block w-full btn-lg-inline border bor"
+              style="background-color: #253C95 !important; color: #fff !important; text-transform: uppercase; letter-spacing: 2px; font-family: 'Inter-Regular'; padding: 10px 70px;">
+              Enroll
+            </a>
+          </div>
+        </div>
+        <!-- End Course Detail -->
+
+        <!-- Course Outline -->
+        <div class="container mx-auto sm:px-4 pt-6">
+          <div class="flex flex-wrap  mt-5 mb-5">
+            <h2 class="course-offer font-bold text-2xl">Course Outline</h2>
+          </div>
+        </div>
+
+        <!-- Accrdion Details -->
+
+        <div class="max-w">
+          <!-- Accordion Item 1 -->
+
+          <div class="accordion">
+            <button class="accordion-header bg-white p-4 w-full text-left uppercase font-semibold">Basic anad Fundamental programming Concepts</button>
+                <div class="accordion-content">
+                    <div class="bg-gray-200 p-4">
+                        <ul class="pl-8 list-disc colored-list">
+                          <li  class="outline-details">Introduction and getting started to programming</li>
+                          <li  class="outline-details">C++ basics (variable, keywords, statement, expression)</li>
+                          <li  class="outline-details">Fundamental data types</li>
+                          <li  class="outline-details">Basic Function and file</li>
+                          <li  class="outline-details">Debugging</li>
+                          <li  class="outline-details">Operators</li>
+                          <li  class="outline-details">Object scope and conversion</li>
+                          <li  class="outline-details">Control flow and error handling</li>
+                          <li  class="outline-details">Lab: Project Practical (1)</li>
+                        </ul>
+                    </div>
+                </div>
+          </div>
+
+        </div>
+
+        <div class="max-w">
+          <!-- Accordion Item 2 -->
+
+          <div class="accordion">
+            <button class="accordion-header bg-white p-4 w-full text-left uppercase font-semibold">Conpound data type</button>
+                <div class="accordion-content">
+                    <div class="bg-gray-200 p-4">
+                        <ul class="pl-8 list-disc colored-list">
+                          <li  class="outline-details">Enum and Structs</li>
+                          <li  class="outline-details">Array</li>
+                          <li  class="outline-details">Strings</li>
+                          <li  class="outline-details">Lab: Project Practical (2)</li>
+                        </ul>
+                    </div>
+                </div>
+          </div>
+
+        </div>
+
+        <div class="max-w">
+          <!-- Accordion Item 3 -->
+
+          <div class="accordion">
+            <button class="accordion-header bg-white p-4 w-full text-left uppercase font-semibold">function</button>
+                <div class="accordion-content">
+                    <div class="bg-gray-200 p-4">
+                        <ul class="pl-8 list-disc colored-list">
+                          <li  class="outline-details">Types of functions</li>
+                          <li  class="outline-details">Passing arguments to functions</li>
+                          <li  class="outline-details">Function pointers</li>
+                          <li  class="outline-details">Recursion</li>
+                        </ul>
+                    </div>
+                </div>
+          </div>
+
+        </div>
+
+        <div class="max-w">
+          <!-- Accordion Item 4 -->
+
+          <div class="accordion">
+            <button class="accordion-header bg-white p-4 w-full text-left uppercase font-semibold">OOP (Object Oriented programming)</button>
+                <div class="accordion-content">
+                    <div class="bg-gray-200 p-4">
+                        <ul class="pl-8 list-disc colored-list">
+                          <li  class="outline-details">Understand Class and Object and Constructors concepts</li>
+                          <li  class="outline-details">Encapsulation</li>
+                          <li  class="outline-details">Anonymous object</li>
+                          <li  class="outline-details">Overloading and inheritance</li>
+                          <li  class="outline-details">Object Relationship</li>
+                          <li  class="outline-details">Lab: Project Practical (3)</li>
+                        </ul>
+                    </div>
+                </div>
+          </div>
+
+        </div>
+
+        <div class="max-w">
+          <!-- Accordion Item 5 -->
+
+        <div class="accordion">
+          <button class="accordion-header bg-white p-4 w-full text-left uppercase font-semibold">Final project</button>
+              <div class="accordion-content">
+                  <div class="bg-gray-200 p-4">
+                      <ul class="pl-8 list-disc colored-list">
+                        <li  class="outline-details">Real use of console application</li>
+                        <li  class="outline-details">Apply OOP concept to solve real problem</li>
+                        <li  class="outline-details">Handling error exception in program</li>
+                      </ul>
+                  </div>
+              </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+  <!--End of Main -->
+
+  <!-- Similar course -->
+  <div class="container mx-auto sm:px-4 p-2">
+    <div class="flex flex-wrap justify-center mt-5 mb-5">
+      <h2 class="course-offer font-bold text-2xl">Similar to this Course</h2>
+    </div>
+  </div>
+
+    <section class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">  
+      <div class="grid gap-8 lg:grid-cols-2  justify-center">
+        <!-- course 1 -->
+        <a href="#" class="max-w-lg bg-white rounded overflow-hidden shadow-lg rounded-2xl flex flex-col sm:flex-row">
+          <!-- Text on the right side -->
+          <div class="w-5/6 p-4">
+            <h2 class="text-xl font-semibold mb-4 text-blue-800" style="font-size: 24px">DevOps Engineering</h2>
+            <span
+              class="inline-block text-center font-semibold text-sm align-baseline leading-none rounded rounded-full py-1 px-3 bg-red-600 text-white hover:bg-red-700 pb-1 font-bold"
+              style="font-size: 16px;">20% Scholarship
+            </span>
+            <p class="text-gray-700 pt-3">This course will provide you with in-depth knowledge on how to build...</p>
+            <p class="text-gray-700 pt-3"><i class='bx bxs-hourglass-top'></i>70 hours<span
+                class="text-gray-700 pt-3 pl-4"><i class='bx bxs-layer'></i>Advanced</span>
+            </p>
+          </div>
+          <!-- Image on the left side -->
+          <div class="w-1/2 flex items-center justify-center">
+            <img src="https://api.istad.co/media/image/835a7298-dbab-448d-8229-ee8a555c4846.png" alt="Image"
+              class="w-4/5 object-cover">
+          </div>
+        </a>
+        <!--end of course 1 -->
+
+        <!-- course 2 -->
+        <a href="#" class="max-w-lg bg-white rounded overflow-hidden shadow-lg rounded-2xl flex flex-col sm:flex-row">
+          <!-- Text on the right side -->
+          <div class="w-5/6 p-4">
+            <h2 class="text-xl font-semibold mb-4 text-blue-800" style="font-size: 24px">C++ Programming</h2>
+            <span
+              class="inline-block text-center font-semibold text-sm align-baseline leading-none rounded rounded-full py-1 px-3 bg-red-600 text-white hover:bg-red-700 pb-1 font-bold"
+              style="font-size: 16px;">20% Scholarship</span>
+            <p class="text-gray-700 pt-3">C++ is one of the world's most popular programming languages.</p>
+            <p class="text-gray-700 pt-3"><i class='bx bxs-hourglass-top'></i>60 hours<span
+                class="text-gray-700 pt-3 pl-4"><i class='bx bxs-layer'></i>Basic</span>
+            </p>
+          </div>
+          <!-- Image on the left side -->
+          <div class="w-1/2 flex items-center justify-center">
+            <img src="https://api.istad.co/media/image/73c3424a-39e0-450c-8969-8b35559594f5.png" alt="Image"
+              class="w-4/5 object-cover">
+          </div>
+        </a>
+        <!-- end of course 2 -->
+      </div>
+    </section>
+  <!-- end of Similar course -->
+<!-- Footer -->
+<footer class="px-3 pt-4 lg:px-9 border-t-2 bg-blue-800 pt-3 text-center sm:text-center md:text-center">
+  <div class="container mx-auto grid gap-10 row-gap-6 mb-8 sm:grid-cols-2 lg:grid-cols-4">
+    <div class="ml-4">
+      <a href="../index.html" class="flex inline-flex items-center ">
+        <img src="https://istad.co/resources/img/CSTAD_120.png" alt="logo" class="cstadlogo" />
+        <span class="ml-2 text-lg font-bold tracking-wide text-white">Start your IT career with CSTAD</span>
+      </a>
+      <p class="mt-4 text-sm text-white text-justify">
+        CSTAD is a noteworthy science and technology center in
+        Cambodia.CSTAD has routed Cambodian students to advanced science and
+        technology, research, and develop digital skills and our graduates
+        have been guaranteed excellent job opportunities with the Top IT
+        company.
+      </p>
+    </div>
+    <div class="flex flex-col gap-2 text-lg text-white">
+      <p class="text-base font-bold tracking-wide">LEARN MORE</p>
+      <a href="../course/course.html">Course</a>
+      <a href="../announcement/itnews.html">IT News</a>
+      <a href="../announcement/AnnounmnetJob.html">Job Opportunity</a>
+      <a href="../policy/privacy.html">Privacy Policy</a>
+      <a href="../policy/faq.html">FAQ</a>
+    </div>
+    <div class="flex flex-col gap-2 text-lg text-white">
+      <p class="text-base font-bold tracking-wide">POPULAR COURSE</p>
+      <a href="webCourse.html">Web Design</a>
+      <a href="flutterCourse.html">Flutter Mobile Development</a>
+      <a href="springCourse.html">Spring framework</a>
+      <a href="javaCourse.html">Java Programming</a>
+    </div>
+    <div class="mt-3">
+      <p class="text-base font-bold tracking-wide text-white">
+         CSTAD IS ALSO AVAILABLE ON 
+      </p>
+
+      <div class="gap-1 pt-5 pb-6 flex">
+        <a href="https://apps.apple.com/kh/app/cstad-mobile/id6463835798" class="w-full min-w-xl flex justify-end">
+            <img src="https://social.webestica.com/assets/images/app-store.svg" alt="Appstore Button" class="h-10" />
+        </a>
+        <a href="https://play.google.com/store/apps/details?id=co.istad.mobile.istad_moblie&pcampaignid=web_share" class="w-full min-w-xl">
+            <img src="https://social.webestica.com/assets/images/google-play.svg" alt="Playstore Button" class="h-10" />
+        </a>
+    </div>
+    
+
+      <p class="text-base font-bold tracking-wide text-white">Contacts</p>
+      <div class="text-white">
+        <span class="mr-1">Email:</span>
+        <a href="mailto:info.istad@gmail.com" title="send email">info.istad@gmail.com</a>
+      </div>
+      <p class="text-white"><a href="tel:+85595990910">(+855) 95-990-910</a>
+        <br/><a href="tel:+85593990910">(+855) 93-990-910</a></p>
+      <div class="justify-start space-x-3 text-white text-2xl">
+        <a href="https://www.facebook.com/istad.co/?ref=embed_page"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://www.youtube.com/@istad7665"><i class="fa-brands fa-youtube"></i></a>
+        <a href="https://t.me/istadkh"><i class="fa-brands fa-telegram"></i></a>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <div class="text-center pt-5 pb-10 border-t lg:flex-row">
+    <p class="text-base text-white">
+      © 2023 Center of Science and Technology Advanced Development | All
+      Rights Reserved
+    </p>
+  </div>
+</footer>
+<!-- End of Footer -->
+
+<script src="./../js/coursedetail.js" type="module"></script>
+<script src="./../js/dropDownCourse.js"></script>
+</body>
+
+</html>

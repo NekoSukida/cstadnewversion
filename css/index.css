@@ -1,0 +1,32 @@
+@font-face {
+    font-family: "Inter-Regular";
+    src: url(../font/Inter-Regular.ttf);
+}
+*{
+    font-family: "Inter-Regular";
+}
+
+
+.fontInter{
+    font-family: 'Inter-Black', sans-serif !important;
+}
+@font-face {
+    font-family: "NotoSerifKhmer-SemiBold";
+    src: url(../font/KhmerFont/NotoSerifKhmer-SemiBold.ttf);
+}
+@font-face {
+    font-family: "Khmer";
+    src: url(../font/KhmerFont/NotoSerifKhmer-Regular.ttf);
+}
+.font-khmer{
+    font-family: 'Khmer', sans-serif !important;
+}
+.text{
+    text-align: center;
+}
+.pop-up{
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7),rgba(0,0,0,0.7));
+}
+.active .course-card{
+    display: none;
+}

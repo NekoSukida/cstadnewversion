@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>IT News</title>
+        <link rel="shotcut icon" href="https://istad.co/resources/img/CSTAD_120.png" />
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        />
+        <link
+          href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.css"
+          rel="stylesheet"
+        />
+        <link rel="stylesheet" href="../css/index.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/datepicker.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.css" rel="stylesheet" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
+        <style>
+          .cstadlogo {
+            height: 100px;
+            width: 100px;
+          }
+
+        </style>
+  </head>
+<body class="bg-[#f5f5f5]">
+  <header class="sticky top-0" style="z-index: 99">
+    <nav class="bg-blue-800 border-gray-200">
+      <div
+        class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
+      >
+        <a href="../index.html" class="flex items-center space-x-3 rtl:space-x-reverse">
+          <img
+            src="https://istad.co/resources/img/CSTAD_120.png"
+            class="h-12"
+            alt="cstad Logo"
+          />
+          <span
+            class="self-center text-white text-2xl font-semibold whitespace-nowrap"
+            >C S T A D</span
+          >
+        </a>
+        <button
+          data-collapse-toggle="navbar-multi-level"
+          type="button"
+          class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-white rounded-lg md:hidden hover:text-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400"
+          aria-controls="navbar-multi-level"
+          aria-expanded="false"
+        >
+          <span class="sr-only">Open main menu</span>
+          <svg
+            class="w-5 h-5"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 17 14"
+          >
+            <path
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M1 1h15M1 7h15M1 13h15"
+            />
+          </svg>
+        </button>
+        <div class="hidden w-full md:block md:w-auto" id="navbar-multi-level">
+          <ul
+            class="bg-blue-800 flex flex-col font-medium p-4 md:p-0 mt-4 text-white border border-gray-100 rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0"
+          >
+            <li>
+              <a
+                href="../index.html"
+                class="block py-2 px-3 rounded md:bg-transparent md:p-0"
+                aria-current="page"
+                >HOME</a
+              >
+            </li>
+            <li>
+              <button
+                id="dropdownNavbarLink"
+                data-dropdown-toggle="dropdownNavbar1"
+                class="flex items-center justify-between w-full py-2 px-3 rounded hover:bg-blue-500 md:hover:bg-transparent md:border-0 md:p-0 md:w-auto"
+              >
+                ENROLLMENT
+                <svg
+                  class="w-2.5 h-2.5 ms-2.5"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 10 6"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="m1 1 4 4 4-4"
+                  />
+                </svg>
+              </button>
+              <!-- Dropdown menu -->
+              <div
+                id="dropdownNavbar1"
+                class="absolute z-10 hidden font-normal bg-gray-100 divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600"
+              >
+                <ul
+                  class="py-2 text-sm text-gray-700 dark:text-gray-400"
+                  aria-labelledby="dropdownLargeButton"
+                >
+                  <li>
+                    <a href="./../enroll1/enroll.html" class="block px-4 py-2 hover:bg-gray-300"
+                      >Paid Course</a
+                    >
+                  </li>
+                  <li>
+                    <a href="./../enroll1/apply.html" class="block px-4 py-2 hover:bg-gray-300"
+                      >Scholarship</a
+                    >
+                  </li>
+                  <li>
+                    <a href="./../enroll1/bachelor.html" class="block px-4 py-2 hover:bg-gray-300"
+                      >Bachelor Degree</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <a
+                href="../course/course.html"
+                class="block py-2 px-3 rounded hover:bg-blue-500 md:hover:bg-transparent md:border-0 md:p-0"
+                >COURSE</a
+              >
+            </li>
+            <li>
+              <button
+                id="dropdownNavbarLink"
+                data-dropdown-toggle="dropdownNavbar"
+                class="flex items-center justify-between w-full py-2 px-3 rounded hover:bg-blue-500 md:hover:bg-transparent md:border-0 md:p-0 md:w-auto"
+              >
+                ANNOUNCEMENT
+                <svg
+                  class="w-2.5 h-2.5 ms-2.5"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 10 6"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="m1 1 4 4 4-4"
+                  />
+                </svg>
+              </button>
+              <!-- Dropdown menu -->
+              <div
+                id="dropdownNavbar"
+                class="relative z-10 hidden font-normal bg-gray-100 divide-y divide-gray-100 rounded-lg shadow w-44"
+              >
+                <ul
+                  class="py-2 text-sm text-gray-700"
+                  aria-labelledby="dropdownLargeButton"
+                >
+                  <li>
+                    <a
+                      href="./../announcement/AnnounmnetJob.html"
+                      class="block px-4 py-2 hover:bg-gray-300"
+                      >Job Opportunity</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="./../announcement/itnews.html"
+                      class="block px-4 py-2 hover:bg-gray-300"
+                      >IT News</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="./../announcement/activity.html"
+                      class="block px-4 py-2 hover:bg-gray-300"
+                      >Activity</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <a
+                href="../about_us/about-us.html"
+                class="block py-2 px-3 rounded hover:bg-blue-500 md:hover:bg-transparent md:border-0 md:p-0"
+                >ABOUT US</a
+              >
+            </li>
+            <li>
+              <a
+                href="../contact_us/contact-us.html"
+                class="block py-2 px-3 rounded hover:bg-blue-500 md:hover:bg-transparent md:border-0 md:p-0"
+                >CONTACT US</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+        <article class="mx-auto ">
+            <h2 class="text-3xl text-blue-800 font-semibold mx-auto m-5 text-center">Latest News</h2>
+        </article>
+        <section class="flex flex-row mx-auto w-2/4 space-x-4">
+          <!-- search -->
+          <div class="mb-3">
+            <div class="relative mb-4 flex w-full flex-wrap items-stretch">
+              <input
+                type="search"
+                class="relative m-0 -mr-0.5 block min-w-0 flex-auto rounded-l border border-solid border-neutral-300 bg-transparent bg-clip-padding px-3 py-[0.25rem] text-base font-normal leading-[1.6] text-neutral-700 outline-none transition duration-200 ease-in-out focus:z-[3] focus:border-primary focus:text-neutral-700 focus:shadow-[inset_0_0_0_1px_rgb(59,113,202)] focus:outline-none dark:border-neutral-600 dark:text-neutral-200 dark:placeholder:text-neutral-200 dark:focus:border-primary"
+                placeholder="Search"
+                aria-label="Search"
+                aria-describedby="button-addon1" />
+          
+              <!--Search button-->
+              <button
+                class="relative z-[2] flex items-center rounded-r bg-blue-800 px-6 py-2.5 text-xs font-medium uppercase leading-tight text-white shadow-md transition duration-150 ease-in-out hover:bg-primary-700 hover:shadow-lg focus:bg-primary-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-primary-800 active:shadow-lg"
+                type="button"
+                id="button-addon1"
+                data-te-ripple-init
+                data-te-ripple-color="light">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                  class="h-5 w-5">
+                  <path
+                    fill-rule="evenodd"
+                    d="M9 3.5a5.5 5.5 0 100 11 5.5 5.5 0 000-11zM2 9a7 7 0 1112.452 4.391l3.328 3.329a.75.75 0 11-1.06 1.06l-3.329-3.328A7 7 0 012 9z"
+                    clip-rule="evenodd" />
+                </svg>
+              </button>
+            </div>
+          </div>
+          <!-- end of search -->
+          <!-- datetime -->
+          <div class="relative max-w-sm">
+            <div class="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none">
+              <svg class="w-4 h-4 mb-6 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                <path d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z"/>
+              </svg>
+            </div>
+            <input datepicker type="text" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full ps-10 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Select date">
+          </div>
+          <!-- end datetime -->
+          
+          <!-- button filter -->
+          <div>
+              <button type="button" class="text-white bg-blue-800 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Filter Result</button>
+          </div>
+          <!-- end of button filter -->
+        </section>
+        <main>
+            <!-- Menu 1-->
+       <section class="my-[64px]">
+        <div id="news-detail"
+            class="container relative grid grid-cols-3 mx-auto my-6 gap-6 max-[1024px]:grid-cols-2 max-sm:grid-cols-1 w-4/5"
+          >
+            <div 
+              class="duration-300 hover:scale-[1.1] w-full max-w-sm  h-90 rounded-lg bg-white"
+            >
+              <a class="relative" href="./../policy/news.html">
+                <img
+                  class="p-0 rounded-t-lg h-72"
+                  src="./../asset/Image/cyber.png"
+                  alt="Programming"
+                  />
+                  <div class="flex items-center justify-between z-10 p-3 bottom-0">
+                    <h5 class="text-lg font-semibold tracking-tight text-black">
+                      Cyber Security
+                      <span class="block font-khmer font-normal text-sm">Cyber Security គឺជាការ ការពារ ប្រព័ន្ធកុំព្យូទ័រ, servers, ទូរស័ព្ទ, ប្រព័ន្ធអេឡិចត្រូនិច, network និង ទិន្នន័យ ​ពីការវាយប្រហារផ្សេងៗ ដែលមានគោលបំណងមិនល្អ។ ដែលបណ្ដាលអោយមាន​ ការលុកចូល ការផ្លាស់ប្ដូរការបង្កក ឬកំទេចនូវព័ត៌មានសំខាន់ៗ លួចយកទិន្ន័យ ឬលុយពីអ្នកប្រើប្រាស់ឬធ្វើឲ្យរាំងស្ទះដល់ដំណើរការធុរកិច្ចទូទៅ។ Cyber Security យើងអាចបង្រួមន័យយ៉ាងខ្លីថា 
+ការការពារប្រព័ន្ធទិន្នន័យឌីជីថល។</span>
+                  </h5>
+                  </div>
+              </a>
+            </div>
+
+            <div 
+              class="duration-300 hover:scale-[1.1] w-full max-w-sm  h-90 rounded-lg bg-white"
+            >
+              <a class="relative" href="./../policy/news.html">
+                <img
+                  class="p-0 rounded-t-lg h-72"
+                  src="./../asset/Image/sch.jpg"
+                  alt="Programming"
+                  />
+                  <div class="flex items-center justify-between z-10 p-3 bottom-0">
+                    <h5 class="text-lg font-semibold tracking-tight text-black">
+                      Scholarship
+                      <span class="block font-khmer font-normal text-sm">Cyber Security គឺជាការ ការពារ ប្រព័ន្ធកុំព្យូទ័រ, servers, ទូរស័ព្ទ, ប្រព័ន្ធអេឡិចត្រូនិច, network និង ទិន្នន័យ ​ពីការវាយប្រហារផ្សេងៗ ដែលមានគោលបំណងមិនល្អ។ ដែលបណ្ដាលអោយមាន​ ការលុកចូល ការផ្លាស់ប្ដូរការបង្កក ឬកំទេចនូវព័ត៌មានសំខាន់ៗ លួចយកទិន្ន័យ ឬលុយពីអ្នកប្រើប្រាស់ឬធ្វើឲ្យរាំងស្ទះដល់ដំណើរការធុរកិច្ចទូទៅ។ Cyber Security យើងអាចបង្រួមន័យយ៉ាងខ្លីថា 
+ការការពារប្រព័ន្ធទិន្នន័យឌីជីថល។</span>
+                  </h5>
+                  </div>
+              </a>
+            </div>
+            <div 
+              class="duration-300 hover:scale-[1.1] w-full max-w-sm  h-90 rounded-lg bg-white"
+            >
+              <a class="relative" href="./../policy/news.html">
+                <img
+                  class="p-0 rounded-t-lg h-72"
+                  src="./../asset/Image/telegram.png"
+                  alt="Programming"
+                  />
+                  <div class="flex items-center justify-between z-10 p-3 bottom-0">
+                    <h5 class="text-lg font-semibold tracking-tight text-black">
+                      Telegram
+                      <span class="block font-khmer font-normal text-sm">Cyber Security គឺជាការ ការពារ ប្រព័ន្ធកុំព្យូទ័រ, servers, ទូរស័ព្ទ, ប្រព័ន្ធអេឡិចត្រូនិច, network និង ទិន្នន័យ ​ពីការវាយប្រហារផ្សេងៗ ដែលមានគោលបំណងមិនល្អ។ ដែលបណ្ដាលអោយមាន​ ការលុកចូល ការផ្លាស់ប្ដូរការបង្កក ឬកំទេចនូវព័ត៌មានសំខាន់ៗ លួចយកទិន្ន័យ ឬលុយពីអ្នកប្រើប្រាស់ឬធ្វើឲ្យរាំងស្ទះដល់ដំណើរការធុរកិច្ចទូទៅ។ Cyber Security យើងអាចបង្រួមន័យយ៉ាងខ្លីថា 
+ការការពារប្រព័ន្ធទិន្នន័យឌីជីថល។</span>
+                  </h5>
+                  </div>
+              </a>
+            </div>
+          <div 
+              class="duration-300 hover:scale-[1.1] w-full max-w-sm  h-90 rounded-lg bg-white"
+            >
+              <a class="relative" href="./../policy/news.html">
+                <img
+                  class="p-0 rounded-t-lg h-72"
+                  src="./../asset/Image/senior.png"
+                  alt="Programming"
+                  />
+                  <div class="flex items-center justify-between z-10 p-3 bottom-0">
+                    <h5 class="text-lg font-khmer font-semibold tracking-tight text-black">
+                      Programming
+                      <span class="block font-khmer font-normal text-sm">Cyber Security គឺជាការ ការពារ ប្រព័ន្ធកុំព្យូទ័រ, servers, ទូរស័ព្ទ, ប្រព័ន្ធអេឡិចត្រូនិច, network និង ទិន្នន័យ ​ពីការវាយប្រហារផ្សេងៗ ដែលមានគោលបំណងមិនល្អ។ ដែលបណ្ដាលអោយមាន​ ការលុកចូល ការផ្លាស់ប្ដូរការបង្កក ឬកំទេចនូវព័ត៌មានសំខាន់ៗ លួចយកទិន្ន័យ ឬលុយពីអ្នកប្រើប្រាស់ឬធ្វើឲ្យរាំងស្ទះដល់ដំណើរការធុរកិច្ចទូទៅ។ Cyber Security យើងអាចបង្រួមន័យយ៉ាងខ្លីថា 
+ការការពារប្រព័ន្ធទិន្នន័យឌីជីថល។</span>
+                  </h5>
+                  </div>
+              </a>
+            </div>
+
+          <div 
+              class="duration-300 hover:scale-[1.1] w-full max-w-sm  h-90 rounded-lg bg-white"
+            >
+              <a class="relative" href="./../policy/news.html">
+                <img
+                  class="p-0 rounded-t-lg h-72"
+                  src="./../asset/Image/web4.0.jpg"
+                  alt="Programming"
+                  />
+                  <div class="flex items-center justify-between z-10 p-3 bottom-0">
+                    <h5 class="text-lg font-khmer font-semibold tracking-tight text-black">
+                      Web 4.0
+                      <span class="block font-khmer font-normal text-sm">Cyber Security គឺជាការ ការពារ ប្រព័ន្ធកុំព្យូទ័រ, servers, ទូរស័ព្ទ, ប្រព័ន្ធអេឡិចត្រូនិច, network និង ទិន្នន័យ ​ពីការវាយប្រហារផ្សេងៗ ដែលមានគោលបំណងមិនល្អ។ ដែលបណ្ដាលអោយមាន​ ការលុកចូល ការផ្លាស់ប្ដូរការបង្កក ឬកំទេចនូវព័ត៌មានសំខាន់ៗ លួចយកទិន្ន័យ ឬលុយពីអ្នកប្រើប្រាស់ឬធ្វើឲ្យរាំងស្ទះដល់ដំណើរការធុរកិច្ចទូទៅ។ Cyber Security យើងអាចបង្រួមន័យយ៉ាងខ្លីថា 
+ការការពារប្រព័ន្ធទិន្នន័យឌីជីថល។</span>
+                  </h5>
+                  </div>
+              </a>
+            </div>
+
+        <div 
+              class="duration-300 hover:scale-[1.1] w-full max-w-sm  h-90 rounded-lg bg-white"
+            >
+              <a class="relative" href="./../policy/news.html">
+                <img
+                  class="p-0 rounded-t-lg h-72"
+                  src="./../asset/Image/itadvance.png"
+                  alt="Programming"
+                  />
+                  <div class="flex items-center justify-between z-10 p-3 bottom-0">
+                    <h5 class="text-lg font-semibold tracking-tight text-black">
+                      IT Advance
+                      <span class="block font-khmer font-normal text-sm">Cyber Security គឺជាការ ការពារ ប្រព័ន្ធកុំព្យូទ័រ, servers, ទូរស័ព្ទ, ប្រព័ន្ធអេឡិចត្រូនិច, network និង ទិន្នន័យ ​ពីការវាយប្រហារផ្សេងៗ ដែលមានគោលបំណងមិនល្អ។ ដែលបណ្ដាលអោយមាន​ ការលុកចូល ការផ្លាស់ប្ដូរការបង្កក ឬកំទេចនូវព័ត៌មានសំខាន់ៗ លួចយកទិន្ន័យ ឬលុយពីអ្នកប្រើប្រាស់ឬធ្វើឲ្យរាំងស្ទះដល់ដំណើរការធុរកិច្ចទូទៅ។ Cyber Security យើងអាចបង្រួមន័យយ៉ាងខ្លីថា 
+ការការពារប្រព័ន្ធទិន្នន័យឌីជីថល។</span>
+                  </h5>
+                  </div>
+              </a>
+            </div>
+        </div>
+      </section>
+      <!-- End Menu 1 -->
+      <!-- pagination -->
+      <nav aria-label="Page navigation example">
+        <ul class="flex items-center -space-x-px h-8 text-sm mx-auto justify-center">
+          <li>
+            <a href="#" class="flex items-center justify-center px-3 h-8 ms-0 leading-tight text-gray-500 bg-white border border-e-0 border-gray-300 rounded-s-lg hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">
+              <span class="sr-only">Previous</span>
+              <svg class="w-2.5 h-2.5 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="flex items-center justify-center px-3 h-8 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">1</a>
+          </li>
+          <li>
+            <a href="#" class="flex items-center justify-center px-3 h-8 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">2</a>
+          </li>
+          <li>
+            <a href="#" aria-current="page" class="z-10 flex items-center justify-center px-3 h-8 leading-tight text-blue-600 border border-blue-300 bg-blue-50 hover:bg-blue-100 hover:text-blue-700 dark:border-gray-700 dark:bg-gray-700 dark:text-white">3</a>
+          </li>
+          <li>
+            <a href="#" class="flex items-center justify-center px-3 h-8 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">4</a>
+          </li>
+          <li>
+            <a href="#" class="flex items-center justify-center px-3 h-8 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">5</a>
+          </li>
+          <li>
+            <a href="#" class="flex items-center justify-center px-3 h-8 leading-tight text-gray-500 bg-white border border-gray-300 rounded-e-lg hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">
+              <span class="sr-only">Next</span>
+              <svg class="w-2.5 h-2.5 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <!-- end of pagination -->
+      <!-- hot topic -->
+      <section>
+        <article class=" mx-auto w-1/2  items-center m-10">
+          <h2 class="text-3xl text-blue-800 font-semibold mx-auto m-5 text-center">Hot Topics</h2>
+      </article>
+      <div class="mx-auto w-4/5 mb-10 z-index">
+        <div id="controls-carousel" class="relative w-full" data-carousel="static">
+        <!-- Carousel wrapper -->
+        <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
+            <!-- Item 1 -->
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <img src="https://api.istad.co/media/image/0b7ddba0-021c-4dc3-ad73-6fe8bea44167.png" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+            </div>
+            <!-- Item 2 -->
+            <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
+                <img src="https://api.istad.co/media/image/8665a243-b962-4a59-b51a-f31a3704b701.png" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+            </div>
+            <!-- Item 3 -->
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <img src="https://api.istad.co/media/image/e391212d-aac5-460c-bd17-f95f468e4408.PNG" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+            </div>
+            <!-- Item 4 -->
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <img src="https://api.istad.co/media/image/a05c8a05-2de6-4dc4-b33e-c7c4689e4f9a.png" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+            </div>
+            <!-- Item 5 -->
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <img src="https://api.istad.co/media/image/77da9050-7ff8-40af-a317-11d097cfacb7.png" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+            </div>
+        </div>
+        <!-- Slider controls -->
+        <button type="button" class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
+            <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-blue/30 dark:bg-gray-800/30 group-hover:bg-blue/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-blue-300 dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                <svg class="w-4 h-4 text-blue-800 dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
+                </svg>
+                <span class="sr-only">Previous</span>
+            </span>
+        </button>
+        <button type="button" class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
+            <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-blue/30 dark:bg-gray-800/30 group-hover:bg-blue/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-blue-300 dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                <svg class="w-4 h-4 text-blue-800 dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+                </svg>
+                <span class="sr-only">Next</span>
+            </span>
+        </button>
+      </div>
+      </div>
+      </section>
+      <!-- end of hot topic -->
+        </main>
+<!-- Footer -->
+<footer class="px-3 pt-4 lg:px-9 border-t-2 bg-blue-800 pt-3 text-center sm:text-center md:text-center">
+  <div class="container mx-auto grid gap-10 row-gap-6 mb-8 sm:grid-cols-2 lg:grid-cols-4">
+    <div class="ml-4">
+      <a href="../index.html" class="flex inline-flex items-center ">
+        <img src="https://istad.co/resources/img/CSTAD_120.png" alt="logo" class="cstadlogo" />
+        <span class="ml-2 text-lg font-bold tracking-wide text-white">Start your IT career with CSTAD</span>
+      </a>
+      <p class="mt-4 text-sm text-white text-justify">
+        CSTAD is a noteworthy science and technology center in
+        Cambodia.CSTAD has routed Cambodian students to advanced science and
+        technology, research, and develop digital skills and our graduates
+        have been guaranteed excellent job opportunities with the Top IT
+        company.
+      </p>
+    </div>
+    <div class="flex flex-col gap-2 text-lg text-white">
+      <p class="text-base font-bold tracking-wide">LEARN MORE</p>
+      <a href="../course/course.html">Course</a>
+      <a href="../announcement/itnews.html">IT News</a>
+      <a href="../announcement/AnnounmnetJob.html">Job Opportunity</a>
+      <a href="../policy/privacy.html">Privacy Policy</a>
+      <a href="../policy/faq.html">FAQ</a>
+    </div>
+    <div class="flex flex-col gap-2 text-lg text-white">
+      <p class="text-base font-bold tracking-wide">POPULAR COURSE</p>
+      <a href="webCourse.html">Web Design</a>
+      <a href="flutterCourse.html">Flutter Mobile Development</a>
+      <a href="springCourse.html">Spring framework</a>
+      <a href="javaCourse.html">Java Programming</a>
+    </div>
+    <div class="mt-3">
+      <p class="text-base font-bold tracking-wide text-white">
+         CSTAD IS ALSO AVAILABLE ON 
+      </p>
+
+      <div class="gap-1 pt-5 pb-6 flex">
+        <a href="https://apps.apple.com/kh/app/cstad-mobile/id6463835798" class="w-full min-w-xl flex justify-end">
+            <img src="https://social.webestica.com/assets/images/app-store.svg" alt="Appstore Button" class="h-10" />
+        </a>
+        <a href="https://play.google.com/store/apps/details?id=co.istad.mobile.istad_moblie&pcampaignid=web_share" class="w-full min-w-xl">
+            <img src="https://social.webestica.com/assets/images/google-play.svg" alt="Playstore Button" class="h-10" />
+        </a>
+    </div>
+    
+
+      <p class="text-base font-bold tracking-wide text-white">Contacts</p>
+      <div class="text-white">
+        <span class="mr-1">Email:</span>
+        <a href="mailto:info.istad@gmail.com" title="send email">info.istad@gmail.com</a>
+      </div>
+      <p class="text-white"><a href="tel:+85595990910">(+855) 95-990-910</a>
+        <br/><a href="tel:+85593990910">(+855) 93-990-910</a></p>
+      <div class="justify-start space-x-3 text-white text-2xl">
+        <a href="https://www.facebook.com/istad.co/?ref=embed_page"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://www.youtube.com/@istad7665"><i class="fa-brands fa-youtube"></i></a>
+        <a href="https://t.me/istadkh"><i class="fa-brands fa-telegram"></i></a>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <div class="text-center pt-5 pb-10 border-t lg:flex-row">
+    <p class="text-base text-white">
+      © 2023 Center of Science and Technology Advanced Development | All
+      Rights Reserved
+    </p>
+  </div>
+</footer>
+<!-- End of Footer -->
+    <script>
+      // Initialization for ES Users
+        import {
+          Ripple,
+          initTE,
+        } from "tw-elements";
+
+        initTE({ Ripple });
+        // Initialization for ES Users
+        
+    </script>
+</body>
+</html>
