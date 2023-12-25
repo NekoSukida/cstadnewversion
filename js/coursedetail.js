@@ -12,6 +12,7 @@ const course_id = param.get("id")
 const current_course = courses.find(course => course.id === parseInt(course_id))
 console.log(current_course.attributes.courseOffers
                   .split(","))
+document.title = current_course.attributes.name
 const detail = document.getElementById("detail")
 detail.innerHTML = `
 <div class="flex flex-wrap">

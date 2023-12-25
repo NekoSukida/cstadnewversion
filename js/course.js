@@ -14,6 +14,28 @@
 //         }
 //     })
 // }
+// document.querySelector("#search").addEventListener("input", filterList);
+
+// function filterList() {
+//   const searchInput = document.querySelector("#search");
+//   const filter = searchInput.value.toLowerCase();
+//   const listContainer = document.querySelector(".list-container"); // Adjust the selector to match your container
+//   const listItems = document.querySelectorAll("h2");
+
+//   listItems.forEach((item) => {
+//     let text = item.textContent.toLowerCase();
+//     if (text.indexOf(filter) !== -1) {
+//       // Move matching item to the top by detaching and reattaching
+//       listContainer.prepend(item);
+//       item.style.display = "block"; // or any other appropriate display value
+//     } else {
+//       item.style.display = "none";
+//     }
+//   });
+// }
+
+
+
 
 const url = "https://cms.istad.co/api/cstad-courses?populate=%2A";
 const getData = async () => {
@@ -99,9 +121,7 @@ for (let course of all_courses) {
                         }</h2>
                         <span
                           class="inline-block pl-4 text-center  text-sm align-baseline leading-none  rounded-full py-1 px-3 bg-red-600 text-white hover:bg-red-700 pb-1 font-bold"
-                          style="font-size: 16px;">${
-                            each_course.attributes.discount
-                          }% Scholarship
+                          style="font-size: 16px;">20% Scholarship
                         </span>
                         <p class="text-gray-700 pt-3 pl-4">${each_course.attributes.description.slice(
                           0,
