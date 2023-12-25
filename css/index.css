@@ -10,10 +10,10 @@
 .fontInter{
     font-family: 'Inter-Black', sans-serif !important;
 }
-/* @font-face {
+@font-face {
     font-family: "NotoSerifKhmer-SemiBold";
     src: url(../font/KhmerFont/NotoSerifKhmer-SemiBold.ttf);
-} */
+}
 @font-face {
     font-family: "Khmer";
     src: url(../font/KhmerFont/NotoSerifKhmer-Regular.ttf);
