@@ -42,328 +42,401 @@
 
   </head>
   <body>
-  <header>
-    <nav class="sticky top-0 bg-blue-800 border-gray-200">
-      <div
-        class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
-      >
-        <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
-          <img
-            src="https://istad.co/resources/img/CSTAD_120.png"
-            class="h-12"
-            alt="cstad Logo"
-          />
-          <span
-            class="self-center text-white text-2xl font-semibold whitespace-nowrap dark:text-white"
-            >C S T A D</span
-          >
-        </a>
-        <button
-          data-collapse-toggle="navbar-dropdown"
-          type="button"
-          class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
-          aria-controls="navbar-dropdown"
-          aria-expanded="false"
-        >
-          <span class="sr-only">Open main menu</span>
-          <svg
-            class="w-5 h-5 text-gray-100"
-            aria-hidden="true"
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 17 14"
-          >
-            <path
-              stroke="currentColor"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M1 1h15M1 7h15M1 13h15"
-            />
-          </svg>
-        </button>
+    <header class="sticky top-0" style="z-index: 99">
+      <nav class="bg-blue-800 border-gray-200">
         <div
-          class="hidden bg-blue-800 md:block md:w-auto"
-          id="navbar-dropdown"
+          class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
         >
-          <ul
-            class="bg-blue-800 flex flex-col font-medium p-4 md:p-0 mt-4 text-white border border-gray-100 rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0"
+          <a href="../index.html" class="flex items-center space-x-3 rtl:space-x-reverse">
+            <img
+              src="https://istad.co/resources/img/CSTAD_120.png"
+              class="h-12"
+              alt="cstad Logo"
+            />
+            <span
+              class="self-center text-white text-2xl font-semibold whitespace-nowrap"
+              >C S T A D</span
+            >
+          </a>
+          <button
+            data-collapse-toggle="navbar-multi-level"
+            type="button"
+            class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-white rounded-lg md:hidden hover:text-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400"
+            aria-controls="navbar-multi-level"
+            aria-expanded="false"
           >
-            <li>
-              <a
-                href="#"
-                class="bg-blue-800 block py-2 px-3 rounded md:bg-transparent md:p-0 md:dark:text-blue-500 dark:bg-blue-600 md:dark:bg-transparent"
-                aria-current="page"
-                >HOME</a
-              >
-            </li>
-            <li>
-              <button
-                id="dropdownNavbarLink"
-                data-dropdown-toggle="dropdownNavbar"
-                class="flex items-center justify-between w-full py-2 px-3 rounded hover:bg-black-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto dark:text-white md:dark:hover:text-blue-500 dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent"
-              >
-                ENROLL
-                <svg
-                  class="w-2.5 h-2.5 ms-2.5"
-                  aria-hidden="true"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 10 6"
+            <span class="sr-only">Open main menu</span>
+            <svg
+              class="w-5 h-5"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 17 14"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M1 1h15M1 7h15M1 13h15"
+              />
+            </svg>
+          </button>
+          <div class="hidden w-full md:block md:w-auto" id="navbar-multi-level">
+            <ul
+              class="bg-blue-800 flex flex-col font-medium p-4 md:p-0 mt-4 text-white border border-gray-100 rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0"
+            >
+              <li>
+                <a
+                  href="../index.html"
+                  class="block py-2 px-3 rounded md:bg-transparent md:p-0"
+                  aria-current="page"
+                  >HOME</a
                 >
-                  <path
-                    stroke="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="m1 1 4 4 4-4"
-                  />
-                </svg>
-              </button>
-              <!-- Dropdown menu -->
-              <div
-                id="dropdownNavbar"
-                class="z-10 hidden font-normal bg-gray-100 divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600"
-              >
-                <ul
-                  class="py-2 text-sm text-gray-700 dark:text-gray-400"
-                  aria-labelledby="dropdownLargeButton"
+              </li>
+              <li>
+                <button
+                  id="dropdownNavbarLink"
+                  data-dropdown-toggle="dropdownNavbar1"
+                  class="flex items-center justify-between w-full py-2 px-3 rounded hover:bg-blue-500 md:hover:bg-transparent md:border-0 md:p-0 md:w-auto"
                 >
-                  <li>
-                    <a
-                      href="#"
-                      class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
-                      >Dashboard</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="#"
-                      class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
-                      >Settings</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="#"
-                      class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
-                      >Earnings</a
-                    >
-                  </li>
-                </ul>
-              </div>
-            </li>
-            <li>
-              <a
-                href="#"
-                class="block py-2 px-3 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
-                >COURSE</a
-              >
-            </li>
-            <li>
-              <button
-                id="dropdownNavbarLink"
-                data-dropdown-toggle="dropdownNavbar"
-                class="flex items-center justify-between w-full py-2 px-3 rounded hover:bg-black-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto dark:text-white md:dark:hover:text-blue-500 dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent"
-              >
-                ANNOUNCEMENT
-                <svg
-                  class="w-2.5 h-2.5 ms-2.5"
-                  aria-hidden="true"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 10 6"
-                >
-                  <path
-                    stroke="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="m1 1 4 4 4-4"
-                  />
-                </svg>
-              </button>
-              <!-- Dropdown menu -->
-              <div
-                id="dropdownNavbar"
-                class="z-10 hidden font-normal bg-gray-100 divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600"
-              >
-                <ul
-                  class="py-2 text-sm text-gray-700 dark:text-gray-400"
-                  aria-labelledby="dropdownLargeButton"
-                >
-                  <li>
-                    <a
-                      href="#"
-                      class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
-                      >Dashboard</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="#"
-                      class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
-                      >Settings</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="#"
-                      class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
-                      >Earnings</a
-                    >
-                  </li>
-                </ul>
-                <div class="py-1">
-                  <a
-                    href="#"
-                    class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white"
-                    >Sign out</a
+                  ENROLLMENT
+                  <svg
+                    class="w-2.5 h-2.5 ms-2.5"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 10 6"
                   >
-                </div>
-              </div>
-            </li>
-            <li>
-              <a
-                href="#"
-                class="block py-2 px-3 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
-                >ABOUT US</a
-              >
-            </li>
-            <li>
-              <a
-                href="#"
-                class="block py-2 px-3 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
-                >CONTACT US</a
-              >
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-  </header>
-<main>
-    <section class="max-w-[950px] m-auto mt-10 mb-10">
-            <div class="flex items-center justify-center rounded-xl bg-white"> 
-            <!-- Author: FormBold Team -->
-                <div class="mx-auto w-full max-w-[450px]">
-                    <h1 id="contact" class="text-2xl font-bold text-center mt-5 mb-5">ENROLL FORM</h1> 
-                    <form class="ml-6">
-                        <div class="mb-5">
-                            <input type="text" name="name" id="name" placeholder="Full Name (EN)"
-                                class="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md" />
-                        </div>
-                        <div class="mb-5">
-                            <input type="email" name="email" id="email" placeholder="Email"
-                                class="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium  text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md" />
-                        </div>
-                        <div class="-mx-3 flex flex-wrap">
-                        <div class="w-full px-3 sm:w-1/2">
-                                <div class="mb-5">
-                                    <select id="gender" name="gender"
-                                        class="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md" required>
-                                        <option value="">Select gender</option>
-                                        <option value="male">Male</option>
-                                        <option value="female">Female</option>
-                                        <option value="other">Other</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="w-full px-3 sm:w-1/2">
-                                <div class="mb-5">
-                                    <input type="date" name="date" id="date"
-                                        class="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md" />
-                                </div>
-                            </div>
-                        </div>
-                        <div class="-mx-3 flex flex-wrap">
-                        <div class="w-full px-3 sm:w-1/2">
-                                <div class="mb-5">
-                                    <select id="gender" name="gender"
-                                        class="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md" required>
-                                        <option value="">Place of Birth</option>
-                                        <option value="male">Male</option>
-                                        <option value="female">Female</option>
-                                        <option value="other">Other</option>
-                                    </select>
-                                </div>
-                            </div>
-                        <div class="w-full px-3 sm:w-1/2">
-                                <div class="mb-5">
-                                        <select id="gender" name="gender"
-                                        class="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md" required>
-                                        <option value="">Current Address</option>
-                                        <option value="male">Male</option>
-                                        <option value="female">Female</option>
-                                        <option value="other">Other</option>
-                                    </select>
-                                </div>
-                        </div>
-                        </div>
-                        <div class="mb-5">
-                        <input type="text" name="phone" id="phone" placeholder="Phone Number"
-                            class="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md" />
-                    </div>
-                    <div class="-mx-3 flex flex-wrap">
-                        <div class="w-full px-3 sm:w-1/2">
-                            <div class="mb-5">
-                                <select id="gender" name="gender"
-                                    class="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md" required>
-                                    <option value="">University</option>
-                                    <option value="male">Male</option>
-                                    <option value="female">Female</option>
-                                    <option value="other">Other</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="w-full px-3 sm:w-1/2">
-                            <div class="mb-5">
-                                <select id="gender" name="gender"
-                                    class="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md" required>
-                                    <option value="">Education</option>
-                                    <option value="male">Male</option>
-                                    <option value="female">Female</option>
-                                    <option value="other">Other</option>
-                                </select>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="-mx-3 flex flex-wrap">
-                        <div class="w-full px-3 sm:w-1/2">
-                            <div class="mb-5">
-                                <select id="gender" name="gender"
-                                    class="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md" required>
-                                    <option value="">Courses</option>
-                                    <option value="male">Male</option>
-                                    <option value="female">Female</option>
-                                    <option value="other">Other</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="w-full px-3 sm:w-1/2">
-                            <div class="mb-5">
-                                <div class="">
-                                <button
-                                    class="hover:shadow-form w-full rounded-md border-2 border-green-600 bg-white py-3 px-8 text-center font-bold text-green-600 outline-none">
-                                    Enroll Now
-                                </button>
-                                </div>
-                            </div>
-                        </div>
-              
-                        <h3 class="text-red-600 font-bold mb-10"><i class="fas fa-hand-point-right"></i> Please filter available courses to select the class..!</h3>
-                    </div> 
-                    </form>
-                </div> 
-              <!-- image -->
-                <div class="md:block hidden w-1/2">
-                    <img
-                    class="rounded-2xl"
-                    src="https://img.freepik.com/free-vector/engineer-developer-with-laptop-tablet-code-cross-platform-development-cross-platform-operating-systems-software-environments-concept-pinkish-coral-bluevector-isolated-illustration_335657-2524.jpg?w=1060&t=st=1702260098~exp=1702260698~hmac=97fc2e05b2efc2b672a6d34ed3772a09556af9f4ae6e687976a5fb18ffc0fe63"
+                    <path
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="m1 1 4 4 4-4"
                     />
+                  </svg>
+                </button>
+                <!-- Dropdown menu -->
+                <div
+                  id="dropdownNavbar1"
+                  class="absolute z-10 hidden font-normal bg-gray-100 divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600"
+                >
+                  <ul
+                    class="py-2 text-sm text-gray-700 dark:text-gray-400"
+                    aria-labelledby="dropdownLargeButton"
+                  >
+                    <li>
+                      <a href="./../enroll1/enroll.html" class="block px-4 py-2 hover:bg-gray-300"
+                        >Paid Course</a
+                      >
+                    </li>
+                    <li>
+                      <a href="./../enroll1/apply.html" class="block px-4 py-2 hover:bg-gray-300"
+                        >Scholarship</a
+                      >
+                    </li>
+                    <li>
+                      <a href="./../enroll1/bachelor.html" class="block px-4 py-2 hover:bg-gray-300"
+                        >Bachelor Degree</a
+                      >
+                    </li>
+                  </ul>
                 </div>
-            </div>
-    </section>
+              </li>
+              <li>
+                <a
+                  href="./course.html"
+                  class="block py-2 px-3 rounded hover:bg-blue-500 md:hover:bg-transparent md:border-0 md:p-0"
+                  >COURSE</a
+                >
+              </li>
+              <li>
+                <button
+                  id="dropdownNavbarLink"
+                  data-dropdown-toggle="dropdownNavbar"
+                  class="flex items-center justify-between w-full py-2 px-3 rounded hover:bg-blue-500 md:hover:bg-transparent md:border-0 md:p-0 md:w-auto"
+                >
+                  ANNOUNCEMENT
+                  <svg
+                    class="w-2.5 h-2.5 ms-2.5"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 10 6"
+                  >
+                    <path
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="m1 1 4 4 4-4"
+                    />
+                  </svg>
+                </button>
+                <!-- Dropdown menu -->
+                <div
+                  id="dropdownNavbar"
+                  class="relative z-10 hidden font-normal bg-gray-100 divide-y divide-gray-100 rounded-lg shadow w-44"
+                >
+                  <ul
+                    class="py-2 text-sm text-gray-700"
+                    aria-labelledby="dropdownLargeButton"
+                  >
+                    <li>
+                      <a
+                        href="./../announcement/AnnounmnetJob.html"
+                        class="block px-4 py-2 hover:bg-gray-300"
+                        >Job Opportunity</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="./../announcement/itnews.html"
+                        class="block px-4 py-2 hover:bg-gray-300"
+                        >IT News</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="./../announcement/activity.html"
+                        class="block px-4 py-2 hover:bg-gray-300"
+                        >Activity</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <a
+                  href="../about_us/about-us.html"
+                  class="block py-2 px-3 rounded hover:bg-blue-500 md:hover:bg-transparent md:border-0 md:p-0"
+                  >ABOUT US</a
+                >
+              </li>
+              <li>
+                <a
+                  href="../contact_us/contact-us.html"
+                  class="block py-2 px-3 rounded hover:bg-blue-500 md:hover:bg-transparent md:border-0 md:p-0"
+                  >CONTACT US</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+<main>
+    <!-- enroll -->
+<section class="max-w-[950px] m-auto mt-10 mb-10">
+  <div class="flex items-center justify-center rounded-xl bg-white"> 
+  <!-- Author: FormBold Team -->
+      <div class="mx-auto w-full max-w-[450px]">
+          <h1 id="contact" class="text-2xl font-bold text-center mt-5 mb-5">ENROLL FORM</h1> 
+          <form class="ml-6">
+              <div class="mb-5">
+                  <input type="text" name="name" id="name" placeholder="Full Name (EN)"
+                      class="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md" />
+              </div>
+              <div class="mb-5">
+                  <input type="email" name="email" id="email" placeholder="Email"
+                      class="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium  text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md" />
+              </div>
+              <div class="-mx-3 flex flex-wrap">
+              <div class="w-full px-3 sm:w-1/2">
+                      <div class="mb-5">
+                          <select id="gender" name="gender"
+                              class="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md" required>
+                              <option value="">Select gender</option>
+                              <option value="male">Male</option>
+                              <option value="female">Female</option>
+                              <option value="other">Other</option>
+                          </select>
+                      </div>
+                  </div>
+                  <div class="w-full px-3 sm:w-1/2">
+                      <div class="mb-5">
+                          <input type="date" name="date" id="date"
+                              class="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md" />
+                      </div>
+                  </div>
+              </div>
+              <div class="-mx-3 flex flex-wrap">
+              <div class="w-full px-3 sm:w-1/2">
+                      <div class="mb-5">
+                          <select id="gender" name="gender"
+                              class="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md" required>
+                              <option value="">Place of Birth</option>
+                              <option value="">Banteay Meanchey</option>
+                              <option value="">Battambang</option>
+                              <option value="">Kampong Cham</option>
+                              <option value="">Kampong Chhnang</option>
+                              <option value="">Kampong Speu</option>
+                              <option value="">Kampong Thom</option>
+                              <option value="">Kampot</option>
+                              <option value="">Kandal</option>
+                              <option value="">Kep</option>
+                              <option value="">Koh Kong</option>
+                              <option value="">Kratie</option>
+                              <option value="">Mondulkiri</option>
+                              <option value="">Oddar Meanchey</option>
+                              <option value="">Pailin</option>
+                              <option value="">Phnom Penh</option>
+                              <option value="">Preah Sihanouk</option>
+                              <option value="">Preah Vihear</option>
+                              <option value="">Prey Veng</option>
+                              <option value="">Pursat</option>
+                              <option value="">Ratanakiri</option>
+                              <option value="">Siem Reap</option>
+                              <option value="">Stung Treng</option>
+                              <option value="">Svay Rieng</option>
+                              <option value="">Takeo</option>
+                              <option value="">Tboung Khmum</option>
+                          </select>
+                      </div>
+                  </div>
+              <div class="w-full px-3 sm:w-1/2">
+                      <div class="mb-5">
+                              <select id="gender" name="gender"
+                              class="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md" required>
+                              <option value="">Current Address</option>
+                              <option value="">Tuol Kouk</option>
+                              <option value="">Sen Sok</option>
+                              <option value="">Russey Keo</option>
+                              <option value="">Prek Pnov</option>
+                              <option value="">Prampir Makara</option>
+                              <option value="">Pou Senchey</option>
+                              <option value="">Mean Chey</option>
+                              <option value="">Kamboul</option>
+                              <option value="">Daun Phenh</option>
+                              <option value="">Dangkao</option>
+                              <option value="">Chroy Changvar</option>
+                              <option value="">Chbar Ampov</option>
+                              <option value="">Chamkar Mon</option>
+                              <option value="">Boeng Keng Kang</option>
+                              
+                          </select>
+                      </div>
+              </div>
+              </div>
+              <div class="mb-5">
+              <input type="text" name="phone" id="phone" placeholder="Phone Number"
+                  class="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md" />
+          </div>
+          <div class="-mx-3 flex flex-wrap">
+              <div class="w-full px-3 sm:w-1/2">
+                  <div class="mb-5">
+                      <select id="gender" name="gender"
+                          class="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md" required>
+                          <option value="">University</option>
+                          <option value="0" disabled="disabled">Select university</option>
+                          <option value="">ACLEDA Institute of Business</option>
+                          <option value="">American University of Phnom Penh</option>
+                          <option value="">Asia Euro University</option>
+                          <option value="">Beltei International University</option>
+                          <option value="">Build Bright University</option>
+                          <option value="">Cambodia Academy of Digital Technology</option>
+                          <option value="">Cambodian Mekong University</option>
+                          <option value="">Cambodia University for Specialties</option>
+                          <option value="">CamEd Business School</option>
+                          <option value="">Chenla University</option>
+                          <option value="">East Asia Management University</option>
+                          <option value="">Economics and Finance Institute</option>
+                          <option value="">Human Resources University</option>
+                          <option value="">IIC University of Technology</option>
+                          <option value="">Institute of Technology of Cambodia</option>
+                          <option value="">International University</option>
+                          <option value="">IT Academy STEP Cambodia</option>
+                          <option value="">Khemarak University</option>
+                          <option value="">Limkokwing University of Creative Technology, Cambodia</option>
+                          <option value="">National Institute of Business</option>
+                          <option value="">National Institute of Education</option>
+                          <option value="">National Polytechnic Institute of Cambodia</option>
+                          <option value="">National University of Management</option>
+                          <option value="">Norton University</option>
+                          <option value="">Other</option>
+                          <option value="">Panha Chiet University</option>
+                          <option value="">Paññasastra University of Cambodia</option>
+                          <option value="">Paragon International University</option>
+                          <option value="">Phnom Penh International University</option>
+                          <option value="">Preah Sihanouk Raja Buddhist University</option>
+                          <option value="">Prek Leap National College of Agriculture</option>
+                          <option value="">Royal Academy of Cambodia</option>
+                          <option value="">Royal University of Agriculture</option>
+                          <option value="">Royal University of Fine Arts</option>
+                          <option value="">Royal University of Law and Economics</option>
+                          <option value="">Royal University of Phnom Penh</option>
+                          <option value="">Setec Institute</option>
+                          <option value="">The University of Cambodia</option>
+                          <option value="">University of Battambang</option>
+                          <option value="">University of Management and Economics</option>
+                          <option value="">University of Puthisastra</option>
+                          <option value="">Vanda Institute</option>
+                          <option value="">Western University Cambodia</option>
+                      </select>
+                  </div>
+              </div>
+              <div class="w-full px-3 sm:w-1/2">
+                  <div class="mb-5">
+                      <select id="gender" name="gender"
+                          class="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md" required>
+                          <option value="">Education</option>
+                          <option value="First Year">First year</option>
+                          <option value="Second Year">Second year</option>
+                          <option value="Third Year">Third year</option>
+                          <option value="Fourth Year">Fourth year</option>
+                          <option value="Graduated">Graduated</option>
+                      </select>
+                  </div>
+              </div>
+          </div>
+          <div class="-mx-3 flex flex-wrap">
+              <div class="w-full px-3 sm:w-1/2">
+                  <div class="mb-5">
+                      <select id="gender" name="gender"
+                          class="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md" required>
+                          <option value="">Courses</option>
+                          <option value="">Flutter Mobile Development</option>
+                          <option value="">iOS Development</option>
+                          <option value="">SQL &amp; Data Modeling with PostgreSQL</option>
+                          <option value="">Web Design</option>
+                          <option value="">DevOps Engineering</option>
+                          <option value="">C++ Programming</option>
+                          <option value="">Docker</option>
+                          <option value="">Data Analytics</option>
+                          <option value="">Android Development</option>
+                          <option value="">NEXT.js</option>
+                          <option value="">Linux Administrator</option>
+                          <option value="">Spring Framework</option>
+                          <option value="">Blockchain Development</option>
+                      </select>
+                  </div>
+              </div>
+              <div class="w-full px-3 sm:w-1/2">
+                  <div class="mb-5">
+                      <div class="">
+                      <button
+                          class="hover:shadow-form w-full rounded-md border-2 border-green-600 bg-white py-3 px-8 text-center font-bold text-green-600 outline-none">
+                          Enroll Now
+                      </button>
+                      </div>
+                  </div>
+              </div>
+    
+              <h3 class="text-red-600 font-bold mb-10"><i class="fas fa-hand-point-right"></i> Please filter available courses to select the class..!</h3>
+          </div> 
+          </form>
+      </div> 
+    <!-- image -->
+      <div class="md:block hidden w-1/2">
+          <img
+          class="rounded-2xl"
+          src="https://img.freepik.com/free-vector/web-developers-courses-computer-programming-web-design-script-coding-study-computer-science-student-learning-interface-structure-components_335657-2542.jpg?t=st=1703475442~exp=1703476042~hmac=d41fcbc976ae3c2ebd676e93a954f2aaaeec455edcf5598c06277e24b6591b35"
+          />
+      </div>
+  </div>
+</section>
+
 </main>
 <!-- Footer -->
 <footer class="px-3 pt-4 lg:px-9 border-t-2 bg-blue-800 pt-3 text-center sm:text-center md:text-center">

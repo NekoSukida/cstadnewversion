@@ -36,32 +36,32 @@
     </style>
   </head>
   <body>
-    <header>
+    <header class="sticky top-0" style="z-index: 99">
       <nav class="bg-blue-800 border-gray-200">
         <div
           class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
         >
-          <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+          <a href="../index.html" class="flex items-center space-x-3 rtl:space-x-reverse">
             <img
               src="https://istad.co/resources/img/CSTAD_120.png"
               class="h-12"
               alt="cstad Logo"
             />
             <span
-              class="self-center text-white text-2xl font-semibold whitespace-nowrap dark:text-white"
+              class="self-center text-white text-2xl font-semibold whitespace-nowrap"
               >C S T A D</span
             >
           </a>
           <button
-            data-collapse-toggle="navbar-dropdown"
+            data-collapse-toggle="navbar-multi-level"
             type="button"
-            class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
-            aria-controls="navbar-dropdown"
+            class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-white rounded-lg md:hidden hover:text-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400"
+            aria-controls="navbar-multi-level"
             aria-expanded="false"
           >
             <span class="sr-only">Open main menu</span>
             <svg
-              class="w-5 h-5 text-gray-100"
+              class="w-5 h-5"
               aria-hidden="true"
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -76,17 +76,14 @@
               />
             </svg>
           </button>
-          <div
-            class="hidden bg-blue-800 md:block md:w-auto"
-            id="navbar-dropdown"
-          >
+          <div class="hidden w-full md:block md:w-auto" id="navbar-multi-level">
             <ul
               class="bg-blue-800 flex flex-col font-medium p-4 md:p-0 mt-4 text-white border border-gray-100 rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0"
             >
               <li>
                 <a
-                  href="#"
-                  class="bg-blue-800 block py-2 px-3 rounded md:bg-transparent md:p-0 md:dark:text-blue-500 dark:bg-blue-600 md:dark:bg-transparent"
+                  href="../index.html"
+                  class="block py-2 px-3 rounded md:bg-transparent md:p-0"
                   aria-current="page"
                   >HOME</a
                 >
@@ -94,10 +91,10 @@
               <li>
                 <button
                   id="dropdownNavbarLink"
-                  data-dropdown-toggle="dropdownNavbar"
-                  class="flex items-center justify-between w-full py-2 px-3 rounded hover:bg-black-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto dark:text-white md:dark:hover:text-blue-500 dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent"
+                  data-dropdown-toggle="dropdownNavbar1"
+                  class="flex items-center justify-between w-full py-2 px-3 rounded hover:bg-blue-500 md:hover:bg-transparent md:border-0 md:p-0 md:w-auto"
                 >
-                  ENROLL
+                  ENROLLMENT
                   <svg
                     class="w-2.5 h-2.5 ms-2.5"
                     aria-hidden="true"
@@ -116,32 +113,26 @@
                 </button>
                 <!-- Dropdown menu -->
                 <div
-                  id="dropdownNavbar"
-                  class="z-10 hidden font-normal bg-gray-100 divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600"
+                  id="dropdownNavbar1"
+                  class="absolute z-10 hidden font-normal bg-gray-100 divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600"
                 >
                   <ul
                     class="py-2 text-sm text-gray-700 dark:text-gray-400"
                     aria-labelledby="dropdownLargeButton"
                   >
                     <li>
-                      <a
-                        href="#"
-                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
-                        >Dashboard</a
+                      <a href="./../enroll1/enroll.html" class="block px-4 py-2 hover:bg-gray-300"
+                        >Paid Course</a
                       >
                     </li>
                     <li>
-                      <a
-                        href="#"
-                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
-                        >Settings</a
+                      <a href="./../enroll1/apply.html" class="block px-4 py-2 hover:bg-gray-300"
+                        >Scholarship</a
                       >
                     </li>
                     <li>
-                      <a
-                        href="#"
-                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
-                        >Earnings</a
+                      <a href="./../enroll1/bachelor.html" class="block px-4 py-2 hover:bg-gray-300"
+                        >Bachelor Degree</a
                       >
                     </li>
                   </ul>
@@ -149,8 +140,8 @@
               </li>
               <li>
                 <a
-                  href="#"
-                  class="block py-2 px-3 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                  href="./course.html"
+                  class="block py-2 px-3 rounded hover:bg-blue-500 md:hover:bg-transparent md:border-0 md:p-0"
                   >COURSE</a
                 >
               </li>
@@ -158,7 +149,7 @@
                 <button
                   id="dropdownNavbarLink"
                   data-dropdown-toggle="dropdownNavbar"
-                  class="flex items-center justify-between w-full py-2 px-3 rounded hover:bg-black-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto dark:text-white md:dark:hover:text-blue-500 dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent"
+                  class="flex items-center justify-between w-full py-2 px-3 rounded hover:bg-blue-500 md:hover:bg-transparent md:border-0 md:p-0 md:w-auto"
                 >
                   ANNOUNCEMENT
                   <svg
@@ -180,54 +171,47 @@
                 <!-- Dropdown menu -->
                 <div
                   id="dropdownNavbar"
-                  class="z-10 hidden font-normal bg-gray-100 divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600"
+                  class="relative z-10 hidden font-normal bg-gray-100 divide-y divide-gray-100 rounded-lg shadow w-44"
                 >
                   <ul
-                    class="py-2 text-sm text-gray-700 dark:text-gray-400"
+                    class="py-2 text-sm text-gray-700"
                     aria-labelledby="dropdownLargeButton"
                   >
                     <li>
                       <a
-                        href="#"
-                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
-                        >Dashboard</a
+                        href="./../announcement/AnnounmnetJob.html"
+                        class="block px-4 py-2 hover:bg-gray-300"
+                        >Job Opportunity</a
                       >
                     </li>
                     <li>
                       <a
-                        href="#"
-                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
-                        >Settings</a
+                        href="./../announcement/itnews.html"
+                        class="block px-4 py-2 hover:bg-gray-300"
+                        >IT News</a
                       >
                     </li>
                     <li>
                       <a
-                        href="#"
-                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
-                        >Earnings</a
+                        href="./../announcement/activity.html"
+                        class="block px-4 py-2 hover:bg-gray-300"
+                        >Activity</a
                       >
                     </li>
                   </ul>
-                  <div class="py-1">
-                    <a
-                      href="#"
-                      class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white"
-                      >Sign out</a
-                    >
-                  </div>
                 </div>
               </li>
               <li>
                 <a
-                  href="#"
-                  class="block py-2 px-3 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                  href="../about_us/about-us.html"
+                  class="block py-2 px-3 rounded hover:bg-blue-500 md:hover:bg-transparent md:border-0 md:p-0"
                   >ABOUT US</a
                 >
               </li>
               <li>
                 <a
-                  href="#"
-                  class="block py-2 px-3 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                  href="../contact_us/contact-us.html"
+                  class="block py-2 px-3 rounded hover:bg-blue-500 md:hover:bg-transparent md:border-0 md:p-0"
                   >CONTACT US</a
                 >
               </li>
@@ -237,191 +221,194 @@
       </nav>
     </header>
     <main>
-        <section>
-            <div class="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
-                <div class="mx-auto mt-5 mb-5 lg:max-w-xl sm:text-center">
-                  <p class="inline-block px-3 py-px mb-4 text-2xl font-bold font-semibold tracking-wider uppercase rounded-full bg-teal-accent-400">
-                    A lovely Feedback from our Student
+
+      <!-- feedback -->
+<section>
+  <div class="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
+      <div class="mx-auto mt-5 mb-5 lg:max-w-xl sm:text-center">
+        <p class="inline-block px-3 py-px mb-4 text-2xl font-bold font-semibold tracking-wider uppercase rounded-full bg-teal-accent-400">
+          A lovely Feedback from our Student
+        </p>
+      </div>
+      <div class="grid gap-10 mx-auto lg:grid-cols-2 lg:max-w-screen-lg">
+        <div class="grid sm:grid-cols-3 bg-white rounded shadow">
+          <div class="relative w-full h-48 max-h-full rounded shadow sm:h-auto">
+            <img class="absolute object-cover w-full h-full rounded" src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=3&amp;h=750&amp;w=1260" alt="Person" />
+          </div>
+          <div class="flex flex-col justify-center mt-5 sm:mt-0 sm:p-5 sm:col-span-2">
+            <p class="text-lg font-bold">Oliver Aguilerra</p>
+            <p class="mb-4 text-xs text-gray-800">Product Manager</p>
+            <p class="mb-4 text-sm tracking-wide text-gray-800">
+              Vincent Van Gogh’s most popular painting, The Starry Night.
+            </p>
+           <div class="flex items-center space-x-3">
+              <a class="text-[#f59e0b] transition-colors duration-300 hover:text-deep-purple-accent-400">
+                <span viewBox="0 0 24 24" fill="currentColor" class="h-5">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="grid sm:grid-cols-3  bg-white rounded shadow">
+          <div class="relative w-full h-48 max-h-full rounded shadow sm:h-auto">
+            <img class="absolute object-cover w-full h-full rounded" src="https://images.pexels.com/photos/2381069/pexels-photo-2381069.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260" alt="Person" />
+          </div>
+          <div class="flex flex-col justify-center mt-5 sm:mt-0 sm:p-5 sm:col-span-2">
+            <p class="text-lg font-bold">Marta Clermont</p>
+            <p class="mb-4 text-xs text-gray-800">Design Team Lead</p>
+            <p class="mb-4 text-sm tracking-wide text-gray-800">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore laudantium aut vitae architecto ipsam eveniet molestias, veniam consectetur, suscipit accusantium fugit eaque est eius tempora laboriosam deserunt numquam eum nisi.
+            </p>
+            <div class="flex items-center space-x-3">
+              <a class="text-[#f59e0b] transition-colors duration-300 hover:text-deep-purple-accent-400">
+                <span viewBox="0 0 24 24" fill="currentColor" class="h-5">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="grid sm:grid-cols-3 bg-white rounded shadow">
+          <div class="relative w-full h-48 max-h-full rounded shadow sm:h-auto">
+            <img class="absolute object-cover w-full h-full rounded" src="https://images.pexels.com/photos/3747435/pexels-photo-3747435.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260" alt="Person" />
+          </div>
+          <div class="flex flex-col justify-center mt-5 sm:mt-0 sm:p-5 sm:col-span-2">
+            <p class="text-lg font-bold">Alice Melbourne</p>
+            <p class="mb-4 text-xs text-gray-800">Human Resources</p>
+            <p class="mb-4 text-sm tracking-wide text-gray-800">
+              Lorizzle ipsum bling bling sit amizzle, consectetuer adipiscing elit.
+            </p>
+            <div class="flex items-center space-x-3">
+              <a class="text-[#f59e0b] transition-colors duration-300 hover:text-deep-purple-accent-400">
+                <span viewBox="0 0 24 24" fill="currentColor" class="h-5">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="grid sm:grid-cols-3 bg-white rounded shadow">
+          <div class="relative w-full h-48 max-h-full rounded shadow sm:h-auto">
+            <img class="absolute object-cover w-full h-full rounded" src="https://images.pexels.com/photos/3931603/pexels-photo-3931603.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260" alt="Person" />
+          </div>
+          <div class="flex flex-col justify-center mt-5 sm:mt-0 sm:p-5 sm:col-span-2">
+            <p class="text-lg font-bold">John Doe</p>
+            <p class="mb-4 text-xs text-gray-800">Good guy</p>
+            <p class="mb-4 text-sm tracking-wide text-gray-800">
+              Bacon ipsum dolor sit amet salami jowl corned beef, andouille flank.
+            </p>
+            <div class="flex items-center space-x-3">
+              <a class="text-[#f59e0b] transition-colors duration-300 hover:text-deep-purple-accent-400">
+                <span viewBox="0 0 24 24" fill="currentColor" class="h-5">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  <div>
+    <div class="mx-auto mb-5 lg:max-w-xl sm:text-center">
+      <p class="inline-block px-3 py-px text-2xl font-bold font-semibold tracking-wider uppercase rounded-full bg-teal-accent-400">
+        Have a feedback?<br>Let us know!
+      </p>
+    </div>
+  </div>
+  <!-- form  -->
+  <section class="max-w-[950px] m-auto mt-10 mb-10">
+    <div class="flex items-center justify-center rounded-xl bg-white"> 
+    <!-- Author: FormBold Team -->
+        <div class="mx-auto mt-8 w-full max-w-[850px]"> 
+            <form class="ml-6">
+                <div class="mb-5">
+                    <input type="text" name="name" id="name" placeholder="Full Name (EN)"
+                        class="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md" />
+                </div>
+                <div class="mb-5">
+                    <input type="email" name="email" id="email" placeholder="Email"
+                        class="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium  text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md" />
+                </div>
+                <div class="-mx-3 flex flex-wrap">
+                  <div class="w-full px-3 sm:w-1/3">
+                    <div class="mb-5">
+                      <select id="gender" name="gender"
+                        class="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md" required>
+                        <option value="">Gender</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="other">Other</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="w-full px-3 sm:w-1/3">
+                    <div class="mb-5">
+                      <select id="gender" name="gender"
+                        class="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md" required>
+                        <option value="">Class</option>
+                        <option value="male">Fundamental</option>
+                        <option value="female">IT Expert</option>
+                        <option value="other">Other</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="w-full px-3 sm:w-1/3">
+                      <div class="mb-5">
+                        <select id="gender" name="gender"
+                          class="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md" required>
+                          <option value="">Generation</option>
+                          <option value="">1st</option>
+                          <option value="">2st</option>
+                          <option value="other">Other</option>
+                        </select>
+                      </div>
+                  </div>
+                </div>
+                <div class="mb-5 text-[#6B7280]">
+                  <p>Rate us:
+                    <span class="text-[#f59e0b]">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                    </span>
                   </p>
                 </div>
-                <div class="grid gap-10 mx-auto lg:grid-cols-2 lg:max-w-screen-lg">
-                  <div class="grid sm:grid-cols-3 bg-white rounded shadow">
-                    <div class="relative w-full h-48 max-h-full rounded shadow sm:h-auto">
-                      <img class="absolute object-cover w-full h-full rounded" src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=3&amp;h=750&amp;w=1260" alt="Person" />
-                    </div>
-                    <div class="flex flex-col justify-center mt-5 sm:mt-0 sm:p-5 sm:col-span-2">
-                      <p class="text-lg font-bold">Oliver Aguilerra</p>
-                      <p class="mb-4 text-xs text-gray-800">Product Manager</p>
-                      <p class="mb-4 text-sm tracking-wide text-gray-800">
-                        Vincent Van Gogh’s most popular painting, The Starry Night.
-                      </p>
-                     <div class="flex items-center space-x-3">
-                        <a class="text-[#f59e0b] transition-colors duration-300 hover:text-deep-purple-accent-400">
-                          <span viewBox="0 0 24 24" fill="currentColor" class="h-5">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                          </span>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="grid sm:grid-cols-3  bg-white rounded shadow">
-                    <div class="relative w-full h-48 max-h-full rounded shadow sm:h-auto">
-                      <img class="absolute object-cover w-full h-full rounded" src="https://images.pexels.com/photos/2381069/pexels-photo-2381069.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260" alt="Person" />
-                    </div>
-                    <div class="flex flex-col justify-center mt-5 sm:mt-0 sm:p-5 sm:col-span-2">
-                      <p class="text-lg font-bold">Marta Clermont</p>
-                      <p class="mb-4 text-xs text-gray-800">Design Team Lead</p>
-                      <p class="mb-4 text-sm tracking-wide text-gray-800">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore laudantium aut vitae architecto ipsam eveniet molestias, veniam consectetur, suscipit accusantium fugit eaque est eius tempora laboriosam deserunt numquam eum nisi.
-                      </p>
-                      <div class="flex items-center space-x-3">
-                        <a class="text-[#f59e0b] transition-colors duration-300 hover:text-deep-purple-accent-400">
-                          <span viewBox="0 0 24 24" fill="currentColor" class="h-5">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                          </span>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="grid sm:grid-cols-3 bg-white rounded shadow">
-                    <div class="relative w-full h-48 max-h-full rounded shadow sm:h-auto">
-                      <img class="absolute object-cover w-full h-full rounded" src="https://images.pexels.com/photos/3747435/pexels-photo-3747435.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260" alt="Person" />
-                    </div>
-                    <div class="flex flex-col justify-center mt-5 sm:mt-0 sm:p-5 sm:col-span-2">
-                      <p class="text-lg font-bold">Alice Melbourne</p>
-                      <p class="mb-4 text-xs text-gray-800">Human Resources</p>
-                      <p class="mb-4 text-sm tracking-wide text-gray-800">
-                        Lorizzle ipsum bling bling sit amizzle, consectetuer adipiscing elit.
-                      </p>
-                      <div class="flex items-center space-x-3">
-                        <a class="text-[#f59e0b] transition-colors duration-300 hover:text-deep-purple-accent-400">
-                          <span viewBox="0 0 24 24" fill="currentColor" class="h-5">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                          </span>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="grid sm:grid-cols-3 bg-white rounded shadow">
-                    <div class="relative w-full h-48 max-h-full rounded shadow sm:h-auto">
-                      <img class="absolute object-cover w-full h-full rounded" src="https://images.pexels.com/photos/3931603/pexels-photo-3931603.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260" alt="Person" />
-                    </div>
-                    <div class="flex flex-col justify-center mt-5 sm:mt-0 sm:p-5 sm:col-span-2">
-                      <p class="text-lg font-bold">John Doe</p>
-                      <p class="mb-4 text-xs text-gray-800">Good guy</p>
-                      <p class="mb-4 text-sm tracking-wide text-gray-800">
-                        Bacon ipsum dolor sit amet salami jowl corned beef, andouille flank.
-                      </p>
-                      <div class="flex items-center space-x-3">
-                        <a class="text-[#f59e0b] transition-colors duration-300 hover:text-deep-purple-accent-400">
-                          <span viewBox="0 0 24 24" fill="currentColor" class="h-5">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                          </span>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+            <div class="mb-5">
+              <textarea name="" id="" cols="10" rows="3" placeholder="Comment" class="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"></textarea>
+            </div> 
+            <div class="flex flex-wrap justify-end">
+              <div class="mb-5">
+                <button
+                class="hover:shadow-form w-full rounded-md border-2 border-green-600 py-3 px-8 text-center font-bold text-green-600 outline-none">
+                Enroll Now
+                </button>
               </div>
-            <div>
-              <div class="mx-auto mb-5 lg:max-w-xl sm:text-center">
-                <p class="inline-block px-3 py-px text-2xl font-bold font-semibold tracking-wider uppercase rounded-full bg-teal-accent-400">
-                  Have a feedback?<br>Let us know!
-                </p>
-              </div>
-            </div>
-            <!-- form  -->
-            <section class="max-w-[950px] m-auto mt-10 mb-10">
-              <div class="flex items-center justify-center rounded-xl bg-white"> 
-              <!-- Author: FormBold Team -->
-                  <div class="mx-auto mt-8 w-full max-w-[850px]"> 
-                      <form class="ml-6">
-                          <div class="mb-5">
-                              <input type="text" name="name" id="name" placeholder="Full Name (EN)"
-                                  class="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md" />
-                          </div>
-                          <div class="mb-5">
-                              <input type="email" name="email" id="email" placeholder="Email"
-                                  class="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium  text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md" />
-                          </div>
-                          <div class="-mx-3 flex flex-wrap">
-                            <div class="w-full px-3 sm:w-1/3">
-                              <div class="mb-5">
-                                <select id="gender" name="gender"
-                                  class="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md" required>
-                                  <option value="">Gender</option>
-                                  <option value="male">Male</option>
-                                  <option value="female">Female</option>
-                                  <option value="other">Other</option>
-                                </select>
-                              </div>
-                            </div>
-                            <div class="w-full px-3 sm:w-1/3">
-                              <div class="mb-5">
-                                <select id="gender" name="gender"
-                                  class="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md" required>
-                                  <option value="">Class</option>
-                                  <option value="male">Male</option>
-                                  <option value="female">Female</option>
-                                  <option value="other">Other</option>
-                                </select>
-                              </div>
-                            </div>
-                            <div class="w-full px-3 sm:w-1/3">
-                                <div class="mb-5">
-                                  <select id="gender" name="gender"
-                                    class="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md" required>
-                                    <option value="">Generation</option>
-                                    <option value="male">Male</option>
-                                    <option value="female">Female</option>
-                                    <option value="other">Other</option>
-                                  </select>
-                                </div>
-                            </div>
-                          </div>
-                          <div class="mb-5 text-[#6B7280]">
-                            <p>Rate us:
-                              <span class="text-[#f59e0b]">
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                              </span>
-                            </p>
-                          </div>
-                      <div class="mb-5">
-                        <textarea name="" id="" cols="10" rows="3" placeholder="Comment" class="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"></textarea>
-                      </div> 
-                      <div class="flex flex-wrap justify-end">
-                        <div class="mb-5">
-                          <button
-                          class="hover:shadow-form w-full rounded-md border-2 border-green-600 py-3 px-8 text-center font-bold text-green-600 outline-none">
-                          Enroll Now
-                          </button>
-                        </div>
-                      </div> 
-                      </form>
-                  </div> 
-              </div>
-      </section>
-    </section>
+            </div> 
+            </form>
+        </div> 
+    </div>
+</section>
+</section>
+
     </main>
 <!-- Footer -->
 <footer class="px-3 pt-4 lg:px-9 border-t-2 bg-blue-800 pt-3 text-center sm:text-center md:text-center">
