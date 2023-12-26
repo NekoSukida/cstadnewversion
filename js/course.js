@@ -148,7 +148,7 @@ input.addEventListener("input", (e) => {
 
       noDataFoundDiv.innerHTML = `
     <img width="250px" class="mx-auto" src="https://cdn3d.iconscout.com/3d/premium/thumb/no-results-found-5732789-4812665.png?f=webp" alt="No Data Image"></img>
-    <h1 class="text-xl pb-11" style="margin-top: 10px;">There is no record</h1>
+    <h1 class="text-xl pb-11 text-blue-800" style="margin-top: 10px;">There is no record</h1>
 `;
 
       course_wrapper.appendChild(noDataFoundDiv);
