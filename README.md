@@ -9,8 +9,8 @@
 
 1. [About CSTAD New Version](#cstadnewversion)
 2. [Getting Started](#getting-started)
-  - [Local Installation](#local-installation)
-  - [Deployment](#Deployment)
+    - [Local Installation](#local-installation)
+    - [Deployment](#Deployment)
 3. [Getting Started](#getting-started)
 
 ## About CSTAD New Version
@@ -47,7 +47,7 @@ Deployment :
 
 
 ## Page URL
-## Global Pages (Not Sign in)
+## Global Pages (Not Signed in)
 1. Home
 2. Enrollment
 3. Course
