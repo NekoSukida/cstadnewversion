@@ -7,17 +7,13 @@
 
 ## Table of Contents
 
-- [Introduction](#introduction)
-- [Technologies Used](#technologies-used)
-- [Features](#features)
-  - [Course](#course)
-  - [Announcement](#announcement)
-  - [Project Achievement](#projectachievement)
-  - [Activity](#activity)
-- [Getting Started](#getting-started)
-  - [Installation](#installation)
+1. [About CSTAD New Version](#cstadnewversion)
+2. [Getting Started](#getting-started)
+  - [Local Installation](#local-installation)
+  - [Deployment](#Deployment)
+3. [Getting Started](#getting-started)
 
-## Introduction
+## About CSTAD New Version
 
 ![Project Logo](./asset/Image/Screenshot%202023-12-26%20000041.png)
 
@@ -31,19 +27,6 @@ CSTAD is a noteworthy science and technology center in Cambodia. CSTAD has route
 - JavaScript
 - Tailwind CSS
 
-## Features
-
-- Course
-    - Course detail
-- Announcement
-    - Job Opportunity
-    - IT News
-    - Activity
-- Project Achievement
-    - Project Achievement detail
-- Activity
-    - Show student activity around such as taking examination, party, trip,...
-
 ## Getting Started
 
 ### Local Installation
@@ -56,12 +39,13 @@ git clone https://github.com/FoundationScholarship/cstad-new-version.git
 ```
 npm install
 ```
-3. Open Live Server 
+Open
+
+### Deployment
+
+Deployment : 
 
 
-### Installation
-- [Tailwind CSS](https://tailwindcss.com/)
-- [Flowbite](https://flowbite.com/)
 ## Page URL
 ## Global Pages (Not Sign in)
 1. Home
